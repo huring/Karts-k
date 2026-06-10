@@ -1,0 +1,37 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--dino-slategrey-900);
+}
+
+.field {
+  height: 42px;
+  width: 100%;
+  padding: 0 13px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-text);
+  background: var(--color-bg);
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.field::placeholder { color: var(--dino-slategrey-200); }
+.field:focus {
+  border-color: var(--dino-blue-link);
+  box-shadow: 0 0 0 2px rgba(27, 136, 232, 0.15);
+}
+.field:disabled {
+  background: var(--dino-slategrey-50);
+  border-color: var(--dino-slategrey-200);
+  color: var(--dino-slategrey-300);
+  cursor: not-allowed;
+}

@@ -1,0 +1,40 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  white-space: nowrap;
+  border: 1px solid transparent;
+}
+
+/* Storlekar (S/M/L = spec från DESIGNSYSTEM.md) */
+.s { font-size: 12px; padding: 3px 8px;  border-radius: 28px; }
+.m { font-size: 14px; padding: 4px 12px; border-radius: var(--radius-full); }
+.l { font-size: 14px; padding: 4px 12px; border-radius: var(--radius-full); font-weight: 500; }
+
+/* Varianter */
+.default {
+  background: var(--dino-white);
+  color: #212121;
+  border-color: var(--color-border);
+}
+.success {
+  background: var(--dino-green-50);
+  color: var(--dino-darkgreen-600);
+  border-color: var(--dino-green-500);
+}
+.warning {
+  background: #FFFBE6;
+  color: #7A6200;
+  border-color: var(--dino-yellow-500);
+}
+.error {
+  background: var(--dino-red-50);
+  color: var(--dino-red-700);
+  border-color: var(--dino-red-400);
+}
+.neutral {
+  background: var(--dino-slategrey-50);
+  color: var(--dino-slategrey-400);
+  border-color: var(--dino-slategrey-200);
+}

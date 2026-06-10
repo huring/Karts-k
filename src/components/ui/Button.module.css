@@ -1,0 +1,48 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-1);
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* Storlekar */
+.md { height: 33px; padding: 0 12px; }
+.sm { height: 24px; padding: 0 8px; font-size: 12px; }
+
+/* Primary */
+.primary {
+  background: var(--dino-blue-800);
+  color: var(--dino-white);
+  border: none;
+}
+.primary:hover:not(:disabled) { background: var(--dino-darkblue-300); }
+
+/* Secondary */
+.secondary {
+  background: transparent;
+  color: var(--dino-darkblue-500);
+  border: 0.5px solid #787878;
+}
+.secondary:hover:not(:disabled) {
+  background: #D9D9D9;
+  border-color: var(--dino-slategrey-200);
+}
+
+/* Ghost */
+.ghost {
+  background: transparent;
+  color: var(--dino-darkblue-500);
+  border: none;
+}
+.ghost:hover:not(:disabled) { color: var(--dino-darkblue-700); }

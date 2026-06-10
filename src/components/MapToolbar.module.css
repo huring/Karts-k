@@ -1,0 +1,119 @@
+.wrapper {
+  position: absolute;
+  top: 110px;
+  right: var(--space-2);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  align-items: flex-end;
+}
+
+.toolstrip {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+
+.toolBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--color-text-muted);
+  border-bottom: 1px solid var(--color-border);
+  transition: background 0.1s, color 0.1s;
+}
+
+.toolBtn:last-child {
+  border-bottom: none;
+}
+
+.toolBtn:hover:not(.active) {
+  background: var(--color-bg-secondary);
+  color: var(--color-text);
+}
+
+.toolBtn.active {
+  background: var(--color-primary);
+  color: var(--dino-white);
+}
+
+.toolBtn .material-symbols-outlined {
+  font-size: 20px;
+}
+
+.panel {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  padding: var(--space-3);
+  min-width: 200px;
+  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.panelLabel {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.panelIcon {
+  font-size: 18px;
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.panelValue {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-text);
+  line-height: 1.3;
+}
+
+.panelActions {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.bufferInput {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.radiusInput {
+  width: 72px;
+  height: 28px;
+  padding: 0 var(--space-1);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+.radiusInput:focus {
+  outline: none;
+  border-color: var(--color-link);
+}
+
+.radiusUnit {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+}

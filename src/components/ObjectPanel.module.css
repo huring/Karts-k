@@ -1,0 +1,337 @@
+.panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 360px;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bg);
+  border-left: 1px solid var(--color-border);
+  box-shadow: -4px 0 16px rgba(0, 0, 0, 0.1);
+  transform: translateX(100%);
+  transition: transform 0.25s ease;
+}
+
+.open {
+  transform: translateX(0);
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+  gap: var(--space-2);
+  flex-shrink: 0;
+  min-height: 52px;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  overflow: hidden;
+  flex: 1;
+}
+
+.headerTitle {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  overflow: hidden;
+}
+
+.titleText {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.iconBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: none;
+  cursor: pointer;
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+  transition: background 0.1s, color 0.1s;
+}
+
+.iconBtn:hover {
+  background: var(--color-bg-secondary);
+  color: var(--color-text);
+}
+
+.iconBtnIcon {
+  font-size: 18px;
+}
+
+/* Breadcrumb */
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2px;
+  padding: var(--space-2) var(--space-4);
+  background: var(--color-bg-secondary);
+  border-bottom: 1px solid var(--color-border);
+  flex-shrink: 0;
+}
+
+.breadcrumbItem {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.breadcrumbSep {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  padding: 0 2px;
+}
+
+.breadcrumbStep {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  max-width: 120px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.breadcrumbStep:last-child {
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+/* Scrollable content */
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+/* Property list (F4-1, F4-4) */
+
+.propList {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.propRow {
+  display: flex;
+  align-items: flex-start;
+  padding: var(--space-2) var(--space-3);
+  gap: var(--space-3);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.propRow:last-child {
+  border-bottom: none;
+}
+
+.propLabel {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+  width: 120px;
+  line-height: 20px;
+}
+
+.propValue {
+  font-size: 13px;
+  color: var(--color-text);
+  font-weight: 500;
+  line-height: 20px;
+  flex: 1;
+}
+
+.propWithIcon {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.iconArea {
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+/* Fly to button */
+
+.flyToRow {
+  display: flex;
+}
+
+.flyToBtn {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-link);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.flyToBtn:hover {
+  text-decoration: underline;
+}
+
+.flyToBtnIcon {
+  font-size: 14px;
+}
+
+/* Loading / empty states */
+
+.loadingText,
+.emptyRelated {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  text-align: center;
+  padding: var(--space-4) 0;
+}
+
+/* Related sections (F4-2) */
+
+.relatedSection {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  width: 100%;
+  padding: var(--space-2) var(--space-3);
+  background: var(--color-bg-secondary);
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.1s;
+}
+
+.sectionHeader:hover {
+  background: var(--dino-slategrey-100);
+}
+
+.sectionIcon {
+  font-size: 16px;
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.sectionTitle {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.sectionCount {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--dino-white);
+  background: var(--color-primary);
+  border-radius: var(--radius-full);
+  padding: 0 6px;
+  line-height: 18px;
+  min-width: 18px;
+  text-align: center;
+}
+
+.expandIcon {
+  font-size: 16px;
+  color: var(--color-text-muted);
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.sectionItems {
+  border-top: 1px solid var(--color-border);
+}
+
+/* Related row (clickable) — F4-3 navigation */
+
+.relatedRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  width: 100%;
+  padding: var(--space-2) var(--space-3);
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--color-border);
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.1s;
+}
+
+.relatedRow:last-child {
+  border-bottom: none;
+}
+
+.relatedRow:hover {
+  background: var(--color-bg-secondary);
+}
+
+.relatedContent {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+  gap: 2px;
+}
+
+.relatedLabel {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.relatedSubLabel {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.relatedBadge {
+  flex-shrink: 0;
+}
+
+.chevronIcon {
+  font-size: 16px;
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+}

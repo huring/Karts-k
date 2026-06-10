@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+:root {
+  /* === Darkblue (primär varumärkesfärg) === */
+  --dino-darkblue-50:  #EDF2F9;
+  --dino-darkblue-100: #D2DCE8;
+  --dino-darkblue-200: #A0B3CB;
+  --dino-darkblue-300: #6D88AA;
+  --dino-darkblue-400: #375A84;
+  --dino-darkblue-500: #013264;
+  --dino-darkblue-600: #002853;
+  --dino-darkblue-700: #031F3F;
+  --dino-darkblue-800: #001837;
+  --dino-darkblue-900: #000D22;
+  --dino-darkblue-950: #000412;
+
+  /* === Blue === */
+  --dino-blue-50:   #F0F6FC;
+  --dino-blue-100:  #DDEDFF;
+  --dino-blue-200:  #B8D8FB;
+  --dino-blue-300:  #8FBFF3;
+  --dino-blue-400:  #5CA3EC;
+  --dino-blue-link: #1B88E8;
+  --dino-blue-600:  #1170C2;
+  --dino-blue-700:  #07599D;
+  --dino-blue-800:  #0E4C83;
+  --dino-blue-900:  #062F54;
+  --dino-blue-950:  #021B35;
+
+  /* === Darkgreen === */
+  --dino-darkgreen-50:  #EFF3ED;
+  --dino-darkgreen-100: #D5DED1;
+  --dino-darkgreen-200: #A9BBA2;
+  --dino-darkgreen-300: #7B9571;
+  --dino-darkgreen-400: #4A6B3D;
+  --dino-darkgreen-500: #1E4606;
+  --dino-darkgreen-600: #143701;
+  --dino-darkgreen-700: #122B05;
+  --dino-darkgreen-800: #0A2400;
+  --dino-darkgreen-900: #051400;
+  --dino-darkgreen-950: #010800;
+
+  /* === Green === */
+  --dino-green-50:  #F3F7F0;
+  --dino-green-100: #E3EBDD;
+  --dino-green-200: #C6D8B6;
+  --dino-green-300: #A6BE8F;
+  --dino-green-400: #84A561;
+  --dino-green-500: #638C2F;
+  --dino-green-600: #517227;
+  --dino-green-700: #405D1A;
+  --dino-green-800: #354E13;
+  --dino-green-900: #21310E;
+  --dino-green-950: #101D03;
+
+  /* === Slategrey (neutraler) === */
+  --dino-slategrey-50:  #F2F2F2;
+  --dino-slategrey-100: #DBDBDB;
+  --dino-slategrey-200: #B7B7B7;
+  --dino-slategrey-300: #8C8C8C;
+  --dino-slategrey-400: #636363;
+  --dino-slategrey-500: #3D3D3D;
+  --dino-slategrey-600: #303030;
+  --dino-slategrey-700: #262626;
+  --dino-slategrey-800: #1F1F1F;
+  --dino-slategrey-900: #0F0F0F;
+  --dino-slategrey-950: #070707;
+
+  /* === Red === */
+  --dino-red-50:  #FCF3F1;
+  --dino-red-100: #FFE4E0;
+  --dino-red-200: #FCC0B8;
+  --dino-red-300: #FB988D;
+  --dino-red-400: #F26A5F;
+  --dino-red-500: #E63935;
+  --dino-red-600: #BE2F2C;
+  --dino-red-700: #9E2320;
+  --dino-red-800: #831A19;
+  --dino-red-900: #55110F;
+  --dino-red-950: #320605;
+
+  /* === Orange === */
+  --dino-orange-400: #E3A480;
+  --dino-orange-500: #D98C61;
+  --dino-orange-600: #B6734D;
+  --dino-orange-700: #915E40;
+
+  /* === Yellow === */
+  --dino-yellow-400: #F4E28B;
+  --dino-yellow-500: #F3DB65;
+  --dino-yellow-600: #CCB857;
+
+  /* === Lilac === */
+  --dino-lilac-100: #F2ECF2;
+  --dino-lilac-500: #B998B9;
+  --dino-lilac-600: #997F9A;
+
+  /* === Semantiska === */
+  --dino-white:   #FFFFFF;
+  --dino-black:   #3D3D3D;
+  --dino-info:    #1B88E8;
+  --dino-warning: #FFDF20;
+  --dino-alert:   #FF8376;
+
+  /* === Applikationsalias === */
+  --color-bg:              var(--dino-white);
+  --color-bg-secondary:    var(--dino-slategrey-50);
+  --color-text:            var(--dino-slategrey-500);
+  --color-text-muted:      var(--dino-slategrey-300);
+  --color-border:          #D9D9D9;
+  --color-border-muted:    var(--dino-slategrey-200);
+  --color-border-secondary: var(--dino-slategrey-200);
+  --color-primary:         var(--dino-blue-800);
+  --color-primary-hover:   var(--dino-darkblue-300);
+  --color-link:            var(--dino-blue-link);
+  --color-error:           var(--dino-red-500);
+  --color-warning:         var(--dino-warning);
+  --color-info:            var(--dino-info);
+
+  /* === Border radius === */
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-full: 100px;
+
+  /* === Spacing (8px-grid) === */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+.app {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+/* Material Symbols helper */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1;
+  display: inline-block;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  user-select: none;
+}

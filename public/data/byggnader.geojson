@@ -1,0 +1,185 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BYG-001",
+        "fastighet_id": "FAR-001",
+        "byggnadstyp": "bostad",
+        "areal_m2": 142,
+        "byggar": 1968,
+        "status": "aktiv"
+      },
+      "geometry": { "type": "Point", "coordinates": [22.049, 65.601] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BYG-002",
+        "fastighet_id": "FAR-001",
+        "byggnadstyp": "ekonomibyggnad",
+        "areal_m2": 85,
+        "byggar": 1975,
+        "status": "aktiv"
+      },
+      "geometry": { "type": "Point", "coordinates": [22.053, 65.602] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BYG-003",
+        "fastighet_id": "FAR-001",
+        "byggnadstyp": "dass",
+        "areal_m2": 4,
+        "byggar": 1960,
+        "status": "aktiv"
+      },
+      "geometry": { "type": "Point", "coordinates": [22.050, 65.604] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BYG-004",
+        "fastighet_id": "FAR-002",
+        "byggnadstyp": "bostad",
+        "areal_m2": 178,
+        "byggar": 1955,
+        "status": "aktiv"
+      },
+      "geometry": { "type": "Point", "coordinates": [21.984, 65.638] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BYG-005",
+        "fastighet_id": "FAR-002",
+        "byggnadstyp": "dass",
+        "areal_m2": 4,
+        "byggar": 1955,
+        "status": "aktiv"
+      },
+      "geometry": { "type": "Point", "coordinates": [21.986, 65.637] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BYG-006",
+        "fastighet_id": "FAR-003",
+        "byggnadstyp": "bostad",
+        "areal_m2": 95,
+        "byggar": 1948,
+        "status": "aktiv"
+      },
+      "geometry": { "type": "Point", "coordinates": [21.995, 65.732] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BYG-007",
+        "fastighet_id": "FAR-003",
+        "byggnadstyp": "ekonomibyggnad",
+        "areal_m2": 120,
+        "byggar": 1952,
+        "status": "aktiv"
+      },
+      "geometry": { "type": "Point", "coordinates": [22.002, 65.733] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BYG-008",
+        "fastighet_id": "FAR-004",
+        "byggnadstyp": "bostad",
+        "areal_m2": 110,
+        "byggar": 1962,
+        "status": "aktiv"
+      },
+      "geometry": { "type": "Point", "coordinates": [21.713, 65.808] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BYG-009",
+        "fastighet_id": "FAR-005",
+        "byggnadstyp": "ekonomibyggnad",
+        "areal_m2": 200,
+        "byggar": 1981,
+        "status": "aktiv"
+      },
+      "geometry": { "type": "Point", "coordinates": [21.927, 65.702] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BYG-010",
+        "fastighet_id": "FAR-005",
+        "byggnadstyp": "bostad",
+        "areal_m2": 155,
+        "byggar": 1979,
+        "status": "aktiv"
+      },
+      "geometry": { "type": "Point", "coordinates": [21.930, 65.701] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BYG-011",
+        "fastighet_id": "FAR-006",
+        "byggnadstyp": "förråd",
+        "areal_m2": 18,
+        "byggar": 1990,
+        "status": "aktiv"
+      },
+      "geometry": { "type": "Point", "coordinates": [22.255, 65.847] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BYG-012",
+        "fastighet_id": "FAR-007",
+        "byggnadstyp": "bostad",
+        "areal_m2": 88,
+        "byggar": 1971,
+        "status": "aktiv"
+      },
+      "geometry": { "type": "Point", "coordinates": [21.874, 65.573] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BYG-013",
+        "fastighet_id": "FAR-008",
+        "byggnadstyp": "bostad",
+        "areal_m2": 130,
+        "byggar": 1935,
+        "status": "aktiv"
+      },
+      "geometry": { "type": "Point", "coordinates": [21.737, 65.829] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BYG-014",
+        "fastighet_id": "FAR-008",
+        "byggnadstyp": "ekonomibyggnad",
+        "areal_m2": 160,
+        "byggar": 1940,
+        "status": "riven"
+      },
+      "geometry": { "type": "Point", "coordinates": [21.740, 65.831] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BYG-015",
+        "fastighet_id": "FAR-009",
+        "byggnadstyp": "bostad",
+        "areal_m2": 210,
+        "byggar": 2003,
+        "status": "aktiv"
+      },
+      "geometry": { "type": "Point", "coordinates": [22.210, 65.577] }
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "id": "FAR-001", "beteckning": "Luleå Rutvik 1:23", "namn": "Rutvik skogsmark", "markslag": "skog", "status": "aktiv", "areal_m2": 450000 },
+      "geometry": { "type": "Polygon", "coordinates": [[[22.043, 65.599], [22.057, 65.600], [22.058, 65.605], [22.055, 65.606], [22.044, 65.605], [22.043, 65.599]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "FAR-002", "beteckning": "Luleå Gammelstad 2:14", "namn": "Gammelstad åkermark", "markslag": "åker", "status": "aktiv", "areal_m2": 180000 },
+      "geometry": { "type": "Polygon", "coordinates": [[[21.980, 65.636], [21.989, 65.637], [21.990, 65.640], [21.987, 65.641], [21.981, 65.639], [21.980, 65.636]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "FAR-003", "beteckning": "Luleå Persön 1:5", "namn": "Persön skogsmark", "markslag": "skog", "status": "aktiv", "areal_m2": 500000 },
+      "geometry": { "type": "Polygon", "coordinates": [[[21.990, 65.729], [22.005, 65.730], [22.006, 65.735], [22.003, 65.736], [21.991, 65.735], [21.990, 65.729]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "FAR-004", "beteckning": "Boden Överhörnäs 1:12", "namn": "Överhörnäs skogsmark", "markslag": "skog", "status": "vilande", "areal_m2": 800000 },
+      "geometry": { "type": "Polygon", "coordinates": [[[21.705, 65.804], [21.724, 65.805], [21.725, 65.812], [21.722, 65.813], [21.706, 65.812], [21.705, 65.804]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "FAR-005", "beteckning": "Luleå Södra Sunderbyn 3:7", "namn": "Sunderbyn jordbruksfastighet", "markslag": "åker", "status": "aktiv", "areal_m2": 250000 },
+      "geometry": { "type": "Polygon", "coordinates": [[[21.922, 65.700], [21.933, 65.701], [21.934, 65.704], [21.931, 65.705], [21.923, 65.703], [21.922, 65.700]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "FAR-006", "beteckning": "Råneå Storön 5:19", "namn": "Storön myrmark", "markslag": "impediment", "status": "aktiv", "areal_m2": 600000 },
+      "geometry": { "type": "Polygon", "coordinates": [[[22.250, 65.844], [22.266, 65.845], [22.267, 65.850], [22.264, 65.851], [22.251, 65.849], [22.250, 65.844]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "FAR-007", "beteckning": "Luleå Antnäs 1:3", "namn": "Antnäs strandmark", "markslag": "vatten", "status": "aktiv", "areal_m2": 150000 },
+      "geometry": { "type": "Polygon", "coordinates": [[[21.871, 65.571], [21.879, 65.572], [21.880, 65.574], [21.877, 65.575], [21.872, 65.574], [21.871, 65.571]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "FAR-008", "beteckning": "Boden Kyrkbyn 2:8", "namn": "Kyrkbyn skogsmark", "markslag": "skog", "status": "aktiv", "areal_m2": 900000 },
+      "geometry": { "type": "Polygon", "coordinates": [[[21.727, 65.826], [21.748, 65.827], [21.749, 65.834], [21.746, 65.835], [21.728, 65.833], [21.727, 65.826]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "FAR-009", "beteckning": "Luleå Hertsön 1:15", "namn": "Hertsön industrimark", "markslag": "övrigt", "status": "aktiv", "areal_m2": 150000 },
+      "geometry": { "type": "Polygon", "coordinates": [[[22.208, 65.575], [22.216, 65.576], [22.217, 65.578], [22.214, 65.579], [22.209, 65.578], [22.208, 65.575]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "FAR-010", "beteckning": "Luleå Sandön 2:4", "namn": "Sandön skogsmark", "markslag": "skog", "status": "avslutad", "areal_m2": 550000 },
+      "geometry": { "type": "Polygon", "coordinates": [[[22.330, 65.615], [22.346, 65.616], [22.347, 65.621], [22.344, 65.622], [22.331, 65.620], [22.330, 65.615]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "FAR-011", "beteckning": "Luleå Kallax 4:2", "namn": "Kallax jordbruksfastighet", "markslag": "åker", "status": "aktiv", "areal_m2": 250000 },
+      "geometry": { "type": "Polygon", "coordinates": [[[22.138, 65.546], [22.149, 65.547], [22.150, 65.551], [22.147, 65.551], [22.139, 65.549], [22.138, 65.546]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "FAR-012", "beteckning": "Boden Sävast 1:9", "namn": "Sävast impediment", "markslag": "impediment", "status": "aktiv", "areal_m2": 350000 },
+      "geometry": { "type": "Polygon", "coordinates": [[[21.842, 65.760], [21.854, 65.761], [21.855, 65.764], [21.852, 65.765], [21.843, 65.764], [21.842, 65.760]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "FAR-013", "beteckning": "Piteå Pitholm 3:8", "namn": "Pitholm åkermark", "markslag": "åker", "status": "aktiv", "areal_m2": 300000 },
+      "geometry": { "type": "Polygon", "coordinates": [[[21.514, 65.338], [21.527, 65.339], [21.528, 65.344], [21.525, 65.344], [21.515, 65.342], [21.514, 65.338]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "FAR-014", "beteckning": "Kiruna Luossavaara 2:1", "namn": "Luossavaara skogsmark", "markslag": "skog", "status": "aktiv", "areal_m2": 1500000 },
+      "geometry": { "type": "Polygon", "coordinates": [[[20.235, 67.855], [20.264, 67.856], [20.266, 67.866], [20.262, 67.867], [20.237, 67.865], [20.235, 67.855]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "FAR-015", "beteckning": "Gällivare Malmberget 1:5", "namn": "Malmberget skogsmark", "markslag": "skog", "status": "aktiv", "areal_m2": 1200000 },
+      "geometry": { "type": "Polygon", "coordinates": [[[20.657, 67.135], [20.682, 67.136], [20.683, 67.145], [20.680, 67.146], [20.659, 67.144], [20.657, 67.135]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "FAR-016", "beteckning": "Jokkmokk Kvikkjokk 4:3", "namn": "Kvikkjokk fjällskog", "markslag": "skog", "status": "aktiv", "areal_m2": 2000000 },
+      "geometry": { "type": "Polygon", "coordinates": [[[19.854, 66.614], [19.886, 66.615], [19.888, 66.627], [19.884, 66.628], [19.856, 66.626], [19.854, 66.614]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "FAR-017", "beteckning": "Arvidsjaur Storavan 2:7", "namn": "Storavan skogsmark", "markslag": "skog", "status": "aktiv", "areal_m2": 950000 },
+      "geometry": { "type": "Polygon", "coordinates": [[[19.209, 65.596], [19.230, 65.597], [19.231, 65.605], [19.228, 65.606], [19.211, 65.604], [19.209, 65.596]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "FAR-018", "beteckning": "Arjeplog Lombolojaure 1:2", "namn": "Lombolojaure skogsmark", "markslag": "skog", "status": "aktiv", "areal_m2": 1800000 },
+      "geometry": { "type": "Polygon", "coordinates": [[[17.905, 66.064], [17.935, 66.065], [17.936, 66.076], [17.932, 66.077], [17.907, 66.075], [17.905, 66.064]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "FAR-019", "beteckning": "Haparanda Nikkala 3:4", "namn": "Nikkala åkermark", "markslag": "åker", "status": "aktiv", "areal_m2": 280000 },
+      "geometry": { "type": "Polygon", "coordinates": [[[24.094, 65.848], [24.106, 65.849], [24.107, 65.852], [24.104, 65.853], [24.095, 65.851], [24.094, 65.848]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "FAR-020", "beteckning": "Kalix Töre 2:11", "namn": "Töre åkermark", "markslag": "åker", "status": "aktiv", "areal_m2": 220000 },
+      "geometry": { "type": "Polygon", "coordinates": [[[23.145, 65.898], [23.155, 65.899], [23.156, 65.902], [23.153, 65.903], [23.146, 65.901], [23.145, 65.898]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "FAR-021", "beteckning": "Pajala Tärendö 1:8", "namn": "Tärendö skogsmark", "markslag": "skog", "status": "vilande", "areal_m2": 1600000 },
+      "geometry": { "type": "Polygon", "coordinates": [[[23.355, 67.215], [23.384, 67.216], [23.386, 67.226], [23.382, 67.228], [23.357, 67.226], [23.355, 67.215]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "FAR-022", "beteckning": "Överkalix Mertainen 5:2", "namn": "Mertainen skogsmark", "markslag": "skog", "status": "aktiv", "areal_m2": 1100000 },
+      "geometry": { "type": "Polygon", "coordinates": [[[22.838, 66.346], [22.861, 66.347], [22.862, 66.355], [22.859, 66.356], [22.840, 66.354], [22.838, 66.346]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "FAR-023", "beteckning": "Övertorneå Hietaniemi 2:6", "namn": "Hietaniemi myrmark", "markslag": "impediment", "status": "aktiv", "areal_m2": 600000 },
+      "geometry": { "type": "Polygon", "coordinates": [[[23.672, 66.397], [23.689, 66.398], [23.690, 66.404], [23.687, 66.405], [23.673, 66.403], [23.672, 66.397]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "FAR-024", "beteckning": "Älvsbyn Pålmark 3:15", "namn": "Pålmark skogsmark", "markslag": "skog", "status": "aktiv", "areal_m2": 750000 },
+      "geometry": { "type": "Polygon", "coordinates": [[[20.991, 65.696], [21.010, 65.697], [21.011, 65.704], [21.008, 65.705], [20.993, 65.703], [20.991, 65.696]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "FAR-025", "beteckning": "Jokkmokk Porjus 3:1", "namn": "Porjus skogsmark", "markslag": "skog", "status": "aktiv", "areal_m2": 1700000 },
+      "geometry": { "type": "Polygon", "coordinates": [[[19.805, 66.964], [19.835, 66.965], [19.836, 66.976], [19.832, 66.977], [19.808, 66.975], [19.805, 66.964]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "FAR-026", "beteckning": "Boden Karlsvik 2:3", "namn": "Karlsvik skogsmark", "markslag": "skog", "status": "aktiv", "areal_m2": 850000 },
+      "geometry": { "type": "Polygon", "coordinates": [[[21.440, 65.846], [21.460, 65.847], [21.461, 65.854], [21.458, 65.855], [21.442, 65.853], [21.440, 65.846]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "FAR-027", "beteckning": "Kiruna Fjällmark 1:3", "namn": "Fjällmark impediment", "markslag": "impediment", "status": "aktiv", "areal_m2": 400000 },
+      "geometry": { "type": "Polygon", "coordinates": [[[20.143, 68.097], [20.158, 68.098], [20.159, 68.103], [20.156, 68.104], [20.144, 68.102], [20.143, 68.097]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "FAR-028", "beteckning": "Arvidsjaur Glommersträsk 1:9", "namn": "Glommersträsk myrmark", "markslag": "impediment", "status": "aktiv", "areal_m2": 650000 },
+      "geometry": { "type": "Polygon", "coordinates": [[[19.571, 65.796], [19.588, 65.797], [19.590, 65.804], [19.587, 65.804], [19.572, 65.802], [19.571, 65.796]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "FAR-029", "beteckning": "Haparanda Seskarö 1:7", "namn": "Seskarö myrmark", "markslag": "impediment", "status": "aktiv", "areal_m2": 450000 },
+      "geometry": { "type": "Polygon", "coordinates": [[[23.743, 65.717], [23.757, 65.718], [23.758, 65.723], [23.755, 65.724], [23.744, 65.722], [23.743, 65.717]]] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "id": "FAR-030", "beteckning": "Kiruna Torneträsk 6:2", "namn": "Torneträsk strandmark", "markslag": "vatten", "status": "aktiv", "areal_m2": 900000 },
+      "geometry": { "type": "Polygon", "coordinates": [[[18.989, 68.346], [19.012, 68.347], [19.013, 68.354], [19.010, 68.355], [18.991, 68.353], [18.989, 68.346]]] }
+    }
+  ]
+}
