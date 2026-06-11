@@ -1,0 +1,3 @@
+# Lägg dina ZIP-exporter från DINO här.
+# Kör sedan: python scripts/convert_dino_export.py exports/*.zip
+# Filerna i den här mappen committas inte till Git.

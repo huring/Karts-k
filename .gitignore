@@ -18,3 +18,9 @@ dist/
 *.njsproj
 *.sln
 *.sw?
+
+# DINO-exporter (ZIP-filer med rådata, committas ej)
+exports/*.zip
+
+# Genererad prototypdata (återskaps via convert_dino_export.py)
+data/*.geojson

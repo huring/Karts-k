@@ -13,10 +13,10 @@ export function SearchBar({ query, onChange }: SearchBarProps) {
         <input
           className={styles.input}
           type="text"
-          placeholder="Sök fastighetsbeteckning eller namn…"
+          placeholder="Sök fastighetsbeteckning, namn eller ort…"
           value={query}
           onChange={e => onChange(e.target.value)}
-          aria-label="Sök fastighetsbeteckning eller namn"
+          aria-label="Sök fastighetsbeteckning, namn eller ort"
           autoComplete="off"
         />
         {query && (

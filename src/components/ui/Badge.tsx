@@ -24,6 +24,16 @@ export function Badge({
   return <span className={cls}>{children}</span>
 }
 
+/** Mappar byggnads-skick till badge-variant */
+export function skickVariant(skick: string): BadgeVariant {
+  switch (skick) {
+    case 'Gott skick':    return 'success'
+    case 'Åtgärdsbehov':  return 'warning'
+    case 'Kritiskt skick': return 'error'
+    default:              return 'neutral'
+  }
+}
+
 /** Mappar DINO-status till badge-variant */
 export function statusVariant(
   status: 'aktiv' | 'vilande' | 'avslutad' | string,

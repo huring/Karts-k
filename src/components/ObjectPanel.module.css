@@ -324,6 +324,14 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.subLabelIcon {
+  font-size: 12px;
+  flex-shrink: 0;
 }
 
 .relatedBadge {
@@ -334,4 +342,105 @@
   font-size: 16px;
   color: var(--color-text-muted);
   flex-shrink: 0;
+}
+
+.relatedRowIndent {
+  padding-left: calc(var(--space-3) + 16px);
+  background: var(--color-bg-secondary);
+}
+
+/* Long-text sections (omr_besk, föreskrifter) */
+
+.textBlock {
+  font-size: 13px;
+  color: var(--color-text);
+  line-height: 1.6;
+  padding: var(--space-3);
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.foreskriftBlock {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.foreskriftBlock:last-child {
+  border-bottom: none;
+}
+
+.foreskriftLabel {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  padding: var(--space-2) var(--space-3) 0;
+}
+
+/* Byggnader — list row with thumbnail */
+
+.byggnadsRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  width: 100%;
+  padding: var(--space-2) var(--space-3);
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--color-border);
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.1s;
+}
+
+.byggnadsRow:last-child {
+  border-bottom: none;
+}
+
+.byggnadsRow:hover {
+  background: var(--color-bg-secondary);
+}
+
+.byggnadsThumbWrap {
+  flex-shrink: 0;
+  width: 52px;
+  height: 38px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: var(--color-bg-secondary);
+}
+
+.byggnadsThumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Byggnad detail view — full image header */
+
+.byggnadsImageWrap {
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  overflow: hidden;
+  background: var(--color-bg-secondary);
+  border-radius: var(--radius-md);
+}
+
+.byggnadsImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.byggnadsImageFallback {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-muted);
+}
+
+.byggnadsImageIcon {
+  font-size: 48px;
 }

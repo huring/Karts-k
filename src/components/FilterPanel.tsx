@@ -1,35 +1,37 @@
+import { useState } from 'react'
 import { Chip } from './ui/Chip'
-import { Select } from './ui/Select'
 import styles from './FilterPanel.module.css'
 import type { ObjectTypeKey, AttributeFilters } from '../hooks/useFilters'
+import type { FilterOptions, SearchTypeCounts } from '../hooks/useSearch'
 
 const TYPE_CONFIG: Array<{ key: ObjectTypeKey; label: string; icon: string }> = [
-  { key: 'fastigheter',    label: 'Fastigheter',     icon: 'landscape'   },
-  { key: 'byggnader',      label: 'Byggnader',        icon: 'home'        },
-  { key: 'avtal',          label: 'Avtal',            icon: 'description' },
-  { key: 'nyttjanderatter',label: 'Nyttjanderätter',  icon: 'key'         },
-  { key: 'aktorer',        label: 'Aktörer',          icon: 'person'      },
+  { key: 'fastigheter',   label: 'Fastigheter',       icon: 'landscape'  },
+  { key: 'skyddsomraden', label: 'Skyddsvärtområden', icon: 'nature'     },
+  { key: 'beslut',        label: 'Beslut',             icon: 'gavel'      },
+  { key: 'byggnader',     label: 'Byggnader',          icon: 'home_work'  },
 ]
 
-const STATUS_OPTIONS = [
-  { value: 'aktiv',    label: 'Aktiv'    },
-  { value: 'vilande',  label: 'Vilande'  },
-  { value: 'avslutad', label: 'Avslutad' },
-]
+interface AttrGroupConfig {
+  key: keyof AttributeFilters
+  label: string
+  isAvailable: (opts: FilterOptions, types: Record<ObjectTypeKey, boolean>) => boolean
+}
 
-const MARKSLAG_OPTIONS = [
-  { value: 'skog',       label: 'Skog'       },
-  { value: 'åker',       label: 'Åker'       },
-  { value: 'impediment', label: 'Impediment' },
-  { value: 'vatten',     label: 'Vatten'     },
-  { value: 'övrigt',     label: 'Övrigt'     },
+const ATTR_GROUPS: AttrGroupConfig[] = [
+  { key: 'status',     label: 'Status',          isAvailable: (o, t) => o.status.length > 0 && (t.skyddsomraden || t.beslut) },
+  { key: 'skyddstyp',  label: 'Skyddstyp',       isAvailable: (o, t) => o.skyddstyp.length > 0 && t.skyddsomraden },
+  { key: 'kommunnamn', label: 'Kommun',           isAvailable: (o, t) => o.kommunnamn.length > 0 && t.fastigheter },
+  { key: 'skick',      label: 'Byggnadsskick',    isAvailable: (o, t) => o.skick.length > 0 && t.byggnader },
+  { key: 'anvandning', label: 'Användning',       isAvailable: (o, t) => o.anvandning.length > 0 && t.byggnader },
 ]
 
 interface FilterPanelProps {
   activeTypes: Record<ObjectTypeKey, boolean>
   attributes: AttributeFilters
+  filterOptions: FilterOptions
+  typeCounts: SearchTypeCounts | null
   onToggleType: (key: ObjectTypeKey) => void
-  onSetAttribute: <K extends keyof AttributeFilters>(key: K, value: AttributeFilters[K]) => void
+  onToggleAttributeValue: (key: keyof AttributeFilters, value: string) => void
   onReset: () => void
   hasActiveFilters: boolean
 }
@@ -37,11 +39,18 @@ interface FilterPanelProps {
 export function FilterPanel({
   activeTypes,
   attributes,
+  filterOptions,
+  typeCounts,
   onToggleType,
-  onSetAttribute,
+  onToggleAttributeValue,
   onReset,
   hasActiveFilters,
 }: FilterPanelProps) {
+  const [attrOpen, setAttrOpen] = useState(false)
+
+  const hasAttrFilter = Object.values(attributes).some(arr => arr.length > 0)
+  const availableGroups = ATTR_GROUPS.filter(g => g.isAvailable(filterOptions, activeTypes))
+
   return (
     <div className={styles.panel}>
       <div className={styles.section}>
@@ -54,38 +63,64 @@ export function FilterPanel({
           )}
         </div>
         <div className={styles.chips}>
-          {TYPE_CONFIG.map(({ key, label, icon }) => (
-            <Chip
-              key={key}
-              active={activeTypes[key]}
-              icon={icon}
-              onClick={() => onToggleType(key)}
-            >
-              {label}
-            </Chip>
-          ))}
+          {TYPE_CONFIG.map(({ key, label, icon }) => {
+            const count = typeCounts ? typeCounts[key] : undefined
+            const dimmed = count !== undefined && count === 0
+            return (
+              <Chip
+                key={key}
+                active={activeTypes[key]}
+                dimmed={dimmed}
+                count={count}
+                icon={icon}
+                onClick={() => onToggleType(key)}
+              >
+                {label}
+              </Chip>
+            )
+          })}
         </div>
       </div>
 
       <div className={styles.divider} />
 
       <div className={styles.section}>
-        <span className={styles.sectionLabel}>Attributfilter</span>
-        <div className={styles.filters}>
-          <Select
-            label="Status"
-            options={STATUS_OPTIONS}
-            value={attributes.status ?? ''}
-            onChange={val => onSetAttribute('status', val || null)}
-          />
-          <Select
-            label="Markslag"
-            options={MARKSLAG_OPTIONS}
-            value={attributes.markslag ?? ''}
-            onChange={val => onSetAttribute('markslag', val || null)}
-            disabled={!activeTypes.fastigheter}
-          />
-        </div>
+        <button
+          type="button"
+          className={styles.attrToggle}
+          onClick={() => setAttrOpen(o => !o)}
+          aria-expanded={attrOpen}
+        >
+          <span className={styles.sectionLabel}>Attributfilter</span>
+          {hasAttrFilter && <span className={styles.attrBadge} />}
+          <span className={`material-symbols-outlined ${styles.attrChevron}`}>
+            {attrOpen ? 'expand_less' : 'expand_more'}
+          </span>
+        </button>
+
+        {attrOpen && (
+          <div className={styles.filters}>
+            {availableGroups.length === 0 && (
+              <p className={styles.noFilters}>Inga filter tillgängliga för de valda objekttyperna</p>
+            )}
+            {availableGroups.map(({ key, label }) => (
+              <div key={key} className={styles.checkGroup}>
+                <span className={styles.checkGroupLabel}>{label}</span>
+                {filterOptions[key].map(value => (
+                  <label key={value} className={styles.checkItem}>
+                    <input
+                      type="checkbox"
+                      className={styles.checkInput}
+                      checked={attributes[key].includes(value)}
+                      onChange={() => onToggleAttributeValue(key, value)}
+                    />
+                    <span className={styles.checkLabel}>{value}</span>
+                  </label>
+                ))}
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   )

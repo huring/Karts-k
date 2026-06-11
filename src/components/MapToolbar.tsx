@@ -2,7 +2,6 @@ import { Button } from './ui/Button'
 import styles from './MapToolbar.module.css'
 import type { ToolMode } from '../hooks/useMapTools'
 import type { Feature } from 'geojson'
-import type { FastighetProperties, ByggnadsProperties } from '../types'
 
 const TOOLS: Array<{ mode: Exclude<ToolMode, 'none'>; label: string; icon: string }> = [
   { mode: 'spatial-search', label: 'Rumslig sökning', icon: 'pentagon'     },
@@ -24,13 +23,14 @@ function formatArea(m2: number | null): string {
 }
 
 function featureName(f: Feature): string {
-  const p = f.properties as (FastighetProperties & ByggnadsProperties) | null
-  return p?.beteckning ?? p?.byggnadstyp ?? 'Okänt objekt'
+  const p = f.properties as Record<string, string> | null
+  return p?.beteckning ?? p?.namn ?? p?.id ?? 'Okänt objekt'
 }
 
 interface MapToolbarProps {
   activeTool: ToolMode
   onSelectTool: (tool: ToolMode) => void
+  panelOpen: boolean
   distance: { totalM: number; pointCount: number; onUndo: () => void }
   area: { m2: number | null; onNew: () => void }
   spatialSearch: { resultCount: number; polygonDrawn: boolean; onClear: () => void }
@@ -45,13 +45,13 @@ interface MapToolbarProps {
 }
 
 export function MapToolbar({
-  activeTool, onSelectTool,
+  activeTool, onSelectTool, panelOpen,
   distance, area, spatialSearch, buffer,
 }: MapToolbarProps) {
   const hasPanel = activeTool !== 'none'
 
   return (
-    <div className={styles.wrapper}>
+    <div className={`${styles.wrapper} ${panelOpen ? styles.wrapperPanelOpen : ''}`}>
       <div className={styles.toolstrip}>
         {TOOLS.map(t => (
           <button

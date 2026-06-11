@@ -41,35 +41,161 @@ VITE_MAPBOX_TOKEN=<din token>
 
 ```
 /
-├── CLAUDE.md              ← den här filen
-├── DESIGNSYSTEM.md        ← färger, typografi, komponentspecar från Figma
-├── .env                   ← miljövariabler (ej i git)
-├── src/
-│   ├── App.tsx            ← rot, håller global state
-│   ├── components/
-│   │   ├── Map.tsx        ← Mapbox-kartan
-│   │   ├── SearchBar.tsx  ← fritextsökning
-│   │   ├── FilterPanel.tsx← objekttyp- och attributfilter
-│   │   ├── ResultsList.tsx← träfflista till vänster om kartan
-│   │   ├── ObjectPanel.tsx← sidopanel vid klick på objekt
-│   │   └── MapToolbar.tsx ← verktygspanel för rumsliga verktyg
-│   ├── hooks/
-│   │   ├── useMap.ts      ← kartreferens och grundfunktioner
-│   │   ├── useMapLayers.ts← laddning och hantering av GeoJSON-lager
-│   │   ├── useSearch.ts   ← söktillstånd och sökning
-│   │   ├── useFilters.ts  ← filtertillstånd (objekttyp + attribut)
-│   │   ├── useMapTools.ts ← aktivt verktyg, ritning, mätresultat
-│   │   └── useRelatedObjects.ts ← hämtar kopplade avtal/aktörer
-│   ├── types/
-│   │   └── index.ts       ← TypeScript-typer för alla domänobjekt
-│   └── data/              ← symlink eller kopia av /data
-└── data/
-    ├── fastigheter.geojson
-    ├── byggnader.geojson
-    ├── avtal.json
-    ├── nyttjanderatter.json
-    └── aktorer.json
+├── CLAUDE.md                  ← den här filen
+├── DESIGNSYSTEM.md            ← färger, typografi, komponentspecar från Figma
+├── KONVERTERA_DATA.md         ← instruktioner för att konvertera DINO-exporter
+├── .env                       ← miljövariabler (ej i git)
+├── scripts/
+│   └── convert_dino_export.py ← konverterar DINO ZIP-exporter till GeoJSON
+├── exports/                   ← lägg ZIP-exporter från DINO här (ej i git)
+├── data/                      ← genereras av convert_dino_export.py (ej i git)
+│   ├── fastigheter.geojson
+│   ├── skyddsomraden.geojson
+│   └── beslut.geojson
+└── src/
+    ├── App.tsx                ← rot, håller global state
+    ├── components/
+    │   ├── Map.tsx            ← Mapbox-kartan
+    │   ├── SearchBar.tsx      ← fritextsökning
+    │   ├── FilterPanel.tsx    ← objekttyp- och attributfilter
+    │   ├── ResultsList.tsx    ← träfflista till vänster om kartan
+    │   ├── ObjectPanel.tsx    ← sidopanel vid klick på objekt
+    │   └── MapToolbar.tsx     ← verktygspanel för rumsliga verktyg
+    ├── hooks/
+    │   ├── useMap.ts          ← kartreferens och grundfunktioner
+    │   ├── useMapLayers.ts    ← laddning och hantering av GeoJSON-lager
+    │   ├── useSearch.ts       ← söktillstånd och sökning
+    │   ├── useFilters.ts      ← filtertillstånd (objekttyp + attribut)
+    │   ├── useMapTools.ts     ← aktivt verktyg, ritning, mätresultat
+    │   └── useRelatedObjects.ts ← kopplar fastighet → skyddsomrade → beslut
+    ├── types/
+    │   └── index.ts           ← TypeScript-typer för alla domänobjekt
+    └── data/                  ← symlink eller kopia av /data (för Vite)
 ```
+
+---
+
+## Data — hur det fungerar
+
+**Data committas aldrig till Git.** Arbetsflödet är:
+
+1. Exportera ett eller flera ärenden från DINO som ZIP (shapefile-format)
+2. Lägg ZIP-filerna i `/exports/`
+3. Kör konverteringsskriptet (se `KONVERTERA_DATA.md`):
+   ```bash
+   python scripts/convert_dino_export.py exports/*.zip
+   ```
+4. Scriptet skriver tre GeoJSON-filer till `/data/`
+5. Starta om prototypen: `npm run dev`
+
+**Koordinatsystem:** DINO exporterar i SWEREF99 TM (EPSG:3006).
+Scriptet konverterar automatiskt till WGS84 (EPSG:4326) som Mapbox kräver.
+Lägg aldrig in SWEREF99-koordinater direkt i prototypen.
+
+---
+
+## Datamodell
+
+Alla tre GeoJSON-filer genereras av `scripts/convert_dino_export.py` och har
+ett stabilt, normaliserat schema. Fältnamnen nedan är de som faktiskt finns
+i filerna — använd exakt dessa namn i all kod.
+
+### `data/fastigheter.geojson`
+
+```typescript
+type FastighetProperties = {
+  feature_type: 'fastighet';
+  id: string;            // UUID — primärnyckel
+  beteckning: string;    // t.ex. "SÄRNABYN 3:6" (rensat från Lantmäteriets råformat)
+  trakt: string;         // t.ex. "SÄRNABYN"
+  blockenhet: string;    // t.ex. "3:6"
+  omrnr: number;         // delgeometri-index — samma fastighet kan ha flera polygoner
+  kommunkod: string;     // t.ex. "2039"
+  kommunnamn: string;    // t.ex. "ÄLVDALEN"
+  adat: string;          // ISO 8601 datetime, t.ex. "2024-12-05T09:29:00Z"
+  detaljtyp: string;     // t.ex. "FASTIGHET"
+  ytkval: number;
+  _externid: string;     // råformat från Lantmäteriet, t.ex. "2039>SÄRNABYN>3:6>1>>>>1"
+  _objectid: number;
+  _source_file: string;  // vilket shapefile-lager featuren kom från
+}
+```
+
+**Viktigt om fastigheter med flera polygoner:**
+En fastighet med `omrnr > 1` har diskontinuerlig mark — samma `id` men
+separata geometrier med `omrnr: 1`, `omrnr: 2` osv. Visa dem som ett
+objekt i ResultsList men rita alla polygoner på kartan.
+
+### `data/skyddsomraden.geojson`
+
+```typescript
+type SkyddsomradeProperties = {
+  feature_type: 'skyddsomrade';
+  id: string;            // t.ex. "SKO-1200132"
+  soid: string;          // t.ex. "NVR-2048018" — kopplingsnyckel mot beslut
+  gid: number;
+  namn: string;          // t.ex. "Ögan"
+  skyddstyp: string;     // t.ex. "NR" (naturreservat)
+  status: string;        // t.ex. "UTREDNING"
+  area_ha: number;       // alltid number (normaliserat)
+  _source_file: string;
+}
+```
+
+### `data/beslut.geojson`
+
+```typescript
+type BeslutProperties = {
+  feature_type: 'beslut';
+  id: string;            // t.ex. "BESLUT-166876"
+  soid: string;          // t.ex. "NVR-2048018" — kopplingsnyckel mot skyddsomrade
+  gid: number;
+  namn: string;
+  typ: string;           // t.ex. "NR"
+  status: string;        // t.ex. "GALLANDE"
+  area_ha: number;
+  beslut_dat: string;    // ISO-datum "ÅÅÅÅ-MM-DD"
+  lagakr_dat: string;    // ISO-datum "ÅÅÅÅ-MM-DD"
+  status_dbt: string | null;
+  _source_file: string;
+}
+```
+
+### Kopplingsnyckel mellan objekttyper
+
+`soid` är nyckeln som binder ihop skyddsomrade och beslut:
+- `skyddsomrade.soid === beslut.soid` → de tillhör samma skyddsobjekt
+- Fastigheter saknar direkt `soid` — de kopplas **rumsligt** (via geometri)
+  eller **kontextuellt** (de exporterades tillsammans med ett skyddsobjekt)
+
+Använd `turf.booleanIntersects()` för att avgöra om en fastighet
+överlappar med ett skyddsomrade eller beslut.
+
+### Identifiera feature_type i kod
+
+Använd alltid `feature_type`-fältet för att avgöra typ — aldrig filnamn
+eller andra fält:
+
+```typescript
+const type = feature.properties.feature_type;
+// 'fastighet' | 'skyddsomrade' | 'beslut'
+```
+
+---
+
+## Kartlager och färgsättning
+
+Alla kartfärger är hämtade ur DINO:s officiella palett (se `DESIGNSYSTEM.md`).
+
+| Lager | Mapbox source | Fill | Opacity | CSS-variabel |
+|---|---|---|---|---|
+| Fastigheter | fastigheter | `#405D1A` | 0.35 | `--dino-green-700` |
+| Skyddsvärtområden (utredning) | skyddsomraden | `#F4E28B` | 0.4 | `--dino-yellow-400` |
+| Beslut (gallande) | beslut | `#638C2F` | 0.4 | `--dino-green-500` |
+| Highlight (valt objekt) | dynamic | — | — | stroke `--dino-darkblue-500`, width 3 |
+| Rumslig sökning | draw | `#5CA3EC` | 0.15 | *(blue/400)*, streckad kontur |
+| Mätlinje | dynamic | — | — | stroke `--dino-red-500`, dasharray |
+| Buffertzon | dynamic | `#E3A480` | 0.12 | `--dino-orange-400` |
 
 ---
 
@@ -171,77 +297,6 @@ NPM-paket. I prototypen bygger vi komponenterna manuellt utifrån Figma-specen.
 
 ---
 
-## Datamodell
-
-### GeoJSON-features (fastigheter och byggnader)
-```typescript
-type FastighetProperties = {
-  id: string;              // unik nyckel, matchar mot avtal/aktorer
-  beteckning: string;      // t.ex. "Norrtälje Västra 1:23"
-  namn?: string;
-  markslag: 'skog' | 'åker' | 'impediment' | 'vatten' | 'övrigt';
-  status: 'aktiv' | 'vilande' | 'avslutad';
-  areal_m2?: number;       // om det finns, annars beräkna med Turf
-}
-
-type ByggnadsProperties = {
-  id: string;
-  fastighet_id: string;    // FK till fastighet
-  byggnadstyp: string;     // t.ex. "bostad", "ekonomibyggnad", "dass"
-  areal_m2?: number;
-  byggar?: number;
-  status: 'aktiv' | 'riven';
-}
-```
-
-### JSON-filer (avtal, nyttjanderätter, aktörer)
-```typescript
-type Avtal = {
-  id: string;
-  fastighet_id: string;
-  avtalstyp: string;
-  status: 'aktiv' | 'vilande' | 'avslutad';
-  giltig_fran: string;     // ISO-datum
-  giltig_till?: string;
-  part_id: string;         // FK till aktorer
-}
-
-type Nyttjanderatt = {
-  id: string;
-  fastighet_id: string;
-  rattighetstyp: 'jakt' | 'arrende' | 'servitut' | 'väg' | 'övrigt';
-  innehavare_id: string;
-  status: 'aktiv' | 'avslutad';
-}
-
-type Aktor = {
-  id: string;
-  typ: 'person' | 'organisation';
-  namn: string;
-  organisationsnummer?: string;
-}
-```
-
----
-
-## Kartlager och färgsättning
-
-Alla kartfärger är hämtade ur DINO:s officiella palett (se `DESIGNSYSTEM.md`).
-
-| Lager | Mapbox source | Fill | Opacity | CSS-variabel |
-|---|---|---|---|---|
-| Fastigheter — skog | fastigheter | `#405D1A` | 0.4 | `--dino-green-700` |
-| Fastigheter — åker | fastigheter | `#F4E28B` | 0.5 | `--dino-yellow-400` |
-| Fastigheter — impediment | fastigheter | `#B7B7B7` | 0.4 | `--dino-slategrey-200` |
-| Fastigheter — vatten | fastigheter | `#B8D8FB` | 0.5 | *(blue/200)* |
-| Byggnader | byggnader | `#E3A480` | 0.7 | `--dino-orange-400` |
-| Highlight (valt objekt) | dynamic | — | — | stroke `--dino-darkblue-500`, width 3 |
-| Rumslig sökning | draw | `#5CA3EC` | 0.15 | *(blue/400)*, streckad kontur |
-| Mätlinje | dynamic | — | — | stroke `--dino-red-500`, dasharray |
-| Buffertzon | dynamic | `#638C2F` | 0.12 | `--dino-green-500` |
-
----
-
 ## Rumsliga verktyg — beteendekrav
 
 ### Avståndsmätning
@@ -258,7 +313,7 @@ Alla kartfärger är hämtade ur DINO:s officiella palett (se `DESIGNSYSTEM.md`)
 
 ### Rumslig sökning
 - Använd `turf.booleanIntersects()` för polygoner och `turf.booleanPointInPolygon()` för punktobjekt
-- Visa träffar i ResultsList grupperade per objekttyp
+- Visa träffar i ResultsList grupperade per `feature_type`
 - Den ritade sökytan ligger kvar tills användaren klickar "rensa" eller byter verktyg
 
 ---
@@ -272,6 +327,7 @@ Alla kartfärger är hämtade ur DINO:s officiella palett (se `DESIGNSYSTEM.md`)
 - **Inga inline-stilar** — använd CSS-moduler (`.module.css`) och CSS-variablerna från `index.css`
 - **Inga hårdkodade färger** — använd alltid `var(--dino-*)` eller applikationsalias `var(--color-*)`
 - **Följ DESIGNSYSTEM.md** — kontrollera alltid komponentspecen (padding, höjd, hover) innan du implementerar en ny komponent
+- **Identifiera alltid objekttyp via `feature_type`** — aldrig via filnamn, source-namn eller andra fält
 - **Kommentera varför, inte vad** — koden ska vara självförklarande, kommentarer förklarar beslut
 
 ---
@@ -300,6 +356,7 @@ Varje story i backloggen har ett ID (t.ex. `F2-3`) och en färdig Claude Code-pr
 - Skrivoperationer — ingen data sparas tillbaka till DINO
 - Externa API:er (Byggnad Direkt, Rättighet Direkt från Lantmäteriet) — används inte i prototyp v1
 - Mobilanpassning — prototypen är optimerad för desktop
+- Direktkoppling fastighet↔skyddsobjekt via attribut — kopplas rumsligt i prototypen
 
 ---
 

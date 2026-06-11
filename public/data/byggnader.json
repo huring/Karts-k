@@ -1,0 +1,1634 @@
+{
+  "byggnader": [
+    {
+      "id": "BYG-0001",
+      "fastighets_id": "909a6a7b-ade3-90ec-e040-ed8f66444c3f",
+      "namn": "Ekonomibyggnad",
+      "anvandning": "Besöksanläggning",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0001/600/300",
+      "yta_m2": 93,
+      "byggnad_ar": 1961
+    },
+    {
+      "id": "BYG-0002",
+      "fastighets_id": "909a6a7b-ade3-90ec-e040-ed8f66444c3f",
+      "namn": "Garage",
+      "anvandning": "Kulturändamål",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0002/600/300",
+      "yta_m2": 94,
+      "byggnad_ar": 1962
+    },
+    {
+      "id": "BYG-0003",
+      "fastighets_id": "909a6a7b-94a1-90ec-e040-ed8f66444c3f",
+      "namn": "Ekonomibyggnad",
+      "anvandning": "Lager/förråd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0003/600/300",
+      "yta_m2": 430,
+      "byggnad_ar": 1997
+    },
+    {
+      "id": "BYG-0004",
+      "fastighets_id": "07ccf1f8-9208-6341-e053-7e44ed8fe247",
+      "namn": "Förråd",
+      "anvandning": "Kulturändamål",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0004/600/300",
+      "yta_m2": 437,
+      "byggnad_ar": 1984
+    },
+    {
+      "id": "BYG-0005",
+      "fastighets_id": "909a6a7b-94bd-90ec-e040-ed8f66444c3f",
+      "namn": "Ekonomibyggnad",
+      "anvandning": "Teknisk anläggning",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0005/600/300",
+      "yta_m2": 96,
+      "byggnad_ar": 2001
+    },
+    {
+      "id": "BYG-0006",
+      "fastighets_id": "909a6a7b-93be-90ec-e040-ed8f66444c3f",
+      "namn": "Stall",
+      "anvandning": "Teknisk anläggning",
+      "skick": "Kritiskt skick",
+      "bild": "https://picsum.photos/seed/BYG-0006/600/300",
+      "yta_m2": 26,
+      "byggnad_ar": 1968
+    },
+    {
+      "id": "BYG-0007",
+      "fastighets_id": "909a6a7b-94ac-90ec-e040-ed8f66444c3f",
+      "namn": "Förråd",
+      "anvandning": "Lantbruk/stall",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0007/600/300",
+      "yta_m2": 251,
+      "byggnad_ar": 1974
+    },
+    {
+      "id": "BYG-0008",
+      "fastighets_id": "909a6a7b-94ac-90ec-e040-ed8f66444c3f",
+      "namn": "Garage",
+      "anvandning": "Lantbruk/stall",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0008/600/300",
+      "yta_m2": 250,
+      "byggnad_ar": 1973
+    },
+    {
+      "id": "BYG-0009",
+      "fastighets_id": "909a6a7c-9bbc-90ec-e040-ed8f66444c3f",
+      "namn": "Villa",
+      "anvandning": "Teknisk anläggning",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0009/600/300",
+      "yta_m2": 259,
+      "byggnad_ar": 2019
+    },
+    {
+      "id": "BYG-0010",
+      "fastighets_id": "909a6a89-f845-90ec-e040-ed8f66444c3f",
+      "namn": "Förråd",
+      "anvandning": "Bostadsändamål",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0010/600/300",
+      "yta_m2": 439,
+      "byggnad_ar": 1953
+    },
+    {
+      "id": "BYG-0011",
+      "fastighets_id": "909a6a89-f845-90ec-e040-ed8f66444c3f",
+      "namn": "Garage",
+      "anvandning": "Bostadsändamål",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0011/600/300",
+      "yta_m2": 438,
+      "byggnad_ar": 1952
+    },
+    {
+      "id": "BYG-0012",
+      "fastighets_id": "909a6a8a-019e-90ec-e040-ed8f66444c3f",
+      "namn": "Förråd",
+      "anvandning": "Kontor/administration",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0012/600/300",
+      "yta_m2": 388,
+      "byggnad_ar": 2001
+    },
+    {
+      "id": "BYG-0013",
+      "fastighets_id": "909a6a8a-019e-90ec-e040-ed8f66444c3f",
+      "namn": "Lada",
+      "anvandning": "Kontor/administration",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0013/600/300",
+      "yta_m2": 389,
+      "byggnad_ar": 2002
+    },
+    {
+      "id": "BYG-0014",
+      "fastighets_id": "909a6a8a-019e-90ec-e040-ed8f66444c3f",
+      "namn": "Stall",
+      "anvandning": "Kontor/administration",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0014/600/300",
+      "yta_m2": 390,
+      "byggnad_ar": 2003
+    },
+    {
+      "id": "BYG-0015",
+      "fastighets_id": "909a6a8a-070b-90ec-e040-ed8f66444c3f",
+      "namn": "Stall",
+      "anvandning": "Bostadsändamål",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0015/600/300",
+      "yta_m2": 196,
+      "byggnad_ar": 2006
+    },
+    {
+      "id": "BYG-0016",
+      "fastighets_id": "909a6a8a-070b-90ec-e040-ed8f66444c3f",
+      "namn": "Lada",
+      "anvandning": "Bostadsändamål",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0016/600/300",
+      "yta_m2": 195,
+      "byggnad_ar": 2005
+    },
+    {
+      "id": "BYG-0017",
+      "fastighets_id": "909a6a89-d4f9-90ec-e040-ed8f66444c3f",
+      "namn": "Ekonomibyggnad",
+      "anvandning": "Kontor/administration",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0017/600/300",
+      "yta_m2": 205,
+      "byggnad_ar": 2002
+    },
+    {
+      "id": "BYG-0018",
+      "fastighets_id": "909a6a88-3d7b-90ec-e040-ed8f66444c3f",
+      "namn": "Redskapsbod",
+      "anvandning": "Industriell verksamhet",
+      "skick": "Kritiskt skick",
+      "bild": "https://picsum.photos/seed/BYG-0018/600/300",
+      "yta_m2": 236,
+      "byggnad_ar": 1976
+    },
+    {
+      "id": "BYG-0019",
+      "fastighets_id": "909a6a88-3d7b-90ec-e040-ed8f66444c3f",
+      "namn": "Maskinhall",
+      "anvandning": "Industriell verksamhet",
+      "skick": "Kritiskt skick",
+      "bild": "https://picsum.photos/seed/BYG-0019/600/300",
+      "yta_m2": 235,
+      "byggnad_ar": 1975
+    },
+    {
+      "id": "BYG-0020",
+      "fastighets_id": "909a6a88-406d-90ec-e040-ed8f66444c3f",
+      "namn": "Ekonomibyggnad",
+      "anvandning": "Kulturändamål",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0020/600/300",
+      "yta_m2": 259,
+      "byggnad_ar": 1952
+    },
+    {
+      "id": "BYG-0021",
+      "fastighets_id": "909a6a88-406d-90ec-e040-ed8f66444c3f",
+      "namn": "Garage",
+      "anvandning": "Kulturändamål",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0021/600/300",
+      "yta_m2": 260,
+      "byggnad_ar": 1953
+    },
+    {
+      "id": "BYG-0022",
+      "fastighets_id": "909a6a88-406d-90ec-e040-ed8f66444c3f",
+      "namn": "Förråd",
+      "anvandning": "Kulturändamål",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0022/600/300",
+      "yta_m2": 261,
+      "byggnad_ar": 1954
+    },
+    {
+      "id": "BYG-0023",
+      "fastighets_id": "909a6a88-407e-90ec-e040-ed8f66444c3f",
+      "namn": "Förråd",
+      "anvandning": "Besöksanläggning",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0023/600/300",
+      "yta_m2": 406,
+      "byggnad_ar": 1922
+    },
+    {
+      "id": "BYG-0024",
+      "fastighets_id": "909a6a88-3cf8-90ec-e040-ed8f66444c3f",
+      "namn": "Stall",
+      "anvandning": "Besöksanläggning",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0024/600/300",
+      "yta_m2": 251,
+      "byggnad_ar": 1984
+    },
+    {
+      "id": "BYG-0025",
+      "fastighets_id": "909a6a88-3cf8-90ec-e040-ed8f66444c3f",
+      "namn": "Kontorsbyggnad",
+      "anvandning": "Besöksanläggning",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0025/600/300",
+      "yta_m2": 252,
+      "byggnad_ar": 1985
+    },
+    {
+      "id": "BYG-0026",
+      "fastighets_id": "909a6a8a-c09c-90ec-e040-ed8f66444c3f",
+      "namn": "Förråd",
+      "anvandning": "Kontor/administration",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0026/600/300",
+      "yta_m2": 479,
+      "byggnad_ar": 2015
+    },
+    {
+      "id": "BYG-0027",
+      "fastighets_id": "909a6a88-3e97-90ec-e040-ed8f66444c3f",
+      "namn": "Stall",
+      "anvandning": "Bostadsändamål",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0027/600/300",
+      "yta_m2": 395,
+      "byggnad_ar": 1947
+    },
+    {
+      "id": "BYG-0028",
+      "fastighets_id": "909a6a88-3eb0-90ec-e040-ed8f66444c3f",
+      "namn": "Ekonomibyggnad",
+      "anvandning": "Lager/förråd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0028/600/300",
+      "yta_m2": 385,
+      "byggnad_ar": 1931
+    },
+    {
+      "id": "BYG-0029",
+      "fastighets_id": "909a6a88-3eb0-90ec-e040-ed8f66444c3f",
+      "namn": "Fritidshus",
+      "anvandning": "Lager/förråd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0029/600/300",
+      "yta_m2": 384,
+      "byggnad_ar": 1930
+    },
+    {
+      "id": "BYG-0030",
+      "fastighets_id": "909a6a88-3dfa-90ec-e040-ed8f66444c3f",
+      "namn": "Stall",
+      "anvandning": "Besöksanläggning",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0030/600/300",
+      "yta_m2": 218,
+      "byggnad_ar": 1960
+    },
+    {
+      "id": "BYG-0031",
+      "fastighets_id": "909a6a88-3dfa-90ec-e040-ed8f66444c3f",
+      "namn": "Lada",
+      "anvandning": "Besöksanläggning",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0031/600/300",
+      "yta_m2": 217,
+      "byggnad_ar": 1959
+    },
+    {
+      "id": "BYG-0032",
+      "fastighets_id": "909a6a88-3dfa-90ec-e040-ed8f66444c3f",
+      "namn": "Förråd",
+      "anvandning": "Besöksanläggning",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0032/600/300",
+      "yta_m2": 216,
+      "byggnad_ar": 1958
+    },
+    {
+      "id": "BYG-0033",
+      "fastighets_id": "909a6a88-3eaa-90ec-e040-ed8f66444c3f",
+      "namn": "Verkstadsbyggnad",
+      "anvandning": "Bostadsändamål",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0033/600/300",
+      "yta_m2": 62,
+      "byggnad_ar": 1975
+    },
+    {
+      "id": "BYG-0034",
+      "fastighets_id": "909a6a88-3eaa-90ec-e040-ed8f66444c3f",
+      "namn": "Kontorsbyggnad",
+      "anvandning": "Bostadsändamål",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0034/600/300",
+      "yta_m2": 61,
+      "byggnad_ar": 1974
+    },
+    {
+      "id": "BYG-0035",
+      "fastighets_id": "909a6a88-3eaa-90ec-e040-ed8f66444c3f",
+      "namn": "Stall",
+      "anvandning": "Bostadsändamål",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0035/600/300",
+      "yta_m2": 60,
+      "byggnad_ar": 1973
+    },
+    {
+      "id": "BYG-0036",
+      "fastighets_id": "909a6a88-3e3c-90ec-e040-ed8f66444c3f",
+      "namn": "Verkstadsbyggnad",
+      "anvandning": "Lager/förråd",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0036/600/300",
+      "yta_m2": 224,
+      "byggnad_ar": 1924
+    },
+    {
+      "id": "BYG-0037",
+      "fastighets_id": "909a6a88-3e57-90ec-e040-ed8f66444c3f",
+      "namn": "Ekonomibyggnad",
+      "anvandning": "Bostadsändamål",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0037/600/300",
+      "yta_m2": 382,
+      "byggnad_ar": 1968
+    },
+    {
+      "id": "BYG-0038",
+      "fastighets_id": "909a6a88-3e46-90ec-e040-ed8f66444c3f",
+      "namn": "Förråd",
+      "anvandning": "Industriell verksamhet",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0038/600/300",
+      "yta_m2": 283,
+      "byggnad_ar": 2007
+    },
+    {
+      "id": "BYG-0039",
+      "fastighets_id": "909a6a88-3e4f-90ec-e040-ed8f66444c3f",
+      "namn": "Villa",
+      "anvandning": "Kontor/administration",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0039/600/300",
+      "yta_m2": 52,
+      "byggnad_ar": 1990
+    },
+    {
+      "id": "BYG-0040",
+      "fastighets_id": "909a6a88-3e40-90ec-e040-ed8f66444c3f",
+      "namn": "Redskapsbod",
+      "anvandning": "Lager/förråd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0040/600/300",
+      "yta_m2": 496,
+      "byggnad_ar": 1988
+    },
+    {
+      "id": "BYG-0041",
+      "fastighets_id": "909a6a88-3e3e-90ec-e040-ed8f66444c3f",
+      "namn": "Stall",
+      "anvandning": "Lager/förråd",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0041/600/300",
+      "yta_m2": 295,
+      "byggnad_ar": 1985
+    },
+    {
+      "id": "BYG-0042",
+      "fastighets_id": "909a6a88-3e3e-90ec-e040-ed8f66444c3f",
+      "namn": "Lada",
+      "anvandning": "Lager/förråd",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0042/600/300",
+      "yta_m2": 294,
+      "byggnad_ar": 1984
+    },
+    {
+      "id": "BYG-0043",
+      "fastighets_id": "909a6a88-3e17-90ec-e040-ed8f66444c3f",
+      "namn": "Redskapsbod",
+      "anvandning": "Teknisk anläggning",
+      "skick": "Kritiskt skick",
+      "bild": "https://picsum.photos/seed/BYG-0043/600/300",
+      "yta_m2": 369,
+      "byggnad_ar": 1989
+    },
+    {
+      "id": "BYG-0044",
+      "fastighets_id": "909a6a88-3e48-90ec-e040-ed8f66444c3f",
+      "namn": "Stall",
+      "anvandning": "Industriell verksamhet",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0044/600/300",
+      "yta_m2": 212,
+      "byggnad_ar": 1946
+    },
+    {
+      "id": "BYG-0045",
+      "fastighets_id": "909a6a88-3e48-90ec-e040-ed8f66444c3f",
+      "namn": "Kontorsbyggnad",
+      "anvandning": "Lantbruk/stall",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0045/600/300",
+      "yta_m2": 213,
+      "byggnad_ar": 1947
+    },
+    {
+      "id": "BYG-0046",
+      "fastighets_id": "909a6a88-3e4b-90ec-e040-ed8f66444c3f",
+      "namn": "Verkstadsbyggnad",
+      "anvandning": "Kontor/administration",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0046/600/300",
+      "yta_m2": 194,
+      "byggnad_ar": 2011
+    },
+    {
+      "id": "BYG-0047",
+      "fastighets_id": "909a6a88-3e4b-90ec-e040-ed8f66444c3f",
+      "namn": "Maskinhall",
+      "anvandning": "Kontor/administration",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0047/600/300",
+      "yta_m2": 195,
+      "byggnad_ar": 2012
+    },
+    {
+      "id": "BYG-0048",
+      "fastighets_id": "909a6a88-3e4b-90ec-e040-ed8f66444c3f",
+      "namn": "Redskapsbod",
+      "anvandning": "Kontor/administration",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0048/600/300",
+      "yta_m2": 196,
+      "byggnad_ar": 2013
+    },
+    {
+      "id": "BYG-0049",
+      "fastighets_id": "909a6a88-3e06-90ec-e040-ed8f66444c3f",
+      "namn": "Verkstadsbyggnad",
+      "anvandning": "Lantbruk/stall",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0049/600/300",
+      "yta_m2": 296,
+      "byggnad_ar": 1986
+    },
+    {
+      "id": "BYG-0050",
+      "fastighets_id": "909a6a88-3e3a-90ec-e040-ed8f66444c3f",
+      "namn": "Förråd",
+      "anvandning": "Besöksanläggning",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0050/600/300",
+      "yta_m2": 338,
+      "byggnad_ar": 1944
+    },
+    {
+      "id": "BYG-0051",
+      "fastighets_id": "909a6a88-3e3a-90ec-e040-ed8f66444c3f",
+      "namn": "Lada",
+      "anvandning": "Besöksanläggning",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0051/600/300",
+      "yta_m2": 339,
+      "byggnad_ar": 1945
+    },
+    {
+      "id": "BYG-0052",
+      "fastighets_id": "909a6a88-3e00-90ec-e040-ed8f66444c3f",
+      "namn": "Ekonomibyggnad",
+      "anvandning": "Industriell verksamhet",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0052/600/300",
+      "yta_m2": 28,
+      "byggnad_ar": 1967
+    },
+    {
+      "id": "BYG-0053",
+      "fastighets_id": "909a6a88-3e91-90ec-e040-ed8f66444c3f",
+      "namn": "Villa",
+      "anvandning": "Kontor/administration",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0053/600/300",
+      "yta_m2": 182,
+      "byggnad_ar": 1966
+    },
+    {
+      "id": "BYG-0054",
+      "fastighets_id": "909a6a88-3e91-90ec-e040-ed8f66444c3f",
+      "namn": "Huvudbyggnad",
+      "anvandning": "Kontor/administration",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0054/600/300",
+      "yta_m2": 181,
+      "byggnad_ar": 1965
+    },
+    {
+      "id": "BYG-0055",
+      "fastighets_id": "909a6a88-3ebd-90ec-e040-ed8f66444c3f",
+      "namn": "Villa",
+      "anvandning": "Industriell verksamhet",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0055/600/300",
+      "yta_m2": 214,
+      "byggnad_ar": 1939
+    },
+    {
+      "id": "BYG-0056",
+      "fastighets_id": "909a6a88-3ebd-90ec-e040-ed8f66444c3f",
+      "namn": "Fritidshus",
+      "anvandning": "Industriell verksamhet",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0056/600/300",
+      "yta_m2": 215,
+      "byggnad_ar": 1940
+    },
+    {
+      "id": "BYG-0057",
+      "fastighets_id": "909a6a88-3ec5-90ec-e040-ed8f66444c3f",
+      "namn": "Verkstadsbyggnad",
+      "anvandning": "Kontor/administration",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0057/600/300",
+      "yta_m2": 301,
+      "byggnad_ar": 1922
+    },
+    {
+      "id": "BYG-0058",
+      "fastighets_id": "909a6a88-3e33-90ec-e040-ed8f66444c3f",
+      "namn": "Förråd",
+      "anvandning": "Bostadsändamål",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0058/600/300",
+      "yta_m2": 474,
+      "byggnad_ar": 2008
+    },
+    {
+      "id": "BYG-0059",
+      "fastighets_id": "909a6a88-3ea7-90ec-e040-ed8f66444c3f",
+      "namn": "Villa",
+      "anvandning": "Lager/förråd",
+      "skick": "Kritiskt skick",
+      "bild": "https://picsum.photos/seed/BYG-0059/600/300",
+      "yta_m2": 477,
+      "byggnad_ar": 2002
+    },
+    {
+      "id": "BYG-0060",
+      "fastighets_id": "909a6a88-3ea7-90ec-e040-ed8f66444c3f",
+      "namn": "Fritidshus",
+      "anvandning": "Lager/förråd",
+      "skick": "Kritiskt skick",
+      "bild": "https://picsum.photos/seed/BYG-0060/600/300",
+      "yta_m2": 478,
+      "byggnad_ar": 2003
+    },
+    {
+      "id": "BYG-0061",
+      "fastighets_id": "909a6a88-3ea7-90ec-e040-ed8f66444c3f",
+      "namn": "Ekonomibyggnad",
+      "anvandning": "Lager/förråd",
+      "skick": "Kritiskt skick",
+      "bild": "https://picsum.photos/seed/BYG-0061/600/300",
+      "yta_m2": 479,
+      "byggnad_ar": 2004
+    },
+    {
+      "id": "BYG-0062",
+      "fastighets_id": "909a6a88-3dcb-90ec-e040-ed8f66444c3f",
+      "namn": "Förråd",
+      "anvandning": "Teknisk anläggning",
+      "skick": "Kritiskt skick",
+      "bild": "https://picsum.photos/seed/BYG-0062/600/300",
+      "yta_m2": 142,
+      "byggnad_ar": 1994
+    },
+    {
+      "id": "BYG-0063",
+      "fastighets_id": "909a6a88-3dcb-90ec-e040-ed8f66444c3f",
+      "namn": "Lada",
+      "anvandning": "Teknisk anläggning",
+      "skick": "Kritiskt skick",
+      "bild": "https://picsum.photos/seed/BYG-0063/600/300",
+      "yta_m2": 143,
+      "byggnad_ar": 1995
+    },
+    {
+      "id": "BYG-0064",
+      "fastighets_id": "909a6a88-3dcb-90ec-e040-ed8f66444c3f",
+      "namn": "Stall",
+      "anvandning": "Teknisk anläggning",
+      "skick": "Kritiskt skick",
+      "bild": "https://picsum.photos/seed/BYG-0064/600/300",
+      "yta_m2": 144,
+      "byggnad_ar": 1996
+    },
+    {
+      "id": "BYG-0065",
+      "fastighets_id": "909a6a88-3e51-90ec-e040-ed8f66444c3f",
+      "namn": "Verkstadsbyggnad",
+      "anvandning": "Kontor/administration",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0065/600/300",
+      "yta_m2": 169,
+      "byggnad_ar": 1987
+    },
+    {
+      "id": "BYG-0066",
+      "fastighets_id": "909a6a88-3e51-90ec-e040-ed8f66444c3f",
+      "namn": "Kontorsbyggnad",
+      "anvandning": "Kontor/administration",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0066/600/300",
+      "yta_m2": 168,
+      "byggnad_ar": 1986
+    },
+    {
+      "id": "BYG-0067",
+      "fastighets_id": "909a6a88-3e15-90ec-e040-ed8f66444c3f",
+      "namn": "Villa",
+      "anvandning": "Bostadsändamål",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0067/600/300",
+      "yta_m2": 298,
+      "byggnad_ar": 1928
+    },
+    {
+      "id": "BYG-0068",
+      "fastighets_id": "909a6a88-3e15-90ec-e040-ed8f66444c3f",
+      "namn": "Huvudbyggnad",
+      "anvandning": "Bostadsändamål",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0068/600/300",
+      "yta_m2": 297,
+      "byggnad_ar": 1927
+    },
+    {
+      "id": "BYG-0069",
+      "fastighets_id": "909a6a88-3e53-90ec-e040-ed8f66444c3f",
+      "namn": "Stall",
+      "anvandning": "Bostadsändamål",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0069/600/300",
+      "yta_m2": 240,
+      "byggnad_ar": 1947
+    },
+    {
+      "id": "BYG-0070",
+      "fastighets_id": "909a6a88-3e13-90ec-e040-ed8f66444c3f",
+      "namn": "Ekonomibyggnad",
+      "anvandning": "Bostadsändamål",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0070/600/300",
+      "yta_m2": 227,
+      "byggnad_ar": 1968
+    },
+    {
+      "id": "BYG-0071",
+      "fastighets_id": "909a6a88-3e11-90ec-e040-ed8f66444c3f",
+      "namn": "Förråd",
+      "anvandning": "Bostadsändamål",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0071/600/300",
+      "yta_m2": 156,
+      "byggnad_ar": 2008
+    },
+    {
+      "id": "BYG-0072",
+      "fastighets_id": "909a6a88-3e11-90ec-e040-ed8f66444c3f",
+      "namn": "Garage",
+      "anvandning": "Bostadsändamål",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0072/600/300",
+      "yta_m2": 155,
+      "byggnad_ar": 2007
+    },
+    {
+      "id": "BYG-0073",
+      "fastighets_id": "909a6a88-3f7b-90ec-e040-ed8f66444c3f",
+      "namn": "Redskapsbod",
+      "anvandning": "Lantbruk/stall",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0073/600/300",
+      "yta_m2": 324,
+      "byggnad_ar": 1937
+    },
+    {
+      "id": "BYG-0074",
+      "fastighets_id": "909a6a88-3ebb-90ec-e040-ed8f66444c3f",
+      "namn": "Redskapsbod",
+      "anvandning": "Industriell verksamhet",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0074/600/300",
+      "yta_m2": 285,
+      "byggnad_ar": 2000
+    },
+    {
+      "id": "BYG-0075",
+      "fastighets_id": "909a6a88-3cdb-90ec-e040-ed8f66444c3f",
+      "namn": "Villa",
+      "anvandning": "Besöksanläggning",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0075/600/300",
+      "yta_m2": 41,
+      "byggnad_ar": 1953
+    },
+    {
+      "id": "BYG-0076",
+      "fastighets_id": "909a6a88-3cdb-90ec-e040-ed8f66444c3f",
+      "namn": "Huvudbyggnad",
+      "anvandning": "Besöksanläggning",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0076/600/300",
+      "yta_m2": 40,
+      "byggnad_ar": 1952
+    },
+    {
+      "id": "BYG-0077",
+      "fastighets_id": "909a6a88-3dde-90ec-e040-ed8f66444c3f",
+      "namn": "Villa",
+      "anvandning": "Lantbruk/stall",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0077/600/300",
+      "yta_m2": 113,
+      "byggnad_ar": 1941
+    },
+    {
+      "id": "BYG-0078",
+      "fastighets_id": "909a6a88-3dde-90ec-e040-ed8f66444c3f",
+      "namn": "Huvudbyggnad",
+      "anvandning": "Lantbruk/stall",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0078/600/300",
+      "yta_m2": 112,
+      "byggnad_ar": 1940
+    },
+    {
+      "id": "BYG-0079",
+      "fastighets_id": "909a6a88-3de0-90ec-e040-ed8f66444c3f",
+      "namn": "Förråd",
+      "anvandning": "Bostadsändamål",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0079/600/300",
+      "yta_m2": 197,
+      "byggnad_ar": 1931
+    },
+    {
+      "id": "BYG-0080",
+      "fastighets_id": "909a6a88-3de0-90ec-e040-ed8f66444c3f",
+      "namn": "Lada",
+      "anvandning": "Bostadsändamål",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0080/600/300",
+      "yta_m2": 198,
+      "byggnad_ar": 1932
+    },
+    {
+      "id": "BYG-0081",
+      "fastighets_id": "909a6a88-3f6c-90ec-e040-ed8f66444c3f",
+      "namn": "Stall",
+      "anvandning": "Kulturändamål",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0081/600/300",
+      "yta_m2": 94,
+      "byggnad_ar": 1998
+    },
+    {
+      "id": "BYG-0082",
+      "fastighets_id": "909a6a88-3f6c-90ec-e040-ed8f66444c3f",
+      "namn": "Lada",
+      "anvandning": "Kulturändamål",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0082/600/300",
+      "yta_m2": 93,
+      "byggnad_ar": 1997
+    },
+    {
+      "id": "BYG-0083",
+      "fastighets_id": "909a6a88-3fc6-90ec-e040-ed8f66444c3f",
+      "namn": "Förråd",
+      "anvandning": "Kulturändamål",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0083/600/300",
+      "yta_m2": 221,
+      "byggnad_ar": 1946
+    },
+    {
+      "id": "BYG-0084",
+      "fastighets_id": "909a6a88-3fc6-90ec-e040-ed8f66444c3f",
+      "namn": "Garage",
+      "anvandning": "Kulturändamål",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0084/600/300",
+      "yta_m2": 220,
+      "byggnad_ar": 1945
+    },
+    {
+      "id": "BYG-0085",
+      "fastighets_id": "909a6a88-3fc6-90ec-e040-ed8f66444c3f",
+      "namn": "Ekonomibyggnad",
+      "anvandning": "Besöksanläggning",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0085/600/300",
+      "yta_m2": 219,
+      "byggnad_ar": 1944
+    },
+    {
+      "id": "BYG-0086",
+      "fastighets_id": "909a6a88-3dba-90ec-e040-ed8f66444c3f",
+      "namn": "Ekonomibyggnad",
+      "anvandning": "Lantbruk/stall",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0086/600/300",
+      "yta_m2": 205,
+      "byggnad_ar": 1981
+    },
+    {
+      "id": "BYG-0087",
+      "fastighets_id": "909a6a88-3dba-90ec-e040-ed8f66444c3f",
+      "namn": "Fritidshus",
+      "anvandning": "Lantbruk/stall",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0087/600/300",
+      "yta_m2": 204,
+      "byggnad_ar": 1980
+    },
+    {
+      "id": "BYG-0088",
+      "fastighets_id": "909a6a88-3f94-90ec-e040-ed8f66444c3f",
+      "namn": "Villa",
+      "anvandning": "Kontor/administration",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0088/600/300",
+      "yta_m2": 254,
+      "byggnad_ar": 1954
+    },
+    {
+      "id": "BYG-0089",
+      "fastighets_id": "909a6a8a-9eb7-90ec-e040-ed8f66444c3f",
+      "namn": "Stall",
+      "anvandning": "Industriell verksamhet",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0089/600/300",
+      "yta_m2": 180,
+      "byggnad_ar": 1933
+    },
+    {
+      "id": "BYG-0090",
+      "fastighets_id": "909a6a8a-9eb7-90ec-e040-ed8f66444c3f",
+      "namn": "Lada",
+      "anvandning": "Industriell verksamhet",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0090/600/300",
+      "yta_m2": 179,
+      "byggnad_ar": 1932
+    },
+    {
+      "id": "BYG-0091",
+      "fastighets_id": "909a6a88-3f96-90ec-e040-ed8f66444c3f",
+      "namn": "Redskapsbod",
+      "anvandning": "Bostadsändamål",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0091/600/300",
+      "yta_m2": 325,
+      "byggnad_ar": 2015
+    },
+    {
+      "id": "BYG-0092",
+      "fastighets_id": "909a6a88-3cc1-90ec-e040-ed8f66444c3f",
+      "namn": "Förråd",
+      "anvandning": "Teknisk anläggning",
+      "skick": "Kritiskt skick",
+      "bild": "https://picsum.photos/seed/BYG-0092/600/300",
+      "yta_m2": 117,
+      "byggnad_ar": 1970
+    },
+    {
+      "id": "BYG-0093",
+      "fastighets_id": "909a6a88-3cc1-90ec-e040-ed8f66444c3f",
+      "namn": "Garage",
+      "anvandning": "Teknisk anläggning",
+      "skick": "Kritiskt skick",
+      "bild": "https://picsum.photos/seed/BYG-0093/600/300",
+      "yta_m2": 116,
+      "byggnad_ar": 1969
+    },
+    {
+      "id": "BYG-0094",
+      "fastighets_id": "909a6a88-3dc4-90ec-e040-ed8f66444c3f",
+      "namn": "Redskapsbod",
+      "anvandning": "Kontor/administration",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0094/600/300",
+      "yta_m2": 302,
+      "byggnad_ar": 1950
+    },
+    {
+      "id": "BYG-0095",
+      "fastighets_id": "909a6a88-3dc4-90ec-e040-ed8f66444c3f",
+      "namn": "Huvudbyggnad",
+      "anvandning": "Kontor/administration",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0095/600/300",
+      "yta_m2": 303,
+      "byggnad_ar": 1951
+    },
+    {
+      "id": "BYG-0096",
+      "fastighets_id": "909a6a88-3ed4-90ec-e040-ed8f66444c3f",
+      "namn": "Villa",
+      "anvandning": "Lager/förråd",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0096/600/300",
+      "yta_m2": 293,
+      "byggnad_ar": 1992
+    },
+    {
+      "id": "BYG-0097",
+      "fastighets_id": "909a6a88-3e9c-90ec-e040-ed8f66444c3f",
+      "namn": "Ekonomibyggnad",
+      "anvandning": "Industriell verksamhet",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0097/600/300",
+      "yta_m2": 484,
+      "byggnad_ar": 1943
+    },
+    {
+      "id": "BYG-0098",
+      "fastighets_id": "909a6a88-3eae-90ec-e040-ed8f66444c3f",
+      "namn": "Förråd",
+      "anvandning": "Bostadsändamål",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0098/600/300",
+      "yta_m2": 204,
+      "byggnad_ar": 1996
+    },
+    {
+      "id": "BYG-0099",
+      "fastighets_id": "909a6a8a-ac7d-90ec-e040-ed8f66444c3f",
+      "namn": "Stall",
+      "anvandning": "Besöksanläggning",
+      "skick": "Kritiskt skick",
+      "bild": "https://picsum.photos/seed/BYG-0099/600/300",
+      "yta_m2": 445,
+      "byggnad_ar": 2007
+    },
+    {
+      "id": "BYG-0100",
+      "fastighets_id": "909a6a8a-b252-90ec-e040-ed8f66444c3f",
+      "namn": "Verkstadsbyggnad",
+      "anvandning": "Besöksanläggning",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0100/600/300",
+      "yta_m2": 42,
+      "byggnad_ar": 1942
+    },
+    {
+      "id": "BYG-0101",
+      "fastighets_id": "909a6a88-3dad-90ec-e040-ed8f66444c3f",
+      "namn": "Verkstadsbyggnad",
+      "anvandning": "Teknisk anläggning",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0101/600/300",
+      "yta_m2": 318,
+      "byggnad_ar": 1973
+    },
+    {
+      "id": "BYG-0102",
+      "fastighets_id": "909a6a88-3dad-90ec-e040-ed8f66444c3f",
+      "namn": "Maskinhall",
+      "anvandning": "Teknisk anläggning",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0102/600/300",
+      "yta_m2": 319,
+      "byggnad_ar": 1974
+    },
+    {
+      "id": "BYG-0103",
+      "fastighets_id": "909a6a88-3eac-90ec-e040-ed8f66444c3f",
+      "namn": "Stall",
+      "anvandning": "Bostadsändamål",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0103/600/300",
+      "yta_m2": 133,
+      "byggnad_ar": 1935
+    },
+    {
+      "id": "BYG-0104",
+      "fastighets_id": "909a6a88-3eac-90ec-e040-ed8f66444c3f",
+      "namn": "Lada",
+      "anvandning": "Bostadsändamål",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0104/600/300",
+      "yta_m2": 132,
+      "byggnad_ar": 1934
+    },
+    {
+      "id": "BYG-0105",
+      "fastighets_id": "909a6a88-3cf0-90ec-e040-ed8f66444c3f",
+      "namn": "Redskapsbod",
+      "anvandning": "Lantbruk/stall",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0105/600/300",
+      "yta_m2": 54,
+      "byggnad_ar": 1925
+    },
+    {
+      "id": "BYG-0106",
+      "fastighets_id": "909a6a8a-ae18-90ec-e040-ed8f66444c3f",
+      "namn": "Verkstadsbyggnad",
+      "anvandning": "Kulturändamål",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0106/600/300",
+      "yta_m2": 139,
+      "byggnad_ar": 2015
+    },
+    {
+      "id": "BYG-0107",
+      "fastighets_id": "909a6a8a-ae18-90ec-e040-ed8f66444c3f",
+      "namn": "Kontorsbyggnad",
+      "anvandning": "Kulturändamål",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0107/600/300",
+      "yta_m2": 138,
+      "byggnad_ar": 2014
+    },
+    {
+      "id": "BYG-0108",
+      "fastighets_id": "909a6a8a-ae18-90ec-e040-ed8f66444c3f",
+      "namn": "Stall",
+      "anvandning": "Kulturändamål",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0108/600/300",
+      "yta_m2": 137,
+      "byggnad_ar": 2013
+    },
+    {
+      "id": "BYG-0109",
+      "fastighets_id": "3a5356af-add8-629b-e053-7e44ed8f5303",
+      "namn": "Förråd",
+      "anvandning": "Industriell verksamhet",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0109/600/300",
+      "yta_m2": 426,
+      "byggnad_ar": 1972
+    },
+    {
+      "id": "BYG-0110",
+      "fastighets_id": "3a5356af-add8-629b-e053-7e44ed8f5303",
+      "namn": "Lada",
+      "anvandning": "Industriell verksamhet",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0110/600/300",
+      "yta_m2": 427,
+      "byggnad_ar": 1973
+    },
+    {
+      "id": "BYG-0111",
+      "fastighets_id": "909a6a88-3e0d-90ec-e040-ed8f66444c3f",
+      "namn": "Ekonomibyggnad",
+      "anvandning": "Kontor/administration",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0111/600/300",
+      "yta_m2": 136,
+      "byggnad_ar": 1929
+    },
+    {
+      "id": "BYG-0112",
+      "fastighets_id": "909a6a88-3e0d-90ec-e040-ed8f66444c3f",
+      "namn": "Garage",
+      "anvandning": "Lager/förråd",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0112/600/300",
+      "yta_m2": 137,
+      "byggnad_ar": 1930
+    },
+    {
+      "id": "BYG-0113",
+      "fastighets_id": "909a6a88-3cbb-90ec-e040-ed8f66444c3f",
+      "namn": "Redskapsbod",
+      "anvandning": "Lantbruk/stall",
+      "skick": "Kritiskt skick",
+      "bild": "https://picsum.photos/seed/BYG-0113/600/300",
+      "yta_m2": 275,
+      "byggnad_ar": 2014
+    },
+    {
+      "id": "BYG-0114",
+      "fastighets_id": "909a6a88-3cbb-90ec-e040-ed8f66444c3f",
+      "namn": "Maskinhall",
+      "anvandning": "Lantbruk/stall",
+      "skick": "Kritiskt skick",
+      "bild": "https://picsum.photos/seed/BYG-0114/600/300",
+      "yta_m2": 274,
+      "byggnad_ar": 2013
+    },
+    {
+      "id": "BYG-0115",
+      "fastighets_id": "909a6a89-1ed9-90ec-e040-ed8f66444c3f",
+      "namn": "Förråd",
+      "anvandning": "Lager/förråd",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0115/600/300",
+      "yta_m2": 211,
+      "byggnad_ar": 1970
+    },
+    {
+      "id": "BYG-0116",
+      "fastighets_id": "909a6a89-1ed9-90ec-e040-ed8f66444c3f",
+      "namn": "Lada",
+      "anvandning": "Lager/förråd",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0116/600/300",
+      "yta_m2": 212,
+      "byggnad_ar": 1971
+    },
+    {
+      "id": "BYG-0117",
+      "fastighets_id": "909a6a89-1ed9-90ec-e040-ed8f66444c3f",
+      "namn": "Stall",
+      "anvandning": "Lager/förråd",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0117/600/300",
+      "yta_m2": 213,
+      "byggnad_ar": 1972
+    },
+    {
+      "id": "BYG-0118",
+      "fastighets_id": "909a6a88-406f-90ec-e040-ed8f66444c3f",
+      "namn": "Förråd",
+      "anvandning": "Kulturändamål",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0118/600/300",
+      "yta_m2": 188,
+      "byggnad_ar": 1992
+    },
+    {
+      "id": "BYG-0119",
+      "fastighets_id": "909a6a88-406f-90ec-e040-ed8f66444c3f",
+      "namn": "Lada",
+      "anvandning": "Kulturändamål",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0119/600/300",
+      "yta_m2": 189,
+      "byggnad_ar": 1993
+    },
+    {
+      "id": "BYG-0120",
+      "fastighets_id": "909a6a88-3e0f-90ec-e040-ed8f66444c3f",
+      "namn": "Förråd",
+      "anvandning": "Lager/förråd",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0120/600/300",
+      "yta_m2": 65,
+      "byggnad_ar": 1969
+    },
+    {
+      "id": "BYG-0121",
+      "fastighets_id": "909a6a88-3e0b-90ec-e040-ed8f66444c3f",
+      "namn": "Redskapsbod",
+      "anvandning": "Kulturändamål",
+      "skick": "Kritiskt skick",
+      "bild": "https://picsum.photos/seed/BYG-0121/600/300",
+      "yta_m2": 314,
+      "byggnad_ar": 1951
+    },
+    {
+      "id": "BYG-0122",
+      "fastighets_id": "909a6a88-3e0b-90ec-e040-ed8f66444c3f",
+      "namn": "Maskinhall",
+      "anvandning": "Kulturändamål",
+      "skick": "Kritiskt skick",
+      "bild": "https://picsum.photos/seed/BYG-0122/600/300",
+      "yta_m2": 313,
+      "byggnad_ar": 1950
+    },
+    {
+      "id": "BYG-0123",
+      "fastighets_id": "909a6a88-3e0b-90ec-e040-ed8f66444c3f",
+      "namn": "Verkstadsbyggnad",
+      "anvandning": "Kulturändamål",
+      "skick": "Kritiskt skick",
+      "bild": "https://picsum.photos/seed/BYG-0123/600/300",
+      "yta_m2": 312,
+      "byggnad_ar": 1949
+    },
+    {
+      "id": "BYG-0124",
+      "fastighets_id": "909a6a88-3ef0-90ec-e040-ed8f66444c3f",
+      "namn": "Stall",
+      "anvandning": "Industriell verksamhet",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0124/600/300",
+      "yta_m2": 398,
+      "byggnad_ar": 2011
+    },
+    {
+      "id": "BYG-0125",
+      "fastighets_id": "909a6a88-3ef0-90ec-e040-ed8f66444c3f",
+      "namn": "Lada",
+      "anvandning": "Industriell verksamhet",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0125/600/300",
+      "yta_m2": 397,
+      "byggnad_ar": 2010
+    },
+    {
+      "id": "BYG-0126",
+      "fastighets_id": "909a6a88-3f87-90ec-e040-ed8f66444c3f",
+      "namn": "Redskapsbod",
+      "anvandning": "Industriell verksamhet",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0126/600/300",
+      "yta_m2": 269,
+      "byggnad_ar": 2000
+    },
+    {
+      "id": "BYG-0127",
+      "fastighets_id": "909a6a88-3f87-90ec-e040-ed8f66444c3f",
+      "namn": "Huvudbyggnad",
+      "anvandning": "Industriell verksamhet",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0127/600/300",
+      "yta_m2": 270,
+      "byggnad_ar": 2001
+    },
+    {
+      "id": "BYG-0128",
+      "fastighets_id": "909a6a88-3eb4-90ec-e040-ed8f66444c3f",
+      "namn": "Redskapsbod",
+      "anvandning": "Lager/förråd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0128/600/300",
+      "yta_m2": 46,
+      "byggnad_ar": 1952
+    },
+    {
+      "id": "BYG-0129",
+      "fastighets_id": "909a6a88-3ec7-90ec-e040-ed8f66444c3f",
+      "namn": "Redskapsbod",
+      "anvandning": "Kontor/administration",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0129/600/300",
+      "yta_m2": 230,
+      "byggnad_ar": 1962
+    },
+    {
+      "id": "BYG-0130",
+      "fastighets_id": "909a6a88-3ec7-90ec-e040-ed8f66444c3f",
+      "namn": "Huvudbyggnad",
+      "anvandning": "Lager/förråd",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0130/600/300",
+      "yta_m2": 231,
+      "byggnad_ar": 1963
+    },
+    {
+      "id": "BYG-0131",
+      "fastighets_id": "909a6a88-3ec7-90ec-e040-ed8f66444c3f",
+      "namn": "Villa",
+      "anvandning": "Lager/förråd",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0131/600/300",
+      "yta_m2": 232,
+      "byggnad_ar": 1964
+    },
+    {
+      "id": "BYG-0132",
+      "fastighets_id": "909a6a88-3e35-90ec-e040-ed8f66444c3f",
+      "namn": "Ekonomibyggnad",
+      "anvandning": "Bostadsändamål",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0132/600/300",
+      "yta_m2": 64,
+      "byggnad_ar": 1968
+    },
+    {
+      "id": "BYG-0133",
+      "fastighets_id": "909a6a88-3e35-90ec-e040-ed8f66444c3f",
+      "namn": "Fritidshus",
+      "anvandning": "Bostadsändamål",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0133/600/300",
+      "yta_m2": 63,
+      "byggnad_ar": 1967
+    },
+    {
+      "id": "BYG-0134",
+      "fastighets_id": "909a6a88-3ec1-90ec-e040-ed8f66444c3f",
+      "namn": "Förråd",
+      "anvandning": "Kontor/administration",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0134/600/300",
+      "yta_m2": 443,
+      "byggnad_ar": 1943
+    },
+    {
+      "id": "BYG-0135",
+      "fastighets_id": "909a6a88-3e42-90ec-e040-ed8f66444c3f",
+      "namn": "Villa",
+      "anvandning": "Industriell verksamhet",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0135/600/300",
+      "yta_m2": 425,
+      "byggnad_ar": 1927
+    },
+    {
+      "id": "BYG-0136",
+      "fastighets_id": "909a6a88-3e42-90ec-e040-ed8f66444c3f",
+      "namn": "Fritidshus",
+      "anvandning": "Industriell verksamhet",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0136/600/300",
+      "yta_m2": 426,
+      "byggnad_ar": 1928
+    },
+    {
+      "id": "BYG-0137",
+      "fastighets_id": "909a6a88-3e4d-90ec-e040-ed8f66444c3f",
+      "namn": "Redskapsbod",
+      "anvandning": "Kontor/administration",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0137/600/300",
+      "yta_m2": 123,
+      "byggnad_ar": 1950
+    },
+    {
+      "id": "BYG-0138",
+      "fastighets_id": "909a6a88-3e4d-90ec-e040-ed8f66444c3f",
+      "namn": "Huvudbyggnad",
+      "anvandning": "Kontor/administration",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0138/600/300",
+      "yta_m2": 124,
+      "byggnad_ar": 1951
+    },
+    {
+      "id": "BYG-0139",
+      "fastighets_id": "909a6a88-3e08-90ec-e040-ed8f66444c3f",
+      "namn": "Redskapsbod",
+      "anvandning": "Lantbruk/stall",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0139/600/300",
+      "yta_m2": 225,
+      "byggnad_ar": 1925
+    },
+    {
+      "id": "BYG-0140",
+      "fastighets_id": "909a6a88-3e08-90ec-e040-ed8f66444c3f",
+      "namn": "Huvudbyggnad",
+      "anvandning": "Lantbruk/stall",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0140/600/300",
+      "yta_m2": 226,
+      "byggnad_ar": 1926
+    },
+    {
+      "id": "BYG-0141",
+      "fastighets_id": "909a6a88-3e59-90ec-e040-ed8f66444c3f",
+      "namn": "Villa",
+      "anvandning": "Bostadsändamål",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0141/600/300",
+      "yta_m2": 453,
+      "byggnad_ar": 1928
+    },
+    {
+      "id": "BYG-0142",
+      "fastighets_id": "909a6a88-3e59-90ec-e040-ed8f66444c3f",
+      "namn": "Huvudbyggnad",
+      "anvandning": "Bostadsändamål",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0142/600/300",
+      "yta_m2": 452,
+      "byggnad_ar": 1927
+    },
+    {
+      "id": "BYG-0143",
+      "fastighets_id": "909a6a88-3e59-90ec-e040-ed8f66444c3f",
+      "namn": "Redskapsbod",
+      "anvandning": "Teknisk anläggning",
+      "skick": "Kritiskt skick",
+      "bild": "https://picsum.photos/seed/BYG-0143/600/300",
+      "yta_m2": 451,
+      "byggnad_ar": 1926
+    },
+    {
+      "id": "BYG-0144",
+      "fastighets_id": "909a6a88-3e2f-90ec-e040-ed8f66444c3f",
+      "namn": "Ekonomibyggnad",
+      "anvandning": "Kontor/administration",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0144/600/300",
+      "yta_m2": 299,
+      "byggnad_ar": 1929
+    },
+    {
+      "id": "BYG-0145",
+      "fastighets_id": "909a6a88-3e44-90ec-e040-ed8f66444c3f",
+      "namn": "Ekonomibyggnad",
+      "anvandning": "Industriell verksamhet",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0145/600/300",
+      "yta_m2": 354,
+      "byggnad_ar": 1967
+    },
+    {
+      "id": "BYG-0146",
+      "fastighets_id": "909a6a88-3e44-90ec-e040-ed8f66444c3f",
+      "namn": "Garage",
+      "anvandning": "Industriell verksamhet",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0146/600/300",
+      "yta_m2": 355,
+      "byggnad_ar": 1968
+    },
+    {
+      "id": "BYG-0147",
+      "fastighets_id": "909a6a88-3e44-90ec-e040-ed8f66444c3f",
+      "namn": "Förråd",
+      "anvandning": "Industriell verksamhet",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0147/600/300",
+      "yta_m2": 356,
+      "byggnad_ar": 1969
+    },
+    {
+      "id": "BYG-0148",
+      "fastighets_id": "909a6a88-3e55-90ec-e040-ed8f66444c3f",
+      "namn": "Förråd",
+      "anvandning": "Bostadsändamål",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0148/600/300",
+      "yta_m2": 311,
+      "byggnad_ar": 2008
+    },
+    {
+      "id": "BYG-0149",
+      "fastighets_id": "909a6a88-3e55-90ec-e040-ed8f66444c3f",
+      "namn": "Garage",
+      "anvandning": "Bostadsändamål",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0149/600/300",
+      "yta_m2": 310,
+      "byggnad_ar": 2007
+    },
+    {
+      "id": "BYG-0150",
+      "fastighets_id": "909a6a88-3e5a-90ec-e040-ed8f66444c3f",
+      "namn": "Villa",
+      "anvandning": "Industriell verksamhet",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0150/600/300",
+      "yta_m2": 400,
+      "byggnad_ar": 2004
+    },
+    {
+      "id": "BYG-0151",
+      "fastighets_id": "909a6a88-3e5a-90ec-e040-ed8f66444c3f",
+      "namn": "Huvudbyggnad",
+      "anvandning": "Industriell verksamhet",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0151/600/300",
+      "yta_m2": 399,
+      "byggnad_ar": 2003
+    },
+    {
+      "id": "BYG-0152",
+      "fastighets_id": "909a6a88-3eb6-90ec-e040-ed8f66444c3f",
+      "namn": "Verkstadsbyggnad",
+      "anvandning": "Lager/förråd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0152/600/300",
+      "yta_m2": 117,
+      "byggnad_ar": 2013
+    },
+    {
+      "id": "BYG-0153",
+      "fastighets_id": "909a6a88-3eb6-90ec-e040-ed8f66444c3f",
+      "namn": "Kontorsbyggnad",
+      "anvandning": "Lager/förråd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0153/600/300",
+      "yta_m2": 116,
+      "byggnad_ar": 2012
+    },
+    {
+      "id": "BYG-0154",
+      "fastighets_id": "909a6a88-3cf6-90ec-e040-ed8f66444c3f",
+      "namn": "Förråd",
+      "anvandning": "Besöksanläggning",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0154/600/300",
+      "yta_m2": 322,
+      "byggnad_ar": 1944
+    },
+    {
+      "id": "BYG-0155",
+      "fastighets_id": "909a6a89-ba2d-90ec-e040-ed8f66444c3f",
+      "namn": "Verkstadsbyggnad",
+      "anvandning": "Industriell verksamhet",
+      "skick": "Kritiskt skick",
+      "bild": "https://picsum.photos/seed/BYG-0155/600/300",
+      "yta_m2": 335,
+      "byggnad_ar": 1954
+    },
+    {
+      "id": "BYG-0156",
+      "fastighets_id": "909a6a89-f24c-90ec-e040-ed8f66444c3f",
+      "namn": "Ekonomibyggnad",
+      "anvandning": "Lantbruk/stall",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0156/600/300",
+      "yta_m2": 226,
+      "byggnad_ar": 1949
+    },
+    {
+      "id": "BYG-0157",
+      "fastighets_id": "909a6a89-c174-90ec-e040-ed8f66444c3f",
+      "namn": "Förråd",
+      "anvandning": "Kontor/administration",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0157/600/300",
+      "yta_m2": 32,
+      "byggnad_ar": 1931
+    },
+    {
+      "id": "BYG-0158",
+      "fastighets_id": "909a6a89-d494-90ec-e040-ed8f66444c3f",
+      "namn": "Ekonomibyggnad",
+      "anvandning": "Lager/förråd",
+      "skick": "Kritiskt skick",
+      "bild": "https://picsum.photos/seed/BYG-0158/600/300",
+      "yta_m2": 153,
+      "byggnad_ar": 1927
+    },
+    {
+      "id": "BYG-0159",
+      "fastighets_id": "909a6a89-d1d4-90ec-e040-ed8f66444c3f",
+      "namn": "Förråd",
+      "anvandning": "Bostadsändamål",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0159/600/300",
+      "yta_m2": 75,
+      "byggnad_ar": 2018
+    },
+    {
+      "id": "BYG-0160",
+      "fastighets_id": "909a6a89-d1d4-90ec-e040-ed8f66444c3f",
+      "namn": "Lada",
+      "anvandning": "Bostadsändamål",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0160/600/300",
+      "yta_m2": 76,
+      "byggnad_ar": 2019
+    },
+    {
+      "id": "BYG-0161",
+      "fastighets_id": "e42c6f56-3159-4912-9d02-96b6e02f2168",
+      "namn": "Villa",
+      "anvandning": "Besöksanläggning",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0161/600/300",
+      "yta_m2": 268,
+      "byggnad_ar": 1921
+    },
+    {
+      "id": "BYG-0162",
+      "fastighets_id": "e42c6f56-3159-4912-9d02-96b6e02f2168",
+      "namn": "Huvudbyggnad",
+      "anvandning": "Besöksanläggning",
+      "skick": "Gott skick",
+      "bild": "https://picsum.photos/seed/BYG-0162/600/300",
+      "yta_m2": 267,
+      "byggnad_ar": 1920
+    },
+    {
+      "id": "BYG-0163",
+      "fastighets_id": "909a6a89-da59-90ec-e040-ed8f66444c3f",
+      "namn": "Verkstadsbyggnad",
+      "anvandning": "Kontor/administration",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/BYG-0163/600/300",
+      "yta_m2": 219,
+      "byggnad_ar": 1975
+    }
+  ]
+}

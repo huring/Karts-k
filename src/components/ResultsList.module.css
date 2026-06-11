@@ -109,3 +109,20 @@
   line-height: 1.5;
   margin: 0;
 }
+
+.geoItem {
+  background: var(--color-bg-secondary);
+}
+
+.geoItem:hover {
+  background: #e8ede0;
+}
+
+.geoIcon {
+  color: var(--dino-green-700);
+}
+
+/* Grouped hierarchy — no visual indent, children appear directly after parent */
+
+.childGroup {}
+.childItem {}

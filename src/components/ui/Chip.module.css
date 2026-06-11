@@ -30,3 +30,32 @@
 .chip .material-symbols-outlined {
   font-size: 15px;
 }
+
+.chip.dimmed {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.chip.active.dimmed {
+  background: var(--dino-slategrey-300);
+  border-color: var(--dino-slategrey-300);
+}
+
+.count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 16px;
+  height: 16px;
+  padding: 0 4px;
+  border-radius: var(--radius-full);
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1;
+  background: rgba(0, 0, 0, 0.15);
+  color: inherit;
+}
+
+.chip.active .count {
+  background: rgba(255, 255, 255, 0.25);
+}

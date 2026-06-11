@@ -1,27 +1,37 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import * as turf from '@turf/turf'
 import type { Feature } from 'geojson'
-import type { FastighetProperties, ByggnadsProperties, Avtal, Nyttjanderatt, Aktor } from '../types'
+import type {
+  FastighetProperties,
+  SkyddsomradeProperties,
+  BeslutProperties,
+  SkyddsomradeFeature,
+  BeslutFeature,
+  Byggnad,
+} from '../types'
+import { isFastighet, isSkyddsomrade, isBeslut } from '../types'
 import type { SelectedLayer } from '../hooks/useSelectedFeature'
-import { useRelatedObjects } from '../hooks/useRelatedObjects'
-import { Badge, statusVariant } from './ui/Badge'
+import { useSpatialRelations, useSpatialData, parseSoids } from '../hooks/useSpatialRelations'
+import { useBuildings } from '../hooks/useBuildings'
+import { Badge, statusVariant, skickVariant } from './ui/Badge'
 import styles from './ObjectPanel.module.css'
 
-// Navigation stack entries (F4-3)
+// Navigation stack
 type PanelView =
   | { kind: 'feature' }
-  | { kind: 'avtal'; id: string }
-  | { kind: 'nyttjanderatt'; id: string }
-  | { kind: 'aktor'; id: string }
+  | { kind: 'skyddsomrade'; id: string }
+  | { kind: 'beslut'; id: string }
+  | { kind: 'byggnad'; id: string }
 
 export interface ObjectPanelProps {
   feature: Feature | null
   layer: SelectedLayer | null
+  initialBuildingId?: string | null
   onClose: () => void
   onFlyTo: (feature: Feature) => void
 }
 
-// --- Formatters ---
+// ── Formatters ────────────────────────────────────────────────────────────────
 
 function formatArea(m2: number): string {
   return m2 >= 10000
@@ -29,37 +39,29 @@ function formatArea(m2: number): string {
     : `${Math.round(m2).toLocaleString('sv-SE')} m²`
 }
 
-function formatDate(iso: string): string {
-  return new Date(iso).toLocaleDateString('sv-SE')
+function formatDate(iso: string | null | undefined): string {
+  if (!iso) return '–'
+  try { return new Date(iso).toLocaleDateString('sv-SE') } catch { return iso }
 }
 
-const STATUS_LABEL: Record<string, string> = {
-  aktiv: 'Aktiv', vilande: 'Vilande', avslutad: 'Avslutad', riven: 'Riven',
-}
+// ── Main export ───────────────────────────────────────────────────────────────
 
-const MARKSLAG_LABEL: Record<string, string> = {
-  skog: 'Skog', åker: 'Åker', impediment: 'Impediment', vatten: 'Vatten', övrigt: 'Övrigt',
-}
-
-const NR_TYPE_LABEL: Record<string, string> = {
-  jakt: 'Jakt', arrende: 'Arrende', servitut: 'Servitut', väg: 'Väg', övrigt: 'Övrigt',
-}
-
-// --- Main export ---
-
-export function ObjectPanel({ feature, layer, onClose, onFlyTo }: ObjectPanelProps) {
+export function ObjectPanel({ feature, layer, initialBuildingId, onClose, onFlyTo }: ObjectPanelProps) {
   const [stack, setStack] = useState<PanelView[]>([{ kind: 'feature' }])
+  useEffect(() => {
+    setStack(initialBuildingId
+      ? [{ kind: 'feature' }, { kind: 'byggnad', id: initialBuildingId }]
+      : [{ kind: 'feature' }]
+    )
+  }, [feature, initialBuildingId])
 
-  // Reset navigation stack whenever the selected feature changes
-  useEffect(() => { setStack([{ kind: 'feature' }]) }, [feature])
-
-  const fastighetId: string | null = feature
-    ? (layer === 'fastigheter'
-        ? (feature.properties as FastighetProperties).id
-        : (feature.properties as ByggnadsProperties).fastighet_id)
-    : null
-
-  const { avtal, nyttjanderatter, relevantAktorer, getAktor, loading } = useRelatedObjects(fastighetId)
+  // Spatial relations for fastigheter only
+  const { skyddsomraden, beslut, loading } = useSpatialRelations(
+    feature && isFastighet(feature) ? feature : null,
+  )
+  // Full data caches — for breadcrumb labels and navigation lookups
+  const { skyddsomraden: allSkydds, beslut: allBeslut } = useSpatialData()
+  const buildings = useBuildings()
 
   const current   = stack[stack.length - 1]
   const canGoBack = stack.length > 1
@@ -67,25 +69,41 @@ export function ObjectPanel({ feature, layer, onClose, onFlyTo }: ObjectPanelPro
   const navigate = (view: PanelView) => setStack(prev => [...prev.slice(-4), view])
   const goBack   = () => setStack(prev => prev.slice(0, -1))
 
-  const viewLabel = (v: PanelView): string => {
-    switch (v.kind) {
-      case 'feature': {
-        if (!feature) return 'Objekt'
-        const p = feature.properties as FastighetProperties & ByggnadsProperties
-        return p.beteckning ?? p.byggnadstyp ?? p.id
-      }
-      case 'avtal': {
-        const a = avtal.find(x => x.id === v.id)
-        return a ? a.avtalstyp : 'Avtal'
-      }
-      case 'nyttjanderatt': {
-        const nr = nyttjanderatter.find(x => x.id === v.id)
-        return nr ? (NR_TYPE_LABEL[nr.rattighetstyp] ?? nr.rattighetstyp) : 'Nyttjanderätt'
-      }
-      case 'aktor': {
-        return getAktor(v.id)?.namn ?? 'Aktör'
-      }
+  function viewLabel(v: PanelView): string {
+    if (v.kind === 'feature') {
+      if (!feature) return 'Objekt'
+      const p = feature.properties as Record<string, string>
+      return p.beteckning ?? p.namn ?? p.id ?? 'Objekt'
     }
+    if (v.kind === 'skyddsomrade') {
+      return allSkydds.find(s => s.properties.id === v.id)?.properties.namn ?? 'Skyddsvärtområde'
+    }
+    if (v.kind === 'beslut') {
+      return allBeslut.find(b => b.properties.id === v.id)?.properties.namn ?? 'Beslut'
+    }
+    return buildings.getById(v.id)?.namn ?? 'Byggnad'
+  }
+
+  function headerContent() {
+    if (current.kind === 'feature' && feature) return <FeatureTitle feature={feature} layer={layer} />
+    if (current.kind === 'skyddsomrade') {
+      const namn = allSkydds.find(s => s.properties.id === current.id)?.properties.namn ?? 'Skyddsvärtområde'
+      return <span className={styles.titleText}>{namn}</span>
+    }
+    if (current.kind === 'beslut') {
+      const namn = allBeslut.find(b => b.properties.id === current.id)?.properties.namn ?? 'Beslut'
+      return <span className={styles.titleText}>{namn}</span>
+    }
+    if (current.kind === 'byggnad') {
+      const b = buildings.getById(current.id)
+      return (
+        <>
+          <span className={styles.titleText}>{b?.namn ?? 'Byggnad'}</span>
+          {b && <Badge variant={skickVariant(b.skick)} size="s">{b.skick}</Badge>}
+        </>
+      )
+    }
+    return null
   }
 
   return (
@@ -101,14 +119,7 @@ export function ObjectPanel({ feature, layer, onClose, onFlyTo }: ObjectPanelPro
               <span className={`material-symbols-outlined ${styles.iconBtnIcon}`}>arrow_back</span>
             </button>
           )}
-          <div className={styles.headerTitle}>
-            {current.kind === 'feature' && feature && (
-              <FeatureTitle feature={feature} layer={layer} />
-            )}
-            {current.kind === 'avtal'         && <span className={styles.titleText}>Avtal</span>}
-            {current.kind === 'nyttjanderatt' && <span className={styles.titleText}>Nyttjanderätt</span>}
-            {current.kind === 'aktor'         && <span className={styles.titleText}>Aktör</span>}
-          </div>
+          <div className={styles.headerTitle}>{headerContent()}</div>
         </div>
         <button type="button" className={styles.iconBtn} onClick={onClose} aria-label="Stäng">
           <span className={`material-symbols-outlined ${styles.iconBtnIcon}`}>close</span>
@@ -131,46 +142,56 @@ export function ObjectPanel({ feature, layer, onClose, onFlyTo }: ObjectPanelPro
           <FeatureContent
             feature={feature}
             layer={layer}
-            avtal={avtal}
-            nyttjanderatter={nyttjanderatter}
-            aktorer={relevantAktorer}
+            skyddsomraden={skyddsomraden}
+            beslut={beslut}
+            byggnader={isFastighet(feature)
+              ? buildings.getByFastighetId((feature.properties as FastighetProperties).id)
+              : []}
             loading={loading}
             onNavigate={navigate}
             onFlyTo={onFlyTo}
           />
         )}
-        {current.kind === 'avtal' && (
-          <AvtalContent
-            avtal={avtal.find(a => a.id === current.id) ?? null}
-            getAktor={getAktor}
+        {current.kind === 'skyddsomrade' && (
+          <SkyddsomradeDetail
+            feature={allSkydds.find(s => s.properties.id === current.id) ?? null}
+            allBeslut={allBeslut}
             onNavigate={navigate}
+            onFlyTo={onFlyTo}
           />
         )}
-        {current.kind === 'nyttjanderatt' && (
-          <NrContent
-            nr={nyttjanderatter.find(n => n.id === current.id) ?? null}
-            getAktor={getAktor}
+        {current.kind === 'beslut' && (
+          <BeslutDetail
+            feature={allBeslut.find(b => b.properties.id === current.id) ?? null}
+            allSkydds={allSkydds}
             onNavigate={navigate}
+            onFlyTo={onFlyTo}
           />
         )}
-        {current.kind === 'aktor' && (
-          <AktorContent aktor={getAktor(current.id) ?? null} />
+        {current.kind === 'byggnad' && (
+          <ByggnadsDetail building={buildings.getById(current.id)} />
         )}
       </div>
     </div>
   )
 }
 
-// --- Sub-components ---
+// ── Sub-components ────────────────────────────────────────────────────────────
 
 function FeatureTitle({ feature, layer }: { feature: Feature; layer: SelectedLayer | null }) {
-  const p = feature.properties as FastighetProperties & ByggnadsProperties
+  const p = feature.properties as Record<string, string>
+  const title = p.beteckning ?? p.namn ?? p.id ?? '–'
+  const badge =
+    layer === 'fastigheter'   ? 'Fastighet' :
+    layer === 'skyddsomraden' ? 'Skyddsvärtomr.' :
+    layer === 'beslut'        ? 'Beslut' : ''
+  const badgeVariant =
+    layer === 'fastigheter'   ? 'default' :
+    layer === 'skyddsomraden' ? 'warning' : 'success'
   return (
     <>
-      <span className={styles.titleText}>{p.beteckning ?? p.id}</span>
-      <Badge variant={layer === 'fastigheter' ? 'default' : 'warning'} size="s">
-        {layer === 'fastigheter' ? 'Fastighet' : 'Byggnad'}
-      </Badge>
+      <span className={styles.titleText}>{title}</span>
+      {badge && <Badge variant={badgeVariant} size="s">{badge}</Badge>}
     </>
   )
 }
@@ -178,47 +199,98 @@ function FeatureTitle({ feature, layer }: { feature: Feature; layer: SelectedLay
 interface FeatureContentProps {
   feature: Feature
   layer: SelectedLayer | null
-  avtal: Avtal[]
-  nyttjanderatter: Nyttjanderatt[]
-  aktorer: Aktor[]
+  skyddsomraden: SkyddsomradeFeature[]
+  beslut: BeslutFeature[]
+  byggnader: Byggnad[]
   loading: boolean
   onNavigate: (v: PanelView) => void
   onFlyTo: (feature: Feature) => void
 }
 
-function FeatureContent({
-  feature, layer, avtal, nyttjanderatter, aktorer, loading, onNavigate, onFlyTo,
-}: FeatureContentProps) {
-  const p    = feature.properties as FastighetProperties & ByggnadsProperties
-  // F4-4: Calculate area dynamically with Turf.js
-  const area = feature.geometry ? turf.area(feature) : null
+function FeatureContent({ feature, layer, skyddsomraden, beslut, byggnader, loading, onNavigate, onFlyTo }: FeatureContentProps) {
+  if (isSkyddsomrade(feature)) {
+    return <SkyddsomradeDetail feature={feature} allBeslut={[]} onNavigate={onNavigate} onFlyTo={onFlyTo} />
+  }
+  if (isBeslut(feature)) {
+    return <BeslutDetail feature={feature} allSkydds={[]} onNavigate={onNavigate} onFlyTo={onFlyTo} />
+  }
 
+  // Fastighet
+  const area = feature.geometry && feature.geometry.type !== 'Point' ? turf.area(feature) : null
   return (
     <>
       <PropList>
-        <PropRow label="Status">
-          <Badge variant={statusVariant(p.status)} size="s">{STATUS_LABEL[p.status] ?? p.status}</Badge>
-        </PropRow>
-        {layer === 'fastigheter' && p.markslag && (
-          <PropRow label="Markslag">{MARKSLAG_LABEL[p.markslag] ?? p.markslag}</PropRow>
-        )}
-        {layer === 'byggnader' && p.byggnadstyp && (
-          <PropRow label="Byggnadstyp">{p.byggnadstyp}</PropRow>
-        )}
-        {layer === 'byggnader' && p.fastighet_id && (
-          <PropRow label="Tillhör fastighet">{p.fastighet_id}</PropRow>
-        )}
-        {layer === 'byggnader' && p.byggar && (
-          <PropRow label="Byggår">{p.byggar}</PropRow>
-        )}
+        <FastighetRows p={feature.properties as FastighetProperties} />
         {area !== null && (
-          <PropRow label="Areal">
+          <PropRow label="Areal (beräknad)">
             <span className={styles.propWithIcon}>
               <span className={`material-symbols-outlined ${styles.iconArea}`}>square_foot</span>
               {formatArea(area)}
             </span>
           </PropRow>
         )}
+      </PropList>
+      <div className={styles.flyToRow}>
+        <button type="button" className={styles.flyToBtn} onClick={() => onFlyTo(feature)}>
+          <span className={`material-symbols-outlined ${styles.flyToBtnIcon}`}>my_location</span>
+          Visa på karta
+        </button>
+      </div>
+      {layer === 'fastigheter' && (
+        <SkyddsstatusSection
+          skyddsomraden={skyddsomraden}
+          beslut={beslut}
+          loading={loading}
+          onNavigate={onNavigate}
+        />
+      )}
+      {byggnader.length > 0 && (
+        <ByggnaderSection byggnader={byggnader} onNavigate={onNavigate} />
+      )}
+    </>
+  )
+}
+
+// ── Skyddsomrade detail view ──────────────────────────────────────────────────
+
+interface SkyddsomradeDetailProps {
+  feature: SkyddsomradeFeature | null
+  allBeslut: BeslutFeature[]
+  onNavigate: (v: PanelView) => void
+  onFlyTo: (feature: Feature) => void
+}
+
+function SkyddsomradeDetail({ feature, allBeslut, onNavigate, onFlyTo }: SkyddsomradeDetailProps) {
+  // Load full data if allBeslut was passed empty (direct-click scenario)
+  const { beslut: cachedBeslut } = useSpatialData()
+  const beslutPool = allBeslut.length > 0 ? allBeslut : cachedBeslut
+
+  const relatedBeslut = useMemo(() => {
+    if (!feature) return []
+    const soIds = parseSoids(feature.properties.soid)
+    return beslutPool.filter(b => soIds.includes(b.properties.soid))
+  }, [feature?.properties.soid, beslutPool])
+
+  if (!feature) return <p className={styles.emptyRelated}>Skyddsvärtområdet hittades inte</p>
+
+  const p = feature.properties
+  const area = feature.geometry && feature.geometry.type !== 'Point' ? turf.area(feature) : null
+
+  return (
+    <>
+      <PropList>
+        <SkyddsomradeRows p={p} />
+        {area !== null && (
+          <PropRow label="Areal (beräknad)">
+            <span className={styles.propWithIcon}>
+              <span className={`material-symbols-outlined ${styles.iconArea}`}>square_foot</span>
+              {formatArea(area)}
+            </span>
+          </PropRow>
+        )}
+        {p.beslmyndig && <PropRow label="Beslutsmyndighet">{p.beslmyndig}</PropRow>}
+        {p.forvaltare && <PropRow label="Förvaltare">{p.forvaltare}</PropRow>}
+        {p.geo_status && <PropRow label="Geometristatus">{p.geo_status}</PropRow>}
       </PropList>
 
       <div className={styles.flyToRow}>
@@ -228,151 +300,343 @@ function FeatureContent({
         </button>
       </div>
 
-      {loading && <p className={styles.loadingText}>Hämtar kopplade objekt…</p>}
+      {p.omr_besk && (
+        <CollapsibleText title="Områdesbeskrivning" icon="article" text={p.omr_besk} />
+      )}
+      {hasForeskrifter(p) && <ForeskrifterSection p={p} />}
 
-      {!loading && avtal.length > 0 && (
-        <RelatedSection title="Avtal" count={avtal.length} icon="description">
-          {avtal.map(a => (
+      {relatedBeslut.length > 0 && (
+        <RelatedSection title="Beslut" count={relatedBeslut.length} icon="gavel">
+          {relatedBeslut.map(b => (
             <RelatedRow
-              key={a.id}
-              label={a.avtalstyp}
-              subLabel={
-                a.giltig_till
-                  ? `${formatDate(a.giltig_fran)} – ${formatDate(a.giltig_till)}`
-                  : `Fr.o.m. ${formatDate(a.giltig_fran)}`
-              }
-              badge={
-                <Badge variant={statusVariant(a.status)} size="s">
-                  {STATUS_LABEL[a.status] ?? a.status}
-                </Badge>
-              }
-              onClick={() => onNavigate({ kind: 'avtal', id: a.id })}
+              key={b.properties.id}
+              label={b.properties.namn}
+              subLabel={`${b.properties.id} · ${formatDate(b.properties.beslut_dat)}`}
+              badge={<Badge variant={statusVariant(b.properties.status)} size="s">{b.properties.status}</Badge>}
+              onClick={() => onNavigate({ kind: 'beslut', id: b.properties.id })}
             />
           ))}
         </RelatedSection>
-      )}
-
-      {!loading && nyttjanderatter.length > 0 && (
-        <RelatedSection title="Nyttjanderätter" count={nyttjanderatter.length} icon="key">
-          {nyttjanderatter.map(nr => {
-            const innehavare = aktorer.find(a => a.id === nr.innehavare_id)
-            return (
-              <RelatedRow
-                key={nr.id}
-                label={NR_TYPE_LABEL[nr.rattighetstyp] ?? nr.rattighetstyp}
-                subLabel={innehavare?.namn ?? nr.innehavare_id}
-                badge={
-                  <Badge variant={nr.status === 'aktiv' ? 'success' : 'neutral'} size="s">
-                    {STATUS_LABEL[nr.status] ?? nr.status}
-                  </Badge>
-                }
-                onClick={() => onNavigate({ kind: 'nyttjanderatt', id: nr.id })}
-              />
-            )
-          })}
-        </RelatedSection>
-      )}
-
-      {!loading && aktorer.length > 0 && (
-        <RelatedSection title="Aktörer" count={aktorer.length} icon="person">
-          {aktorer.map(a => (
-            <RelatedRow
-              key={a.id}
-              label={a.namn}
-              subLabel={a.typ === 'organisation' ? (a.organisationsnummer ?? 'Organisation') : 'Person'}
-              onClick={() => onNavigate({ kind: 'aktor', id: a.id })}
-            />
-          ))}
-        </RelatedSection>
-      )}
-
-      {!loading && avtal.length === 0 && nyttjanderatter.length === 0 && aktorer.length === 0 && (
-        <p className={styles.emptyRelated}>Inga kopplade objekt hittades</p>
       )}
     </>
   )
 }
 
-interface AvtalContentProps {
-  avtal: Avtal | null
-  getAktor: (id: string) => Aktor | undefined
+// ── Beslut detail view ────────────────────────────────────────────────────────
+
+interface BeslutDetailProps {
+  feature: BeslutFeature | null
+  allSkydds: SkyddsomradeFeature[]
   onNavigate: (v: PanelView) => void
+  onFlyTo: (feature: Feature) => void
 }
 
-function AvtalContent({ avtal, getAktor, onNavigate }: AvtalContentProps) {
-  if (!avtal) return <p className={styles.emptyRelated}>Avtalet hittades inte</p>
-  const part = getAktor(avtal.part_id)
+function BeslutDetail({ feature, allSkydds, onNavigate, onFlyTo }: BeslutDetailProps) {
+  // Load full data if allSkydds was passed empty (direct-click scenario)
+  const { skyddsomraden: cachedSkydds } = useSpatialData()
+  const skyddsPool = allSkydds.length > 0 ? allSkydds : cachedSkydds
+
+  const linkedSkyddsomraden = useMemo(() => {
+    if (!feature) return []
+    return skyddsPool.filter(s => parseSoids(s.properties.soid).includes(feature.properties.soid))
+  }, [feature?.properties.soid, skyddsPool])
+
+  if (!feature) return <p className={styles.emptyRelated}>Beslutet hittades inte</p>
+
+  const p = feature.properties
+  const area = feature.geometry && feature.geometry.type !== 'Point' ? turf.area(feature) : null
+
   return (
     <>
       <PropList>
-        <PropRow label="Typ">{avtal.avtalstyp}</PropRow>
-        <PropRow label="Status">
-          <Badge variant={statusVariant(avtal.status)} size="s">{STATUS_LABEL[avtal.status] ?? avtal.status}</Badge>
-        </PropRow>
-        <PropRow label="Giltig fr.o.m.">{formatDate(avtal.giltig_fran)}</PropRow>
-        {avtal.giltig_till && (
-          <PropRow label="Giltig t.o.m.">{formatDate(avtal.giltig_till)}</PropRow>
+        <BeslutRows p={p} />
+        {area !== null && (
+          <PropRow label="Areal (beräknad)">
+            <span className={styles.propWithIcon}>
+              <span className={`material-symbols-outlined ${styles.iconArea}`}>square_foot</span>
+              {formatArea(area)}
+            </span>
+          </PropRow>
         )}
+        {p.beslmyndig && <PropRow label="Beslutsmyndighet">{p.beslmyndig}</PropRow>}
+        {p.forvaltare && <PropRow label="Förvaltare">{p.forvaltare}</PropRow>}
+        {p.geo_status && <PropRow label="Geometristatus">{p.geo_status}</PropRow>}
       </PropList>
-      {part && (
-        <RelatedSection title="Part" count={1} icon="person">
-          <RelatedRow
-            label={part.namn}
-            subLabel={part.typ === 'organisation' ? (part.organisationsnummer ?? 'Organisation') : 'Person'}
-            onClick={() => onNavigate({ kind: 'aktor', id: part.id })}
-          />
+
+      <div className={styles.flyToRow}>
+        <button type="button" className={styles.flyToBtn} onClick={() => onFlyTo(feature)}>
+          <span className={`material-symbols-outlined ${styles.flyToBtnIcon}`}>my_location</span>
+          Visa på karta
+        </button>
+      </div>
+
+      {hasForeskrifter(p) && <ForeskrifterSection p={p} />}
+
+      {linkedSkyddsomraden.length > 0 && (
+        <RelatedSection title="Skyddsvärtområde" count={linkedSkyddsomraden.length} icon="nature">
+          {linkedSkyddsomraden.map(s => (
+            <RelatedRow
+              key={s.properties.id}
+              label={s.properties.namn}
+              subLabel={`${s.properties.id} · ${s.properties.skyddstyp}`}
+              badge={<Badge variant={statusVariant(s.properties.status)} size="s">{s.properties.status}</Badge>}
+              onClick={() => onNavigate({ kind: 'skyddsomrade', id: s.properties.id })}
+            />
+          ))}
         </RelatedSection>
       )}
     </>
   )
 }
 
-interface NrContentProps {
-  nr: Nyttjanderatt | null
-  getAktor: (id: string) => Aktor | undefined
+// ── Building type → Material Symbol icon mapping ──────────────────────────────
+
+function anvandningIcon(anvandning: string): string {
+  switch (anvandning) {
+    case 'Bostadsändamål':        return 'home'
+    case 'Kontor/administration': return 'business'
+    case 'Industriell verksamhet': return 'factory'
+    case 'Lager/förråd':          return 'warehouse'
+    case 'Lantbruk/stall':        return 'agriculture'
+    case 'Kulturändamål':         return 'museum'
+    case 'Besöksanläggning':      return 'hotel'
+    case 'Teknisk anläggning':    return 'bolt'
+    default:                      return 'home_work'
+  }
+}
+
+// ── Byggnader section (fastighet → buildings) ─────────────────────────────────
+
+function ByggnaderSection({ byggnader, onNavigate }: { byggnader: Byggnad[]; onNavigate: (v: PanelView) => void }) {
+  return (
+    <RelatedSection title="Byggnader" count={byggnader.length} icon="home_work">
+      {byggnader.map(b => (
+        <button
+          key={b.id}
+          type="button"
+          className={styles.byggnadsRow}
+          onClick={() => onNavigate({ kind: 'byggnad', id: b.id })}
+        >
+          <div className={styles.byggnadsThumbWrap}>
+            <img src={b.bild} alt={b.namn} className={styles.byggnadsThumb} loading="lazy" />
+          </div>
+          <div className={styles.relatedContent}>
+            <span className={styles.relatedLabel}>{b.namn}</span>
+            <span className={styles.relatedSubLabel}>
+              <span className={`material-symbols-outlined ${styles.subLabelIcon}`}>{anvandningIcon(b.anvandning)}</span>
+              {b.anvandning}
+            </span>
+          </div>
+          <Badge variant={skickVariant(b.skick)} size="s">{b.skick}</Badge>
+          <span className={`material-symbols-outlined ${styles.chevronIcon}`}>chevron_right</span>
+        </button>
+      ))}
+    </RelatedSection>
+  )
+}
+
+// ── Byggnad detail view ───────────────────────────────────────────────────────
+
+function ByggnadsDetail({ building }: { building: Byggnad | null }) {
+  const [imgError, setImgError] = useState(false)
+  if (!building) return <p className={styles.emptyRelated}>Byggnaden hittades inte</p>
+  const icon = anvandningIcon(building.anvandning)
+  return (
+    <>
+      <div className={styles.byggnadsImageWrap}>
+        {!imgError ? (
+          <img
+            src={building.bild}
+            alt={building.namn}
+            className={styles.byggnadsImage}
+            onError={() => setImgError(true)}
+          />
+        ) : (
+          <div className={styles.byggnadsImageFallback}>
+            <span className={`material-symbols-outlined ${styles.byggnadsImageIcon}`}>{icon}</span>
+          </div>
+        )}
+      </div>
+      <PropList>
+        <PropRow label="Namn">{building.namn}</PropRow>
+        <PropRow label="Användningsområde">
+          <span className={styles.propWithIcon}>
+            <span className={`material-symbols-outlined ${styles.iconArea}`}>{icon}</span>
+            {building.anvandning}
+          </span>
+        </PropRow>
+        <PropRow label="Skick">
+          <Badge variant={skickVariant(building.skick)} size="m">{building.skick}</Badge>
+        </PropRow>
+        {building.yta_m2 !== undefined && (
+          <PropRow label="Yta">{building.yta_m2.toLocaleString('sv-SE')} m²</PropRow>
+        )}
+        {building.byggnad_ar !== undefined && (
+          <PropRow label="Byggår">{building.byggnad_ar}</PropRow>
+        )}
+        <PropRow label="ID">{building.id}</PropRow>
+      </PropList>
+    </>
+  )
+}
+
+// ── Property row components ───────────────────────────────────────────────────
+
+function FastighetRows({ p }: { p: FastighetProperties }) {
+  return (
+    <>
+      <PropRow label="Beteckning">{p.beteckning}</PropRow>
+      <PropRow label="Trakt">{p.trakt}</PropRow>
+      <PropRow label="Blockenhet">{p.blockenhet}</PropRow>
+      {p.omrnr > 1 && <PropRow label="Del nr">{p.omrnr}</PropRow>}
+      <PropRow label="Kommun">{p.kommunnamn}</PropRow>
+      <PropRow label="Uppdaterad">{formatDate(p.adat)}</PropRow>
+    </>
+  )
+}
+
+function SkyddsomradeRows({ p }: { p: SkyddsomradeProperties }) {
+  return (
+    <>
+      <PropRow label="Namn">{p.namn}</PropRow>
+      <PropRow label="ID">{p.id}</PropRow>
+      <PropRow label="Skyddstyp">{p.skyddstyp}</PropRow>
+      <PropRow label="Status">
+        <Badge variant={statusVariant(p.status)} size="s">{p.status}</Badge>
+      </PropRow>
+      <PropRow label="Areal (attribut)">{p.area_ha} ha</PropRow>
+    </>
+  )
+}
+
+function BeslutRows({ p }: { p: BeslutProperties }) {
+  return (
+    <>
+      <PropRow label="Namn">{p.namn}</PropRow>
+      <PropRow label="ID">{p.id}</PropRow>
+      <PropRow label="Typ">{p.typ}</PropRow>
+      <PropRow label="Status">
+        <Badge variant={statusVariant(p.status)} size="s">{p.status}</Badge>
+      </PropRow>
+      <PropRow label="Beslutsdatum">{formatDate(p.beslut_dat)}</PropRow>
+      <PropRow label="Lagakraft">{formatDate(p.lagakr_dat)}</PropRow>
+      <PropRow label="Areal (attribut)">{p.area_ha} ha</PropRow>
+    </>
+  )
+}
+
+// ── Optional extended sections ────────────────────────────────────────────────
+
+function hasForeskrifter(p: SkyddsomradeProperties | BeslutProperties): boolean {
+  return !!(p.a_foresk || p.b_foresk || p.c_foresk || p.undantag)
+}
+
+function ForeskrifterSection({ p }: { p: SkyddsomradeProperties | BeslutProperties }) {
+  const items = [
+    { key: 'a_foresk' as const, label: 'A – Föreskrifter' },
+    { key: 'b_foresk' as const, label: 'B – Föreskrifter' },
+    { key: 'c_foresk' as const, label: 'C – Föreskrifter' },
+    { key: 'undantag' as const, label: 'Undantag' },
+  ].filter(({ key }) => !!p[key])
+
+  const [open, setOpen] = useState(false)
+  return (
+    <div className={styles.relatedSection}>
+      <button type="button" className={styles.sectionHeader} onClick={() => setOpen(o => !o)} aria-expanded={open}>
+        <span className={`material-symbols-outlined ${styles.sectionIcon}`}>rule</span>
+        <span className={styles.sectionTitle}>Föreskrifter & undantag</span>
+        <span className={styles.sectionCount}>{items.length}</span>
+        <span className={`material-symbols-outlined ${styles.expandIcon}`}>{open ? 'expand_less' : 'expand_more'}</span>
+      </button>
+      {open && (
+        <div className={styles.sectionItems}>
+          {items.map(({ key, label }) => (
+            <div key={key} className={styles.foreskriftBlock}>
+              <div className={styles.foreskriftLabel}>{label}</div>
+              <p className={styles.textBlock}>{String(p[key])}</p>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  )
+}
+
+function CollapsibleText({ title, icon, text }: { title: string; icon: string; text: string }) {
+  const [open, setOpen] = useState(false)
+  return (
+    <div className={styles.relatedSection}>
+      <button type="button" className={styles.sectionHeader} onClick={() => setOpen(o => !o)} aria-expanded={open}>
+        <span className={`material-symbols-outlined ${styles.sectionIcon}`}>{icon}</span>
+        <span className={styles.sectionTitle}>{title}</span>
+        <span className={`material-symbols-outlined ${styles.expandIcon}`}>{open ? 'expand_less' : 'expand_more'}</span>
+      </button>
+      {open && (
+        <div className={styles.sectionItems}>
+          <p className={styles.textBlock}>{text}</p>
+        </div>
+      )}
+    </div>
+  )
+}
+
+// ── F4-2: Skyddsstatus-sektion (fastigheter only) ─────────────────────────────
+
+interface SkyddsstatusSectionProps {
+  skyddsomraden: SkyddsomradeFeature[]
+  beslut: BeslutFeature[]
+  loading: boolean
   onNavigate: (v: PanelView) => void
 }
 
-function NrContent({ nr, getAktor, onNavigate }: NrContentProps) {
-  if (!nr) return <p className={styles.emptyRelated}>Nyttjanderätten hittades inte</p>
-  const innehavare = getAktor(nr.innehavare_id)
+function SkyddsstatusSection({ skyddsomraden, beslut, loading, onNavigate }: SkyddsstatusSectionProps) {
+  if (loading) return <p className={styles.loadingText}>Söker skyddsobjekt…</p>
+
+  if (skyddsomraden.length === 0 && beslut.length === 0) {
+    return (
+      <div className={styles.relatedSection}>
+        <div className={styles.sectionHeader} style={{ cursor: 'default' }}>
+          <span className={`material-symbols-outlined ${styles.sectionIcon}`}>shield</span>
+          <span className={styles.sectionTitle}>Skyddsstatus</span>
+        </div>
+        <p className={styles.emptyRelated}>Inga registrerade skyddsobjekt</p>
+      </div>
+    )
+  }
+
   return (
-    <>
-      <PropList>
-        <PropRow label="Typ">{NR_TYPE_LABEL[nr.rattighetstyp] ?? nr.rattighetstyp}</PropRow>
-        <PropRow label="Status">
-          <Badge variant={nr.status === 'aktiv' ? 'success' : 'neutral'} size="s">
-            {STATUS_LABEL[nr.status] ?? nr.status}
-          </Badge>
-        </PropRow>
-      </PropList>
-      {innehavare && (
-        <RelatedSection title="Innehavare" count={1} icon="person">
-          <RelatedRow
-            label={innehavare.namn}
-            subLabel={innehavare.typ === 'organisation' ? (innehavare.organisationsnummer ?? 'Organisation') : 'Person'}
-            onClick={() => onNavigate({ kind: 'aktor', id: innehavare.id })}
-          />
-        </RelatedSection>
-      )}
-    </>
+    <RelatedSection title="Skyddsstatus" count={skyddsomraden.length} icon="shield">
+      {skyddsomraden.map(s => {
+        const p = s.properties
+        // soid can be multi-value — use parseSoids for matching
+        const soIds = parseSoids(p.soid)
+        const relatedBeslut = beslut.filter(b => soIds.includes(b.properties.soid))
+        return (
+          <div key={p.id}>
+            <RelatedRow
+              label={p.namn}
+              subLabel={`${p.id} · ${p.skyddstyp}`}
+              badge={<Badge variant={statusVariant(p.status)} size="s">{p.status}</Badge>}
+              onClick={() => onNavigate({ kind: 'skyddsomrade', id: p.id })}
+            />
+            {relatedBeslut.map(b => (
+              <RelatedRow
+                key={b.properties.id}
+                label={`Beslut ${b.properties.id}`}
+                subLabel={`${formatDate(b.properties.beslut_dat)} · lagakraft ${formatDate(b.properties.lagakr_dat)}`}
+                badge={<Badge variant={statusVariant(b.properties.status)} size="s">{b.properties.status}</Badge>}
+                onClick={() => onNavigate({ kind: 'beslut', id: b.properties.id })}
+                indent
+              />
+            ))}
+          </div>
+        )
+      })}
+    </RelatedSection>
   )
 }
 
-function AktorContent({ aktor }: { aktor: Aktor | null }) {
-  if (!aktor) return <p className={styles.emptyRelated}>Aktören hittades inte</p>
-  return (
-    <PropList>
-      <PropRow label="Namn">{aktor.namn}</PropRow>
-      <PropRow label="Typ">{aktor.typ === 'organisation' ? 'Organisation' : 'Person'}</PropRow>
-      {aktor.organisationsnummer && (
-        <PropRow label="Org.nr">{aktor.organisationsnummer}</PropRow>
-      )}
-    </PropList>
-  )
-}
-
-// --- Primitive layout helpers ---
+// ── Primitive layout helpers ──────────────────────────────────────────────────
 
 function PropList({ children }: { children: React.ReactNode }) {
   return <dl className={styles.propList}>{children}</dl>
@@ -388,28 +652,17 @@ function PropRow({ label, children }: { label: string; children: React.ReactNode
 }
 
 interface RelatedSectionProps {
-  title: string
-  count: number
-  icon: string
-  children: React.ReactNode
+  title: string; count: number; icon: string; children: React.ReactNode
 }
-
 function RelatedSection({ title, count, icon, children }: RelatedSectionProps) {
   const [expanded, setExpanded] = useState(true)
   return (
     <div className={styles.relatedSection}>
-      <button
-        type="button"
-        className={styles.sectionHeader}
-        onClick={() => setExpanded(e => !e)}
-        aria-expanded={expanded}
-      >
+      <button type="button" className={styles.sectionHeader} onClick={() => setExpanded(e => !e)} aria-expanded={expanded}>
         <span className={`material-symbols-outlined ${styles.sectionIcon}`}>{icon}</span>
         <span className={styles.sectionTitle}>{title}</span>
         <span className={styles.sectionCount}>{count}</span>
-        <span className={`material-symbols-outlined ${styles.expandIcon}`}>
-          {expanded ? 'expand_less' : 'expand_more'}
-        </span>
+        <span className={`material-symbols-outlined ${styles.expandIcon}`}>{expanded ? 'expand_less' : 'expand_more'}</span>
       </button>
       {expanded && <div className={styles.sectionItems}>{children}</div>}
     </div>
@@ -417,15 +670,15 @@ function RelatedSection({ title, count, icon, children }: RelatedSectionProps) {
 }
 
 interface RelatedRowProps {
-  label: string
-  subLabel?: string
-  badge?: React.ReactNode
-  onClick: () => void
+  label: string; subLabel?: string; badge?: React.ReactNode; onClick: () => void; indent?: boolean
 }
-
-function RelatedRow({ label, subLabel, badge, onClick }: RelatedRowProps) {
+function RelatedRow({ label, subLabel, badge, onClick, indent }: RelatedRowProps) {
   return (
-    <button type="button" className={styles.relatedRow} onClick={onClick}>
+    <button
+      type="button"
+      className={`${styles.relatedRow} ${indent ? styles.relatedRowIndent : ''}`}
+      onClick={onClick}
+    >
       <div className={styles.relatedContent}>
         <span className={styles.relatedLabel}>{label}</span>
         {subLabel && <span className={styles.relatedSubLabel}>{subLabel}</span>}

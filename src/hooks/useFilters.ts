@@ -1,23 +1,28 @@
 import { useState } from 'react'
 
-export type ObjectTypeKey = 'fastigheter' | 'byggnader' | 'avtal' | 'nyttjanderatter' | 'aktorer'
+export type ObjectTypeKey = 'fastigheter' | 'skyddsomraden' | 'beslut' | 'byggnader'
 
 export type AttributeFilters = {
-  status: string | null
-  markslag: string | null
+  status:     string[]
+  skyddstyp:  string[]
+  kommunnamn: string[]
+  skick:      string[]
+  anvandning: string[]
 }
 
 const INITIAL_TYPES: Record<ObjectTypeKey, boolean> = {
-  fastigheter: true,
-  byggnader: true,
-  avtal: true,
-  nyttjanderatter: true,
-  aktorer: true,
+  fastigheter:   true,
+  skyddsomraden: true,
+  beslut:        true,
+  byggnader:     true,
 }
 
 const INITIAL_ATTRIBUTES: AttributeFilters = {
-  status: null,
-  markslag: null,
+  status:     [],
+  skyddstyp:  [],
+  kommunnamn: [],
+  skick:      [],
+  anvandning: [],
 }
 
 export function useFilters() {
@@ -28,11 +33,14 @@ export function useFilters() {
     setActiveTypes(prev => ({ ...prev, [key]: !prev[key] }))
   }
 
-  function setAttributeFilter<K extends keyof AttributeFilters>(
-    key: K,
-    value: AttributeFilters[K],
-  ) {
-    setAttributes(prev => ({ ...prev, [key]: value }))
+  function toggleAttributeValue(key: keyof AttributeFilters, value: string) {
+    setAttributes(prev => {
+      const current = prev[key]
+      const next = current.includes(value)
+        ? current.filter(v => v !== value)
+        : [...current, value]
+      return { ...prev, [key]: next }
+    })
   }
 
   function resetFilters() {
@@ -42,7 +50,7 @@ export function useFilters() {
 
   const hasActiveFilters =
     !Object.values(activeTypes).every(Boolean) ||
-    Object.values(attributes).some(v => v !== null)
+    Object.values(attributes).some(arr => arr.length > 0)
 
-  return { activeTypes, attributes, toggleType, setAttributeFilter, resetFilters, hasActiveFilters }
+  return { activeTypes, attributes, toggleType, toggleAttributeValue, resetFilters, hasActiveFilters }
 }

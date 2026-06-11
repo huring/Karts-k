@@ -3,7 +3,7 @@ import mapboxgl from 'mapbox-gl'
 import MapboxDraw from '@mapbox/mapbox-gl-draw'
 import * as turf from '@turf/turf'
 import type { Feature, FeatureCollection, Point, Polygon, MultiPolygon } from 'geojson'
-import type { FastighetProperties, ByggnadsProperties } from '../types'
+import type { FastighetProperties, SkyddsomradeProperties, BeslutProperties } from '../types'
 import type { SearchResult } from './useSearch'
 
 export type ToolMode = 'none' | 'distance' | 'area' | 'spatial-search' | 'buffer'
@@ -29,31 +29,63 @@ export function useMapTools(
   const [bufferRadiusM, setBufferRadiusM] = useState(500)
   const [bufferResults, setBufferResults] = useState<SearchResult[]>([])
 
-  // Refs for use in event callbacks to avoid stale closures
-  const activeToolRef = useRef<ToolMode>('none')
+  const activeToolRef    = useRef<ToolMode>('none')
   const distancePointsRef = useRef<[number, number][]>([])
-  const allFeaturesRef = useRef<SearchResult[]>([])
+  const allFeaturesRef   = useRef<SearchResult[]>([])
 
   useEffect(() => { activeToolRef.current = activeTool }, [activeTool])
   useEffect(() => { distancePointsRef.current = distancePoints }, [distancePoints])
 
-  // Load GeoJSON features once for spatial intersection queries
+  // Load all GeoJSON sources for spatial queries
   useEffect(() => {
     Promise.all([
       fetch('/data/fastigheter.geojson').then(r => r.json()),
-      fetch('/data/byggnader.geojson').then(r => r.json()),
-    ]).then(([rawFast, rawBygg]) => {
-      const fast = rawFast as FeatureCollection
-      const bygg = rawBygg as FeatureCollection
+      fetch('/data/skyddsomraden.geojson').then(r => r.json()),
+      fetch('/data/beslut.geojson').then(r => r.json()),
+      fetch('/data/byggnader.json').then(r => r.json()),
+    ]).then(([rawFast, rawSkydds, rawBeslut, rawByggnader]) => {
+      const fast   = rawFast   as FeatureCollection
+      const skydds = rawSkydds as FeatureCollection
+      const beslut = rawBeslut as FeatureCollection
+      const bgData = rawByggnader as { byggnader: Array<{ id: string; fastighets_id: string; namn: string; anvandning: string; skick: string }> }
+
+      // Build centroid lookup from fastigheter (for placing building points)
+      const centroidById = new Map<string, [number, number]>()
+      fast.features.forEach(f => {
+        const id = (f.properties as { id?: string }).id
+        if (id && !centroidById.has(id)) {
+          const c = turf.centroid(f)
+          centroidById.set(id, c.geometry.coordinates as [number, number])
+        }
+      })
+
       const fastItems: SearchResult[] = fast.features.map(f => {
         const p = f.properties as FastighetProperties
-        return { id: p.id, label: p.beteckning, subLabel: p.namn ?? p.markslag, layer: 'fastigheter', feature: f }
+        return { id: p.id, label: p.beteckning, subLabel: `${p.trakt} · ${p.kommunnamn}`, layer: 'fastigheter' as const, feature: f }
       })
-      const byggItems: SearchResult[] = bygg.features.map(f => {
-        const p = f.properties as ByggnadsProperties
-        return { id: p.id, label: p.id, subLabel: p.byggnadstyp, layer: 'byggnader', feature: f }
+      const skyddsItems: SearchResult[] = skydds.features.map(f => {
+        const p = f.properties as SkyddsomradeProperties
+        return { id: p.id, label: p.namn, subLabel: `${p.id} · ${p.skyddstyp}`, layer: 'skyddsomraden' as const, feature: f }
       })
-      allFeaturesRef.current = [...fastItems, ...byggItems]
+      const beslutItems: SearchResult[] = beslut.features.map(f => {
+        const p = f.properties as BeslutProperties
+        return { id: p.id, label: p.namn, subLabel: `${p.id} · ${p.typ}`, layer: 'beslut' as const, feature: f }
+      })
+      const byggnadItems: SearchResult[] = bgData.byggnader
+        .filter(b => centroidById.has(b.fastighets_id))
+        .map(b => ({
+          id: b.id,
+          label: b.namn,
+          subLabel: `${b.anvandning} · ${b.skick}`,
+          layer: 'byggnader' as const,
+          feature: {
+            type: 'Feature' as const,
+            geometry: { type: 'Point' as const, coordinates: centroidById.get(b.fastighets_id)! },
+            properties: { ...b, feature_type: 'byggnad' },
+          },
+        }))
+
+      allFeaturesRef.current = [...fastItems, ...skyddsItems, ...beslutItems, ...byggnadItems]
     })
   }, [])
 
@@ -62,17 +94,14 @@ export function useMapTools(
     if (!isLoaded || !mapRef.current) return
     const map = mapRef.current
 
-    const sources: [string][] = [
-      ['measure-line'], ['measure-preview'], ['measure-points'],
-      ['search-area'], ['buffer'],
-    ]
-    sources.forEach(([id]) => map.addSource(id, { type: 'geojson', data: EMPTY_FC }))
+    const sources: string[] = ['measure-line', 'measure-preview', 'measure-points', 'search-area', 'buffer']
+    sources.forEach(id => map.addSource(id, { type: 'geojson', data: EMPTY_FC }))
 
-    map.addLayer({ id: 'measure-line-layer', type: 'line', source: 'measure-line',
+    map.addLayer({ id: 'measure-line-layer',    type: 'line',   source: 'measure-line',
       paint: { 'line-color': '#E63935', 'line-width': 2 } })
-    map.addLayer({ id: 'measure-preview-layer', type: 'line', source: 'measure-preview',
+    map.addLayer({ id: 'measure-preview-layer', type: 'line',   source: 'measure-preview',
       paint: { 'line-color': '#E63935', 'line-width': 1.5, 'line-dasharray': [4, 3] } })
-    map.addLayer({ id: 'measure-points-layer', type: 'circle', source: 'measure-points',
+    map.addLayer({ id: 'measure-points-layer',  type: 'circle', source: 'measure-points',
       paint: { 'circle-color': '#E63935', 'circle-radius': 5, 'circle-stroke-color': '#fff', 'circle-stroke-width': 2 } })
     map.addLayer({ id: 'search-area-fill', type: 'fill', source: 'search-area',
       paint: { 'fill-color': '#5CA3EC', 'fill-opacity': 0.12 } })
@@ -89,11 +118,11 @@ export function useMapTools(
       ['measure-line-layer', 'measure-preview-layer', 'measure-points-layer',
         'search-area-fill', 'search-area-line', 'buffer-fill', 'buffer-line',
       ].forEach(id => { if (m.getLayer(id)) m.removeLayer(id) })
-      sources.forEach(([id]) => { if (m.getSource(id)) m.removeSource(id) })
+      sources.forEach(id => { if (m.getSource(id)) m.removeSource(id) })
     }
   }, [isLoaded, mapRef])
 
-  // Set up / tear down event listeners for the active tool
+  // Set up event listeners for the active tool
   useEffect(() => {
     const map = mapRef.current
     const draw = drawRef.current
@@ -103,44 +132,34 @@ export function useMapTools(
 
     const onDistanceClick = (e: mapboxgl.MapMouseEvent) => {
       const pt: [number, number] = [e.lngLat.lng, e.lngLat.lat]
-      setDistancePoints(prev => {
-        const next = [...prev, pt]
-        distancePointsRef.current = next
-        return next
-      })
+      setDistancePoints(prev => { const next = [...prev, pt]; distancePointsRef.current = next; return next })
     }
 
     const onDistanceMouseMove = (e: mapboxgl.MapMouseEvent) => {
       const pts = distancePointsRef.current
       if (pts.length === 0) return
-      const preview = turf.lineString([pts[pts.length - 1], [e.lngLat.lng, e.lngLat.lat]])
-      setSourceData(map, 'measure-preview', preview)
+      setSourceData(map, 'measure-preview', turf.lineString([pts[pts.length - 1], [e.lngLat.lng, e.lngLat.lat]]))
     }
 
     const onDrawCreate = (e: object) => {
-      const evt = e as { features: Feature[] }
-      const feature = evt.features[0]
+      const feature = (e as { features: Feature[] }).features[0]
       if (!feature?.geometry || feature.geometry.type !== 'Polygon') return
       const polygon = feature as Feature<Polygon>
 
       if (activeToolRef.current === 'area') {
         setAreaM2(turf.area(polygon))
-        // Keep the polygon in Draw for visual reference; user can clear with "Rita ny yta"
       } else if (activeToolRef.current === 'spatial-search') {
-        // Move polygon from Draw to custom styled source
         setSourceData(map, 'search-area', turf.featureCollection([polygon]))
         draw.deleteAll()
         draw.changeMode('simple_select')
-
-        const hits = runIntersection(polygon)
-        setSpatialResults(hits)
+        setSpatialResults(runIntersection(polygon))
         setSearchPolygonDrawn(true)
       }
     }
 
     const onBufferClick = (e: mapboxgl.MapMouseEvent) => {
       const feats = map.queryRenderedFeatures(e.point, {
-        layers: ['fastigheter-fill', 'byggnader-circle'],
+        layers: ['fastigheter-fill', 'skyddsomraden-fill', 'beslut-circle'],
       })
       if (feats.length === 0) return
       const f = feats[0]
@@ -155,9 +174,7 @@ export function useMapTools(
       draw.changeMode('draw_polygon')
       map.on('draw.create', onDrawCreate as (e: object) => void)
     }
-    if (activeTool === 'buffer') {
-      map.on('click', onBufferClick)
-    }
+    if (activeTool === 'buffer') map.on('click', onBufferClick)
 
     return () => {
       map.getCanvas().style.cursor = ''
@@ -165,9 +182,7 @@ export function useMapTools(
       map.off('mousemove', onDistanceMouseMove)
       map.off('draw.create', onDrawCreate as (e: object) => void)
       map.off('click', onBufferClick)
-      if (activeTool === 'area' || activeTool === 'spatial-search') {
-        draw.changeMode('simple_select')
-      }
+      if (activeTool === 'area' || activeTool === 'spatial-search') draw.changeMode('simple_select')
     }
   }, [activeTool, mapRef, drawRef, isLoaded])
 
@@ -175,20 +190,17 @@ export function useMapTools(
   useEffect(() => {
     const map = mapRef.current
     if (!map || !map.getSource('measure-line')) return
-
     if (distancePoints.length >= 2) {
       setSourceData(map, 'measure-line', turf.lineString(distancePoints))
     } else {
       setSourceData(map, 'measure-line', EMPTY_FC)
       setSourceData(map, 'measure-preview', EMPTY_FC)
     }
-
-    if (distancePoints.length > 0) {
-      setSourceData(map, 'measure-points',
-        turf.featureCollection(distancePoints.map(p => turf.point(p))))
-    } else {
-      setSourceData(map, 'measure-points', EMPTY_FC)
-    }
+    setSourceData(map, 'measure-points',
+      distancePoints.length > 0
+        ? turf.featureCollection(distancePoints.map(p => turf.point(p)))
+        : EMPTY_FC,
+    )
   }, [distancePoints, mapRef])
 
   const distanceTotalM = useMemo(() => {
@@ -200,9 +212,7 @@ export function useMapTools(
     return allFeaturesRef.current.filter(item => {
       const geom = item.feature.geometry
       if (!geom) return false
-      if (geom.type === 'Point') {
-        return turf.booleanPointInPolygon(item.feature as Feature<Point>, polygon)
-      }
+      if (geom.type === 'Point') return turf.booleanPointInPolygon(item.feature as Feature<Point>, polygon)
       return turf.booleanIntersects(item.feature, polygon)
     })
   }
@@ -214,12 +224,10 @@ export function useMapTools(
 
   function selectTool(tool: ToolMode) {
     const next = activeTool === tool ? 'none' : tool
-
-    const map = mapRef.current
+    const map  = mapRef.current
     const draw = drawRef.current
     if (map) clearAllSources(map)
     if (draw) draw.deleteAll()
-
     setDistancePoints([])
     distancePointsRef.current = []
     setAreaM2(null)
@@ -230,9 +238,7 @@ export function useMapTools(
     setActiveTool(next)
   }
 
-  function undoLastPoint() {
-    setDistancePoints(prev => prev.slice(0, -1))
-  }
+  function undoLastPoint() { setDistancePoints(prev => prev.slice(0, -1)) }
 
   function newArea() {
     const draw = drawRef.current
@@ -241,9 +247,9 @@ export function useMapTools(
   }
 
   function clearSearch() {
-    const map = mapRef.current
+    const map  = mapRef.current
     const draw = drawRef.current
-    if (map) setSourceData(map, 'search-area', EMPTY_FC)
+    if (map)  setSourceData(map, 'search-area', EMPTY_FC)
     if (draw) draw.changeMode('draw_polygon')
     setSpatialResults([])
     setSearchPolygonDrawn(false)
@@ -254,17 +260,11 @@ export function useMapTools(
     const buffered = turf.buffer(bufferCenter, bufferRadiusM / 1000, { units: 'kilometers' })
     if (!buffered) return
     setSourceData(mapRef.current, 'buffer', buffered)
-
     const poly = buffered as Feature<Polygon | MultiPolygon>
     const hits = allFeaturesRef.current.filter(item => {
       const geom = item.feature.geometry
       if (!geom) return false
-      if (geom.type === 'Point') {
-        return turf.booleanPointInPolygon(
-          item.feature as Feature<Point>,
-          poly as Feature<Polygon>,
-        )
-      }
+      if (geom.type === 'Point') return turf.booleanPointInPolygon(item.feature as Feature<Point>, poly as Feature<Polygon>)
       return turf.booleanIntersects(item.feature, poly)
     })
     setBufferResults(hits)

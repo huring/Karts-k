@@ -3,6 +3,7 @@ import mapboxgl from 'mapbox-gl'
 import MapboxDraw from '@mapbox/mapbox-gl-draw'
 import * as turf from '@turf/turf'
 import type { Feature } from 'geojson'
+import { getBeslutFeatureById } from './useMapLayers'
 
 const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN as string
 
@@ -58,7 +59,13 @@ export function useMap(containerRef: React.RefObject<HTMLDivElement | null>) {
   function flyToFeature(feature: Feature) {
     const map = mapRef.current
     if (!map) return
-    const [minLng, minLat, maxLng, maxLat] = turf.bbox(feature)
+    // For beslut the selected feature has Point geometry (centroid) — look up the polygon for correct bounds
+    let target = feature
+    if (feature.properties?.feature_type === 'beslut' && feature.geometry?.type === 'Point') {
+      const polygon = getBeslutFeatureById(feature.properties.id as string)
+      if (polygon) target = polygon
+    }
+    const [minLng, minLat, maxLng, maxLat] = turf.bbox(target)
     map.fitBounds([[minLng, minLat], [maxLng, maxLat]], {
       padding: 80,
       maxZoom: 15,
