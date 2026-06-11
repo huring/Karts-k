@@ -8,11 +8,16 @@ import type {
   SkyddsomradeFeature,
   BeslutFeature,
   Byggnad,
+  Anlaggning,
+  Avtal,
 } from '../types'
 import { isFastighet, isSkyddsomrade, isBeslut } from '../types'
 import type { SelectedLayer } from '../hooks/useSelectedFeature'
 import { useSpatialRelations, useSpatialData, parseSoids } from '../hooks/useSpatialRelations'
 import { useBuildings } from '../hooks/useBuildings'
+import { useAnlaggningar } from '../hooks/useAnlaggningar'
+import { useAvtal } from '../hooks/useAvtal'
+import { useFastighetMeta } from '../hooks/useFastighetMeta'
 import { Badge, statusVariant, skickVariant } from './ui/Badge'
 import styles from './ObjectPanel.module.css'
 
@@ -61,7 +66,10 @@ export function ObjectPanel({ feature, layer, initialBuildingId, onClose, onFlyT
   )
   // Full data caches — for breadcrumb labels and navigation lookups
   const { skyddsomraden: allSkydds, beslut: allBeslut } = useSpatialData()
-  const buildings = useBuildings()
+  const buildings    = useBuildings()
+  const anlaggningar = useAnlaggningar()
+  const avtal        = useAvtal()
+  const fastighetMeta = useFastighetMeta()
 
   const current   = stack[stack.length - 1]
   const canGoBack = stack.length > 1
@@ -147,6 +155,15 @@ export function ObjectPanel({ feature, layer, initialBuildingId, onClose, onFlyT
             byggnader={isFastighet(feature)
               ? buildings.getByFastighetId((feature.properties as FastighetProperties).id)
               : []}
+            anlaggningar={isFastighet(feature)
+              ? anlaggningar.getByFastighetId((feature.properties as FastighetProperties).id)
+              : []}
+            avtal={isFastighet(feature)
+              ? avtal.getByFastighetId((feature.properties as FastighetProperties).id)
+              : []}
+            meta={isFastighet(feature)
+              ? fastighetMeta.getById((feature.properties as FastighetProperties).id)
+              : null}
             loading={loading}
             onNavigate={navigate}
             onFlyTo={onFlyTo}
@@ -202,12 +219,15 @@ interface FeatureContentProps {
   skyddsomraden: SkyddsomradeFeature[]
   beslut: BeslutFeature[]
   byggnader: Byggnad[]
+  anlaggningar: Anlaggning[]
+  avtal: Avtal[]
+  meta: import('../types').FastighetMeta | null
   loading: boolean
   onNavigate: (v: PanelView) => void
   onFlyTo: (feature: Feature) => void
 }
 
-function FeatureContent({ feature, layer, skyddsomraden, beslut, byggnader, loading, onNavigate, onFlyTo }: FeatureContentProps) {
+function FeatureContent({ feature, layer, skyddsomraden, beslut, byggnader, anlaggningar, avtal, meta, loading, onNavigate, onFlyTo }: FeatureContentProps) {
   if (isSkyddsomrade(feature)) {
     return <SkyddsomradeDetail feature={feature} allBeslut={[]} onNavigate={onNavigate} onFlyTo={onFlyTo} />
   }
@@ -220,7 +240,7 @@ function FeatureContent({ feature, layer, skyddsomraden, beslut, byggnader, load
   return (
     <>
       <PropList>
-        <FastighetRows p={feature.properties as FastighetProperties} />
+        <FastighetRows p={feature.properties as FastighetProperties} meta={meta} />
         {area !== null && (
           <PropRow label="Areal (beräknad)">
             <span className={styles.propWithIcon}>
@@ -246,6 +266,12 @@ function FeatureContent({ feature, layer, skyddsomraden, beslut, byggnader, load
       )}
       {byggnader.length > 0 && (
         <ByggnaderSection byggnader={byggnader} onNavigate={onNavigate} />
+      )}
+      {anlaggningar.length > 0 && (
+        <AnlaggningarSection anlaggningar={anlaggningar} />
+      )}
+      {avtal.length > 0 && (
+        <AvtalSection avtal={avtal} />
       )}
     </>
   )

@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import mapboxgl from 'mapbox-gl'
 import * as turf from '@turf/turf'
 import type { Feature, FeatureCollection } from 'geojson'
-import type { FastighetProperties, SkyddsomradeProperties, BeslutProperties } from '../types'
+import type { FastighetProperties, SkyddsomradeProperties, BeslutProperties, FastighetMeta } from '../types'
 import type { ObjectTypeKey, AttributeFilters } from './useFilters'
 
 export type SearchResultLayer = 'fastigheter' | 'skyddsomraden' | 'beslut' | 'byggnader'
@@ -35,6 +35,7 @@ function computeFilterOptions(items: SearchResult[]): FilterOptions {
     status: unique([
       ...items.filter(i => i.layer === 'skyddsomraden').map(i => (i.feature.properties as SkyddsomradeProperties).status),
       ...items.filter(i => i.layer === 'beslut').map(i => (i.feature.properties as BeslutProperties).status),
+      ...items.filter(i => i.layer === 'fastigheter').map(i => (i.feature.properties as FastighetProperties).status ?? ''),
     ]),
     skyddstyp:  unique(items.filter(i => i.layer === 'skyddsomraden').map(i => (i.feature.properties as SkyddsomradeProperties).skyddstyp)),
     kommunnamn: unique(items.filter(i => i.layer === 'fastigheter').map(i => (i.feature.properties as FastighetProperties).kommunnamn)),
@@ -73,11 +74,20 @@ export function useSearch(
       fetch('/data/skyddsomraden.geojson').then(r => r.json()),
       fetch('/data/beslut.geojson').then(r => r.json()),
       fetch('/data/byggnader.json').then(r => r.json()),
-    ]).then(([rawFast, rawSkydds, rawBeslut, rawByggnader]) => {
+      fetch('/data/fastigheter_meta.json').then(r => r.json()),
+    ]).then(([rawFast, rawSkydds, rawBeslut, rawByggnader, rawMeta]) => {
       const fast       = rawFast       as FeatureCollection
       const skydds     = rawSkydds     as FeatureCollection
       const beslut     = rawBeslut     as FeatureCollection
       const bgData     = rawByggnader  as { byggnader: Array<{ id: string; fastighets_id: string; namn: string; anvandning: string; skick: string }> }
+      const metaMap    = (rawMeta as { meta: Record<string, FastighetMeta> }).meta
+
+      // Merge meta fields into fastighet features so they're available for filtering
+      fast.features.forEach((f: Feature) => {
+        const id = (f.properties as FastighetProperties).id
+        const m = id ? metaMap[id] : null
+        if (m && f.properties) Object.assign(f.properties, m)
+      })
 
       // Build centroid lookup for placing building points
       const centroidById = new Map<string, [number, number]>()

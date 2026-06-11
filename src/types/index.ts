@@ -17,6 +17,11 @@ export type FastighetProperties = {
   _externid: string
   _objectid: number
   _source_file: string
+  // Merged from fastigheter_meta.json at load time
+  status?: string
+  lan?: string
+  uppdragstagare?: string
+  processstatus?: string | null
 }
 
 export type SkyddsomradeProperties = {
@@ -67,7 +72,7 @@ export type BeslutProperties = {
 
 // ── Byggnad (icke-geografisk, kopplad till fastighet) ─────────────────────────
 
-export type ByggnadSkick = 'Gott skick' | 'Åtgärdsbehov' | 'Kritiskt skick'
+export type ByggnadSkick = 'Bra' | 'Åtgärdsbehov' | 'Bristfällig'
 
 export type Byggnad = {
   id: string
@@ -78,6 +83,38 @@ export type Byggnad = {
   bild: string
   yta_m2?: number
   byggnad_ar?: number
+}
+
+// ── Anläggning (icke-geografisk, kopplad till fastighet) ──────────────────────
+
+export type Anlaggning = {
+  id: string
+  fastighets_id: string
+  namn: string
+  typ: string
+  skick: string
+  bild: string
+  ar?: number
+}
+
+// ── Avtal (kopplat till fastighet) ────────────────────────────────────────────
+
+export type Avtal = {
+  id: string
+  fastighets_id: string
+  typ: string
+  datum: string
+  belopp_kr: number
+  status: string
+}
+
+// ── FastighetMeta (laddas separat, ej i GeoJSON) ──────────────────────────────
+
+export type FastighetMeta = {
+  status: string
+  lan: string
+  uppdragstagare: string
+  processstatus: string | null
 }
 
 // ── Typed feature wrappers ────────────────────────────────────────────────────

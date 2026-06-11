@@ -5,7 +5,7 @@
       "fastighets_id": "909a6a7b-ade3-90ec-e040-ed8f66444c3f",
       "namn": "Ekonomibyggnad",
       "anvandning": "Besöksanläggning",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0001/600/300",
       "yta_m2": 93,
       "byggnad_ar": 1961
@@ -15,7 +15,7 @@
       "fastighets_id": "909a6a7b-ade3-90ec-e040-ed8f66444c3f",
       "namn": "Garage",
       "anvandning": "Kulturändamål",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0002/600/300",
       "yta_m2": 94,
       "byggnad_ar": 1962
@@ -55,7 +55,7 @@
       "fastighets_id": "909a6a7b-93be-90ec-e040-ed8f66444c3f",
       "namn": "Stall",
       "anvandning": "Teknisk anläggning",
-      "skick": "Kritiskt skick",
+      "skick": "Bristfällig",
       "bild": "https://picsum.photos/seed/BYG-0006/600/300",
       "yta_m2": 26,
       "byggnad_ar": 1968
@@ -65,7 +65,7 @@
       "fastighets_id": "909a6a7b-94ac-90ec-e040-ed8f66444c3f",
       "namn": "Förråd",
       "anvandning": "Lantbruk/stall",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0007/600/300",
       "yta_m2": 251,
       "byggnad_ar": 1974
@@ -75,7 +75,7 @@
       "fastighets_id": "909a6a7b-94ac-90ec-e040-ed8f66444c3f",
       "namn": "Garage",
       "anvandning": "Lantbruk/stall",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0008/600/300",
       "yta_m2": 250,
       "byggnad_ar": 1973
@@ -85,7 +85,7 @@
       "fastighets_id": "909a6a7c-9bbc-90ec-e040-ed8f66444c3f",
       "namn": "Villa",
       "anvandning": "Teknisk anläggning",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0009/600/300",
       "yta_m2": 259,
       "byggnad_ar": 2019
@@ -95,7 +95,7 @@
       "fastighets_id": "909a6a89-f845-90ec-e040-ed8f66444c3f",
       "namn": "Förråd",
       "anvandning": "Bostadsändamål",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0010/600/300",
       "yta_m2": 439,
       "byggnad_ar": 1953
@@ -105,7 +105,7 @@
       "fastighets_id": "909a6a89-f845-90ec-e040-ed8f66444c3f",
       "namn": "Garage",
       "anvandning": "Bostadsändamål",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0011/600/300",
       "yta_m2": 438,
       "byggnad_ar": 1952
@@ -115,7 +115,7 @@
       "fastighets_id": "909a6a8a-019e-90ec-e040-ed8f66444c3f",
       "namn": "Förråd",
       "anvandning": "Kontor/administration",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0012/600/300",
       "yta_m2": 388,
       "byggnad_ar": 2001
@@ -125,7 +125,7 @@
       "fastighets_id": "909a6a8a-019e-90ec-e040-ed8f66444c3f",
       "namn": "Lada",
       "anvandning": "Kontor/administration",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0013/600/300",
       "yta_m2": 389,
       "byggnad_ar": 2002
@@ -135,7 +135,7 @@
       "fastighets_id": "909a6a8a-019e-90ec-e040-ed8f66444c3f",
       "namn": "Stall",
       "anvandning": "Kontor/administration",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0014/600/300",
       "yta_m2": 390,
       "byggnad_ar": 2003
@@ -165,7 +165,7 @@
       "fastighets_id": "909a6a89-d4f9-90ec-e040-ed8f66444c3f",
       "namn": "Ekonomibyggnad",
       "anvandning": "Kontor/administration",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0017/600/300",
       "yta_m2": 205,
       "byggnad_ar": 2002
@@ -175,7 +175,7 @@
       "fastighets_id": "909a6a88-3d7b-90ec-e040-ed8f66444c3f",
       "namn": "Redskapsbod",
       "anvandning": "Industriell verksamhet",
-      "skick": "Kritiskt skick",
+      "skick": "Bristfällig",
       "bild": "https://picsum.photos/seed/BYG-0018/600/300",
       "yta_m2": 236,
       "byggnad_ar": 1976
@@ -185,7 +185,7 @@
       "fastighets_id": "909a6a88-3d7b-90ec-e040-ed8f66444c3f",
       "namn": "Maskinhall",
       "anvandning": "Industriell verksamhet",
-      "skick": "Kritiskt skick",
+      "skick": "Bristfällig",
       "bild": "https://picsum.photos/seed/BYG-0019/600/300",
       "yta_m2": 235,
       "byggnad_ar": 1975
@@ -195,7 +195,7 @@
       "fastighets_id": "909a6a88-406d-90ec-e040-ed8f66444c3f",
       "namn": "Ekonomibyggnad",
       "anvandning": "Kulturändamål",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0020/600/300",
       "yta_m2": 259,
       "byggnad_ar": 1952
@@ -205,7 +205,7 @@
       "fastighets_id": "909a6a88-406d-90ec-e040-ed8f66444c3f",
       "namn": "Garage",
       "anvandning": "Kulturändamål",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0021/600/300",
       "yta_m2": 260,
       "byggnad_ar": 1953
@@ -215,7 +215,7 @@
       "fastighets_id": "909a6a88-406d-90ec-e040-ed8f66444c3f",
       "namn": "Förråd",
       "anvandning": "Kulturändamål",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0022/600/300",
       "yta_m2": 261,
       "byggnad_ar": 1954
@@ -225,7 +225,7 @@
       "fastighets_id": "909a6a88-407e-90ec-e040-ed8f66444c3f",
       "namn": "Förråd",
       "anvandning": "Besöksanläggning",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0023/600/300",
       "yta_m2": 406,
       "byggnad_ar": 1922
@@ -255,7 +255,7 @@
       "fastighets_id": "909a6a8a-c09c-90ec-e040-ed8f66444c3f",
       "namn": "Förråd",
       "anvandning": "Kontor/administration",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0026/600/300",
       "yta_m2": 479,
       "byggnad_ar": 2015
@@ -265,7 +265,7 @@
       "fastighets_id": "909a6a88-3e97-90ec-e040-ed8f66444c3f",
       "namn": "Stall",
       "anvandning": "Bostadsändamål",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0027/600/300",
       "yta_m2": 395,
       "byggnad_ar": 1947
@@ -295,7 +295,7 @@
       "fastighets_id": "909a6a88-3dfa-90ec-e040-ed8f66444c3f",
       "namn": "Stall",
       "anvandning": "Besöksanläggning",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0030/600/300",
       "yta_m2": 218,
       "byggnad_ar": 1960
@@ -305,7 +305,7 @@
       "fastighets_id": "909a6a88-3dfa-90ec-e040-ed8f66444c3f",
       "namn": "Lada",
       "anvandning": "Besöksanläggning",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0031/600/300",
       "yta_m2": 217,
       "byggnad_ar": 1959
@@ -315,7 +315,7 @@
       "fastighets_id": "909a6a88-3dfa-90ec-e040-ed8f66444c3f",
       "namn": "Förråd",
       "anvandning": "Besöksanläggning",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0032/600/300",
       "yta_m2": 216,
       "byggnad_ar": 1958
@@ -355,7 +355,7 @@
       "fastighets_id": "909a6a88-3e3c-90ec-e040-ed8f66444c3f",
       "namn": "Verkstadsbyggnad",
       "anvandning": "Lager/förråd",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0036/600/300",
       "yta_m2": 224,
       "byggnad_ar": 1924
@@ -365,7 +365,7 @@
       "fastighets_id": "909a6a88-3e57-90ec-e040-ed8f66444c3f",
       "namn": "Ekonomibyggnad",
       "anvandning": "Bostadsändamål",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0037/600/300",
       "yta_m2": 382,
       "byggnad_ar": 1968
@@ -385,7 +385,7 @@
       "fastighets_id": "909a6a88-3e4f-90ec-e040-ed8f66444c3f",
       "namn": "Villa",
       "anvandning": "Kontor/administration",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0039/600/300",
       "yta_m2": 52,
       "byggnad_ar": 1990
@@ -405,7 +405,7 @@
       "fastighets_id": "909a6a88-3e3e-90ec-e040-ed8f66444c3f",
       "namn": "Stall",
       "anvandning": "Lager/förråd",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0041/600/300",
       "yta_m2": 295,
       "byggnad_ar": 1985
@@ -415,7 +415,7 @@
       "fastighets_id": "909a6a88-3e3e-90ec-e040-ed8f66444c3f",
       "namn": "Lada",
       "anvandning": "Lager/förråd",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0042/600/300",
       "yta_m2": 294,
       "byggnad_ar": 1984
@@ -425,7 +425,7 @@
       "fastighets_id": "909a6a88-3e17-90ec-e040-ed8f66444c3f",
       "namn": "Redskapsbod",
       "anvandning": "Teknisk anläggning",
-      "skick": "Kritiskt skick",
+      "skick": "Bristfällig",
       "bild": "https://picsum.photos/seed/BYG-0043/600/300",
       "yta_m2": 369,
       "byggnad_ar": 1989
@@ -455,7 +455,7 @@
       "fastighets_id": "909a6a88-3e4b-90ec-e040-ed8f66444c3f",
       "namn": "Verkstadsbyggnad",
       "anvandning": "Kontor/administration",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0046/600/300",
       "yta_m2": 194,
       "byggnad_ar": 2011
@@ -465,7 +465,7 @@
       "fastighets_id": "909a6a88-3e4b-90ec-e040-ed8f66444c3f",
       "namn": "Maskinhall",
       "anvandning": "Kontor/administration",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0047/600/300",
       "yta_m2": 195,
       "byggnad_ar": 2012
@@ -475,7 +475,7 @@
       "fastighets_id": "909a6a88-3e4b-90ec-e040-ed8f66444c3f",
       "namn": "Redskapsbod",
       "anvandning": "Kontor/administration",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0048/600/300",
       "yta_m2": 196,
       "byggnad_ar": 2013
@@ -525,7 +525,7 @@
       "fastighets_id": "909a6a88-3e91-90ec-e040-ed8f66444c3f",
       "namn": "Villa",
       "anvandning": "Kontor/administration",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0053/600/300",
       "yta_m2": 182,
       "byggnad_ar": 1966
@@ -535,7 +535,7 @@
       "fastighets_id": "909a6a88-3e91-90ec-e040-ed8f66444c3f",
       "namn": "Huvudbyggnad",
       "anvandning": "Kontor/administration",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0054/600/300",
       "yta_m2": 181,
       "byggnad_ar": 1965
@@ -545,7 +545,7 @@
       "fastighets_id": "909a6a88-3ebd-90ec-e040-ed8f66444c3f",
       "namn": "Villa",
       "anvandning": "Industriell verksamhet",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0055/600/300",
       "yta_m2": 214,
       "byggnad_ar": 1939
@@ -555,7 +555,7 @@
       "fastighets_id": "909a6a88-3ebd-90ec-e040-ed8f66444c3f",
       "namn": "Fritidshus",
       "anvandning": "Industriell verksamhet",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0056/600/300",
       "yta_m2": 215,
       "byggnad_ar": 1940
@@ -565,7 +565,7 @@
       "fastighets_id": "909a6a88-3ec5-90ec-e040-ed8f66444c3f",
       "namn": "Verkstadsbyggnad",
       "anvandning": "Kontor/administration",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0057/600/300",
       "yta_m2": 301,
       "byggnad_ar": 1922
@@ -585,7 +585,7 @@
       "fastighets_id": "909a6a88-3ea7-90ec-e040-ed8f66444c3f",
       "namn": "Villa",
       "anvandning": "Lager/förråd",
-      "skick": "Kritiskt skick",
+      "skick": "Bristfällig",
       "bild": "https://picsum.photos/seed/BYG-0059/600/300",
       "yta_m2": 477,
       "byggnad_ar": 2002
@@ -595,7 +595,7 @@
       "fastighets_id": "909a6a88-3ea7-90ec-e040-ed8f66444c3f",
       "namn": "Fritidshus",
       "anvandning": "Lager/förråd",
-      "skick": "Kritiskt skick",
+      "skick": "Bristfällig",
       "bild": "https://picsum.photos/seed/BYG-0060/600/300",
       "yta_m2": 478,
       "byggnad_ar": 2003
@@ -605,7 +605,7 @@
       "fastighets_id": "909a6a88-3ea7-90ec-e040-ed8f66444c3f",
       "namn": "Ekonomibyggnad",
       "anvandning": "Lager/förråd",
-      "skick": "Kritiskt skick",
+      "skick": "Bristfällig",
       "bild": "https://picsum.photos/seed/BYG-0061/600/300",
       "yta_m2": 479,
       "byggnad_ar": 2004
@@ -615,7 +615,7 @@
       "fastighets_id": "909a6a88-3dcb-90ec-e040-ed8f66444c3f",
       "namn": "Förråd",
       "anvandning": "Teknisk anläggning",
-      "skick": "Kritiskt skick",
+      "skick": "Bristfällig",
       "bild": "https://picsum.photos/seed/BYG-0062/600/300",
       "yta_m2": 142,
       "byggnad_ar": 1994
@@ -625,7 +625,7 @@
       "fastighets_id": "909a6a88-3dcb-90ec-e040-ed8f66444c3f",
       "namn": "Lada",
       "anvandning": "Teknisk anläggning",
-      "skick": "Kritiskt skick",
+      "skick": "Bristfällig",
       "bild": "https://picsum.photos/seed/BYG-0063/600/300",
       "yta_m2": 143,
       "byggnad_ar": 1995
@@ -635,7 +635,7 @@
       "fastighets_id": "909a6a88-3dcb-90ec-e040-ed8f66444c3f",
       "namn": "Stall",
       "anvandning": "Teknisk anläggning",
-      "skick": "Kritiskt skick",
+      "skick": "Bristfällig",
       "bild": "https://picsum.photos/seed/BYG-0064/600/300",
       "yta_m2": 144,
       "byggnad_ar": 1996
@@ -645,7 +645,7 @@
       "fastighets_id": "909a6a88-3e51-90ec-e040-ed8f66444c3f",
       "namn": "Verkstadsbyggnad",
       "anvandning": "Kontor/administration",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0065/600/300",
       "yta_m2": 169,
       "byggnad_ar": 1987
@@ -655,7 +655,7 @@
       "fastighets_id": "909a6a88-3e51-90ec-e040-ed8f66444c3f",
       "namn": "Kontorsbyggnad",
       "anvandning": "Kontor/administration",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0066/600/300",
       "yta_m2": 168,
       "byggnad_ar": 1986
@@ -665,7 +665,7 @@
       "fastighets_id": "909a6a88-3e15-90ec-e040-ed8f66444c3f",
       "namn": "Villa",
       "anvandning": "Bostadsändamål",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0067/600/300",
       "yta_m2": 298,
       "byggnad_ar": 1928
@@ -675,7 +675,7 @@
       "fastighets_id": "909a6a88-3e15-90ec-e040-ed8f66444c3f",
       "namn": "Huvudbyggnad",
       "anvandning": "Bostadsändamål",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0068/600/300",
       "yta_m2": 297,
       "byggnad_ar": 1927
@@ -685,7 +685,7 @@
       "fastighets_id": "909a6a88-3e53-90ec-e040-ed8f66444c3f",
       "namn": "Stall",
       "anvandning": "Bostadsändamål",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0069/600/300",
       "yta_m2": 240,
       "byggnad_ar": 1947
@@ -695,7 +695,7 @@
       "fastighets_id": "909a6a88-3e13-90ec-e040-ed8f66444c3f",
       "namn": "Ekonomibyggnad",
       "anvandning": "Bostadsändamål",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0070/600/300",
       "yta_m2": 227,
       "byggnad_ar": 1968
@@ -705,7 +705,7 @@
       "fastighets_id": "909a6a88-3e11-90ec-e040-ed8f66444c3f",
       "namn": "Förråd",
       "anvandning": "Bostadsändamål",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0071/600/300",
       "yta_m2": 156,
       "byggnad_ar": 2008
@@ -715,7 +715,7 @@
       "fastighets_id": "909a6a88-3e11-90ec-e040-ed8f66444c3f",
       "namn": "Garage",
       "anvandning": "Bostadsändamål",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0072/600/300",
       "yta_m2": 155,
       "byggnad_ar": 2007
@@ -725,7 +725,7 @@
       "fastighets_id": "909a6a88-3f7b-90ec-e040-ed8f66444c3f",
       "namn": "Redskapsbod",
       "anvandning": "Lantbruk/stall",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0073/600/300",
       "yta_m2": 324,
       "byggnad_ar": 1937
@@ -735,7 +735,7 @@
       "fastighets_id": "909a6a88-3ebb-90ec-e040-ed8f66444c3f",
       "namn": "Redskapsbod",
       "anvandning": "Industriell verksamhet",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0074/600/300",
       "yta_m2": 285,
       "byggnad_ar": 2000
@@ -745,7 +745,7 @@
       "fastighets_id": "909a6a88-3cdb-90ec-e040-ed8f66444c3f",
       "namn": "Villa",
       "anvandning": "Besöksanläggning",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0075/600/300",
       "yta_m2": 41,
       "byggnad_ar": 1953
@@ -755,7 +755,7 @@
       "fastighets_id": "909a6a88-3cdb-90ec-e040-ed8f66444c3f",
       "namn": "Huvudbyggnad",
       "anvandning": "Besöksanläggning",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0076/600/300",
       "yta_m2": 40,
       "byggnad_ar": 1952
@@ -785,7 +785,7 @@
       "fastighets_id": "909a6a88-3de0-90ec-e040-ed8f66444c3f",
       "namn": "Förråd",
       "anvandning": "Bostadsändamål",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0079/600/300",
       "yta_m2": 197,
       "byggnad_ar": 1931
@@ -795,7 +795,7 @@
       "fastighets_id": "909a6a88-3de0-90ec-e040-ed8f66444c3f",
       "namn": "Lada",
       "anvandning": "Bostadsändamål",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0080/600/300",
       "yta_m2": 198,
       "byggnad_ar": 1932
@@ -855,7 +855,7 @@
       "fastighets_id": "909a6a88-3dba-90ec-e040-ed8f66444c3f",
       "namn": "Ekonomibyggnad",
       "anvandning": "Lantbruk/stall",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0086/600/300",
       "yta_m2": 205,
       "byggnad_ar": 1981
@@ -865,7 +865,7 @@
       "fastighets_id": "909a6a88-3dba-90ec-e040-ed8f66444c3f",
       "namn": "Fritidshus",
       "anvandning": "Lantbruk/stall",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0087/600/300",
       "yta_m2": 204,
       "byggnad_ar": 1980
@@ -875,7 +875,7 @@
       "fastighets_id": "909a6a88-3f94-90ec-e040-ed8f66444c3f",
       "namn": "Villa",
       "anvandning": "Kontor/administration",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0088/600/300",
       "yta_m2": 254,
       "byggnad_ar": 1954
@@ -905,7 +905,7 @@
       "fastighets_id": "909a6a88-3f96-90ec-e040-ed8f66444c3f",
       "namn": "Redskapsbod",
       "anvandning": "Bostadsändamål",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0091/600/300",
       "yta_m2": 325,
       "byggnad_ar": 2015
@@ -915,7 +915,7 @@
       "fastighets_id": "909a6a88-3cc1-90ec-e040-ed8f66444c3f",
       "namn": "Förråd",
       "anvandning": "Teknisk anläggning",
-      "skick": "Kritiskt skick",
+      "skick": "Bristfällig",
       "bild": "https://picsum.photos/seed/BYG-0092/600/300",
       "yta_m2": 117,
       "byggnad_ar": 1970
@@ -925,7 +925,7 @@
       "fastighets_id": "909a6a88-3cc1-90ec-e040-ed8f66444c3f",
       "namn": "Garage",
       "anvandning": "Teknisk anläggning",
-      "skick": "Kritiskt skick",
+      "skick": "Bristfällig",
       "bild": "https://picsum.photos/seed/BYG-0093/600/300",
       "yta_m2": 116,
       "byggnad_ar": 1969
@@ -955,7 +955,7 @@
       "fastighets_id": "909a6a88-3ed4-90ec-e040-ed8f66444c3f",
       "namn": "Villa",
       "anvandning": "Lager/förråd",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0096/600/300",
       "yta_m2": 293,
       "byggnad_ar": 1992
@@ -985,7 +985,7 @@
       "fastighets_id": "909a6a8a-ac7d-90ec-e040-ed8f66444c3f",
       "namn": "Stall",
       "anvandning": "Besöksanläggning",
-      "skick": "Kritiskt skick",
+      "skick": "Bristfällig",
       "bild": "https://picsum.photos/seed/BYG-0099/600/300",
       "yta_m2": 445,
       "byggnad_ar": 2007
@@ -1005,7 +1005,7 @@
       "fastighets_id": "909a6a88-3dad-90ec-e040-ed8f66444c3f",
       "namn": "Verkstadsbyggnad",
       "anvandning": "Teknisk anläggning",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0101/600/300",
       "yta_m2": 318,
       "byggnad_ar": 1973
@@ -1015,7 +1015,7 @@
       "fastighets_id": "909a6a88-3dad-90ec-e040-ed8f66444c3f",
       "namn": "Maskinhall",
       "anvandning": "Teknisk anläggning",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0102/600/300",
       "yta_m2": 319,
       "byggnad_ar": 1974
@@ -1055,7 +1055,7 @@
       "fastighets_id": "909a6a8a-ae18-90ec-e040-ed8f66444c3f",
       "namn": "Verkstadsbyggnad",
       "anvandning": "Kulturändamål",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0106/600/300",
       "yta_m2": 139,
       "byggnad_ar": 2015
@@ -1065,7 +1065,7 @@
       "fastighets_id": "909a6a8a-ae18-90ec-e040-ed8f66444c3f",
       "namn": "Kontorsbyggnad",
       "anvandning": "Kulturändamål",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0107/600/300",
       "yta_m2": 138,
       "byggnad_ar": 2014
@@ -1075,7 +1075,7 @@
       "fastighets_id": "909a6a8a-ae18-90ec-e040-ed8f66444c3f",
       "namn": "Stall",
       "anvandning": "Kulturändamål",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0108/600/300",
       "yta_m2": 137,
       "byggnad_ar": 2013
@@ -1105,7 +1105,7 @@
       "fastighets_id": "909a6a88-3e0d-90ec-e040-ed8f66444c3f",
       "namn": "Ekonomibyggnad",
       "anvandning": "Kontor/administration",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0111/600/300",
       "yta_m2": 136,
       "byggnad_ar": 1929
@@ -1115,7 +1115,7 @@
       "fastighets_id": "909a6a88-3e0d-90ec-e040-ed8f66444c3f",
       "namn": "Garage",
       "anvandning": "Lager/förråd",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0112/600/300",
       "yta_m2": 137,
       "byggnad_ar": 1930
@@ -1125,7 +1125,7 @@
       "fastighets_id": "909a6a88-3cbb-90ec-e040-ed8f66444c3f",
       "namn": "Redskapsbod",
       "anvandning": "Lantbruk/stall",
-      "skick": "Kritiskt skick",
+      "skick": "Bristfällig",
       "bild": "https://picsum.photos/seed/BYG-0113/600/300",
       "yta_m2": 275,
       "byggnad_ar": 2014
@@ -1135,7 +1135,7 @@
       "fastighets_id": "909a6a88-3cbb-90ec-e040-ed8f66444c3f",
       "namn": "Maskinhall",
       "anvandning": "Lantbruk/stall",
-      "skick": "Kritiskt skick",
+      "skick": "Bristfällig",
       "bild": "https://picsum.photos/seed/BYG-0114/600/300",
       "yta_m2": 274,
       "byggnad_ar": 2013
@@ -1145,7 +1145,7 @@
       "fastighets_id": "909a6a89-1ed9-90ec-e040-ed8f66444c3f",
       "namn": "Förråd",
       "anvandning": "Lager/förråd",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0115/600/300",
       "yta_m2": 211,
       "byggnad_ar": 1970
@@ -1155,7 +1155,7 @@
       "fastighets_id": "909a6a89-1ed9-90ec-e040-ed8f66444c3f",
       "namn": "Lada",
       "anvandning": "Lager/förråd",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0116/600/300",
       "yta_m2": 212,
       "byggnad_ar": 1971
@@ -1165,7 +1165,7 @@
       "fastighets_id": "909a6a89-1ed9-90ec-e040-ed8f66444c3f",
       "namn": "Stall",
       "anvandning": "Lager/förråd",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0117/600/300",
       "yta_m2": 213,
       "byggnad_ar": 1972
@@ -1175,7 +1175,7 @@
       "fastighets_id": "909a6a88-406f-90ec-e040-ed8f66444c3f",
       "namn": "Förråd",
       "anvandning": "Kulturändamål",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0118/600/300",
       "yta_m2": 188,
       "byggnad_ar": 1992
@@ -1185,7 +1185,7 @@
       "fastighets_id": "909a6a88-406f-90ec-e040-ed8f66444c3f",
       "namn": "Lada",
       "anvandning": "Kulturändamål",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0119/600/300",
       "yta_m2": 189,
       "byggnad_ar": 1993
@@ -1195,7 +1195,7 @@
       "fastighets_id": "909a6a88-3e0f-90ec-e040-ed8f66444c3f",
       "namn": "Förråd",
       "anvandning": "Lager/förråd",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0120/600/300",
       "yta_m2": 65,
       "byggnad_ar": 1969
@@ -1205,7 +1205,7 @@
       "fastighets_id": "909a6a88-3e0b-90ec-e040-ed8f66444c3f",
       "namn": "Redskapsbod",
       "anvandning": "Kulturändamål",
-      "skick": "Kritiskt skick",
+      "skick": "Bristfällig",
       "bild": "https://picsum.photos/seed/BYG-0121/600/300",
       "yta_m2": 314,
       "byggnad_ar": 1951
@@ -1215,7 +1215,7 @@
       "fastighets_id": "909a6a88-3e0b-90ec-e040-ed8f66444c3f",
       "namn": "Maskinhall",
       "anvandning": "Kulturändamål",
-      "skick": "Kritiskt skick",
+      "skick": "Bristfällig",
       "bild": "https://picsum.photos/seed/BYG-0122/600/300",
       "yta_m2": 313,
       "byggnad_ar": 1950
@@ -1225,7 +1225,7 @@
       "fastighets_id": "909a6a88-3e0b-90ec-e040-ed8f66444c3f",
       "namn": "Verkstadsbyggnad",
       "anvandning": "Kulturändamål",
-      "skick": "Kritiskt skick",
+      "skick": "Bristfällig",
       "bild": "https://picsum.photos/seed/BYG-0123/600/300",
       "yta_m2": 312,
       "byggnad_ar": 1949
@@ -1255,7 +1255,7 @@
       "fastighets_id": "909a6a88-3f87-90ec-e040-ed8f66444c3f",
       "namn": "Redskapsbod",
       "anvandning": "Industriell verksamhet",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0126/600/300",
       "yta_m2": 269,
       "byggnad_ar": 2000
@@ -1265,7 +1265,7 @@
       "fastighets_id": "909a6a88-3f87-90ec-e040-ed8f66444c3f",
       "namn": "Huvudbyggnad",
       "anvandning": "Industriell verksamhet",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0127/600/300",
       "yta_m2": 270,
       "byggnad_ar": 2001
@@ -1285,7 +1285,7 @@
       "fastighets_id": "909a6a88-3ec7-90ec-e040-ed8f66444c3f",
       "namn": "Redskapsbod",
       "anvandning": "Kontor/administration",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0129/600/300",
       "yta_m2": 230,
       "byggnad_ar": 1962
@@ -1295,7 +1295,7 @@
       "fastighets_id": "909a6a88-3ec7-90ec-e040-ed8f66444c3f",
       "namn": "Huvudbyggnad",
       "anvandning": "Lager/förråd",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0130/600/300",
       "yta_m2": 231,
       "byggnad_ar": 1963
@@ -1305,7 +1305,7 @@
       "fastighets_id": "909a6a88-3ec7-90ec-e040-ed8f66444c3f",
       "namn": "Villa",
       "anvandning": "Lager/förråd",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0131/600/300",
       "yta_m2": 232,
       "byggnad_ar": 1964
@@ -1335,7 +1335,7 @@
       "fastighets_id": "909a6a88-3ec1-90ec-e040-ed8f66444c3f",
       "namn": "Förråd",
       "anvandning": "Kontor/administration",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0134/600/300",
       "yta_m2": 443,
       "byggnad_ar": 1943
@@ -1365,7 +1365,7 @@
       "fastighets_id": "909a6a88-3e4d-90ec-e040-ed8f66444c3f",
       "namn": "Redskapsbod",
       "anvandning": "Kontor/administration",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0137/600/300",
       "yta_m2": 123,
       "byggnad_ar": 1950
@@ -1375,7 +1375,7 @@
       "fastighets_id": "909a6a88-3e4d-90ec-e040-ed8f66444c3f",
       "namn": "Huvudbyggnad",
       "anvandning": "Kontor/administration",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0138/600/300",
       "yta_m2": 124,
       "byggnad_ar": 1951
@@ -1405,7 +1405,7 @@
       "fastighets_id": "909a6a88-3e59-90ec-e040-ed8f66444c3f",
       "namn": "Villa",
       "anvandning": "Bostadsändamål",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0141/600/300",
       "yta_m2": 453,
       "byggnad_ar": 1928
@@ -1415,7 +1415,7 @@
       "fastighets_id": "909a6a88-3e59-90ec-e040-ed8f66444c3f",
       "namn": "Huvudbyggnad",
       "anvandning": "Bostadsändamål",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0142/600/300",
       "yta_m2": 452,
       "byggnad_ar": 1927
@@ -1425,7 +1425,7 @@
       "fastighets_id": "909a6a88-3e59-90ec-e040-ed8f66444c3f",
       "namn": "Redskapsbod",
       "anvandning": "Teknisk anläggning",
-      "skick": "Kritiskt skick",
+      "skick": "Bristfällig",
       "bild": "https://picsum.photos/seed/BYG-0143/600/300",
       "yta_m2": 451,
       "byggnad_ar": 1926
@@ -1475,7 +1475,7 @@
       "fastighets_id": "909a6a88-3e55-90ec-e040-ed8f66444c3f",
       "namn": "Förråd",
       "anvandning": "Bostadsändamål",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0148/600/300",
       "yta_m2": 311,
       "byggnad_ar": 2008
@@ -1485,7 +1485,7 @@
       "fastighets_id": "909a6a88-3e55-90ec-e040-ed8f66444c3f",
       "namn": "Garage",
       "anvandning": "Bostadsändamål",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0149/600/300",
       "yta_m2": 310,
       "byggnad_ar": 2007
@@ -1545,7 +1545,7 @@
       "fastighets_id": "909a6a89-ba2d-90ec-e040-ed8f66444c3f",
       "namn": "Verkstadsbyggnad",
       "anvandning": "Industriell verksamhet",
-      "skick": "Kritiskt skick",
+      "skick": "Bristfällig",
       "bild": "https://picsum.photos/seed/BYG-0155/600/300",
       "yta_m2": 335,
       "byggnad_ar": 1954
@@ -1575,7 +1575,7 @@
       "fastighets_id": "909a6a89-d494-90ec-e040-ed8f66444c3f",
       "namn": "Ekonomibyggnad",
       "anvandning": "Lager/förråd",
-      "skick": "Kritiskt skick",
+      "skick": "Bristfällig",
       "bild": "https://picsum.photos/seed/BYG-0158/600/300",
       "yta_m2": 153,
       "byggnad_ar": 1927
@@ -1605,7 +1605,7 @@
       "fastighets_id": "e42c6f56-3159-4912-9d02-96b6e02f2168",
       "namn": "Villa",
       "anvandning": "Besöksanläggning",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0161/600/300",
       "yta_m2": 268,
       "byggnad_ar": 1921
@@ -1615,7 +1615,7 @@
       "fastighets_id": "e42c6f56-3159-4912-9d02-96b6e02f2168",
       "namn": "Huvudbyggnad",
       "anvandning": "Besöksanläggning",
-      "skick": "Gott skick",
+      "skick": "Bra",
       "bild": "https://picsum.photos/seed/BYG-0162/600/300",
       "yta_m2": 267,
       "byggnad_ar": 1920

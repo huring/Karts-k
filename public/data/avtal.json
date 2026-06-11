@@ -1,0 +1,4324 @@
+{
+  "avtal": [
+    {
+      "id": "AVT-0001",
+      "fastighets_id": "909a6a7b-ade3-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2020-02-15",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0002",
+      "fastighets_id": "909a6a7b-ade3-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2020-02-15",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0003",
+      "fastighets_id": "909a6a7b-ade3-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2020-02-15",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0004",
+      "fastighets_id": "bbbf06f4-5d5a-43ce-96a4-9e827db389c8",
+      "typ": "Vägservitut",
+      "datum": "2013-09-03",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0005",
+      "fastighets_id": "bbbf06f4-5d5a-43ce-96a4-9e827db389c8",
+      "typ": "Vägservitut",
+      "datum": "2013-09-03",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0006",
+      "fastighets_id": "bbbf06f4-5d5a-43ce-96a4-9e827db389c8",
+      "typ": "Vägservitut",
+      "datum": "2013-09-03",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0007",
+      "fastighets_id": "909a6a7b-94a8-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2023-04-20",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0008",
+      "fastighets_id": "909a6a7b-94a1-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2013-09-02",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0009",
+      "fastighets_id": "909a6a7b-94a1-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2013-09-02",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0010",
+      "fastighets_id": "07ccf1f8-9208-6341-e053-7e44ed8fe247",
+      "typ": "Arrende",
+      "datum": "2023-04-20",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0011",
+      "fastighets_id": "07ccf1f8-9208-6341-e053-7e44ed8fe247",
+      "typ": "Arrende",
+      "datum": "2023-04-20",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0012",
+      "fastighets_id": "07ccf1f8-9208-6341-e053-7e44ed8fe247",
+      "typ": "Arrende",
+      "datum": "2023-04-20",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0013",
+      "fastighets_id": "07ccf1f8-9208-6341-e053-7e44ed8fe247",
+      "typ": "Arrende",
+      "datum": "2023-04-20",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0014",
+      "fastighets_id": "909a6a7b-93ec-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2023-04-20",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0015",
+      "fastighets_id": "909a6a7b-93ec-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2023-04-20",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0016",
+      "fastighets_id": "909a6a7b-93ec-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2023-04-20",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0017",
+      "fastighets_id": "909a6a7c-aba3-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2012-08-01",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0018",
+      "fastighets_id": "909a6a7c-aba3-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2012-08-01",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0019",
+      "fastighets_id": "909a6a7c-aba3-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2012-08-01",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0020",
+      "fastighets_id": "909a6a7c-aba3-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2012-08-01",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0021",
+      "fastighets_id": "07ccf1f8-9209-6341-e053-7e44ed8fe247",
+      "typ": "Markersättningsavtal",
+      "datum": "2015-10-06",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0022",
+      "fastighets_id": "07ccf1f8-9209-6341-e053-7e44ed8fe247",
+      "typ": "Markersättningsavtal",
+      "datum": "2015-10-06",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0023",
+      "fastighets_id": "07ccf1f8-9209-6341-e053-7e44ed8fe247",
+      "typ": "Markersättningsavtal",
+      "datum": "2015-10-06",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0024",
+      "fastighets_id": "07ccf1f8-9209-6341-e053-7e44ed8fe247",
+      "typ": "Markersättningsavtal",
+      "datum": "2015-10-06",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0025",
+      "fastighets_id": "909a6a7b-94bd-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2019-01-12",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0026",
+      "fastighets_id": "909a6a7b-94bd-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2019-01-12",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0027",
+      "fastighets_id": "909a6a7b-94bd-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2019-01-12",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0028",
+      "fastighets_id": "909a6a7b-94bd-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2019-01-12",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0029",
+      "fastighets_id": "909a6a7b-94bd-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2019-01-12",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0030",
+      "fastighets_id": "909a6a7b-93be-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2023-04-20",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0031",
+      "fastighets_id": "909a6a7b-93be-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2023-04-20",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0032",
+      "fastighets_id": "909a6a7b-93be-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2023-04-20",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0033",
+      "fastighets_id": "909a6a7b-93be-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2023-04-20",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0034",
+      "fastighets_id": "909a6a7b-93be-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2023-04-20",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0035",
+      "fastighets_id": "909a6a7b-94ac-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-25",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0036",
+      "fastighets_id": "909a6a7b-94ac-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-25",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0037",
+      "fastighets_id": "909a6a7b-94ac-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-25",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0038",
+      "fastighets_id": "909a6a7c-9bbc-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2015-10-06",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0039",
+      "fastighets_id": "909a6a7c-9bbc-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2015-10-06",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0040",
+      "fastighets_id": "909a6a7c-9bbc-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2015-10-06",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0041",
+      "fastighets_id": "909a6a89-f845-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2012-08-01",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0042",
+      "fastighets_id": "909a6a89-f845-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2012-08-01",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0043",
+      "fastighets_id": "909a6a89-f845-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2012-08-01",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0044",
+      "fastighets_id": "909a6a8a-019e-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2021-03-16",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0045",
+      "fastighets_id": "909a6a8a-019e-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2021-03-16",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0046",
+      "fastighets_id": "909a6a8a-019e-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2021-03-16",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0047",
+      "fastighets_id": "909a6a8a-070b-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2017-12-09",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0048",
+      "fastighets_id": "909a6a8a-0196-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2017-12-09",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0049",
+      "fastighets_id": "909a6a8a-0196-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2017-12-09",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0050",
+      "fastighets_id": "909a6a8a-070c-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2008-06-23",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0051",
+      "fastighets_id": "909a6a89-215b-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2008-05-22",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0052",
+      "fastighets_id": "909a6a89-215b-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2008-05-22",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0053",
+      "fastighets_id": "909a6a89-215b-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2008-05-22",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0054",
+      "fastighets_id": "909a6a89-d4f9-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2023-04-19",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0055",
+      "fastighets_id": "909a6a89-d4f9-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2023-04-19",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0056",
+      "fastighets_id": "909a6a89-d4f9-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2023-04-19",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0057",
+      "fastighets_id": "909a6a89-d4f9-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2023-04-19",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0058",
+      "fastighets_id": "909a6a89-bdd0-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2009-06-25",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0059",
+      "fastighets_id": "909a6a89-bdd0-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2009-06-25",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0060",
+      "fastighets_id": "909a6a89-bdd0-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2009-06-25",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0061",
+      "fastighets_id": "909a6a89-bdd0-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2009-06-25",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0062",
+      "fastighets_id": "909a6a88-3d7b-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2014-10-04",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0063",
+      "fastighets_id": "909a6a88-406d-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2019-01-13",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0064",
+      "fastighets_id": "909a6a88-406d-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2019-01-13",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0065",
+      "fastighets_id": "909a6a88-407e-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2011-08-28",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0066",
+      "fastighets_id": "909a6a88-407e-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2011-08-28",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0067",
+      "fastighets_id": "909a6a88-407e-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2011-08-28",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0068",
+      "fastighets_id": "909a6a88-407e-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2011-08-28",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0069",
+      "fastighets_id": "909a6a88-407e-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2011-08-28",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0070",
+      "fastighets_id": "909a6a88-3cf8-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2021-03-16",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0071",
+      "fastighets_id": "909a6a88-3cf8-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2021-03-16",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0072",
+      "fastighets_id": "909a6a88-3cf8-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2021-03-16",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0073",
+      "fastighets_id": "909a6a88-3cf8-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2021-03-16",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0074",
+      "fastighets_id": "909a6a88-3cf8-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2021-03-16",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0075",
+      "fastighets_id": "909a6a88-406e-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2011-08-28",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0076",
+      "fastighets_id": "909a6a88-406e-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2011-08-28",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0077",
+      "fastighets_id": "909a6a8a-c09c-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2016-11-09",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0078",
+      "fastighets_id": "3c4d6a1e-5baa-461b-8c4b-e811d14239d4",
+      "typ": "Markersättningsavtal",
+      "datum": "2016-11-07",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0079",
+      "fastighets_id": "3c4d6a1e-5baa-461b-8c4b-e811d14239d4",
+      "typ": "Markersättningsavtal",
+      "datum": "2016-11-07",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0080",
+      "fastighets_id": "3c4d6a1e-5baa-461b-8c4b-e811d14239d4",
+      "typ": "Markersättningsavtal",
+      "datum": "2016-11-07",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0081",
+      "fastighets_id": "3c4d6a1e-5baa-461b-8c4b-e811d14239d4",
+      "typ": "Markersättningsavtal",
+      "datum": "2016-11-07",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0082",
+      "fastighets_id": "909a6a88-3e97-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2015-10-05",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0083",
+      "fastighets_id": "909a6a88-3e97-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2015-10-05",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0084",
+      "fastighets_id": "909a6a88-3e97-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2015-10-05",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0085",
+      "fastighets_id": "909a6a88-3e97-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2015-10-05",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0086",
+      "fastighets_id": "909a6a88-3eb0-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2009-06-24",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0087",
+      "fastighets_id": "909a6a88-3ebc-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2015-10-06",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0088",
+      "fastighets_id": "909a6a88-3ebc-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2015-10-06",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0089",
+      "fastighets_id": "909a6a88-3e94-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2022-03-18",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0090",
+      "fastighets_id": "909a6a88-3e94-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2022-03-18",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0091",
+      "fastighets_id": "909a6a88-3e94-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2022-03-18",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0092",
+      "fastighets_id": "909a6a88-3e94-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2022-03-18",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0093",
+      "fastighets_id": "909a6a88-3dfa-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2011-07-27",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0094",
+      "fastighets_id": "909a6a88-3dfa-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2011-07-27",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0095",
+      "fastighets_id": "909a6a88-3e3b-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2017-12-10",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0096",
+      "fastighets_id": "909a6a88-3e3b-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2017-12-10",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0097",
+      "fastighets_id": "909a6a88-3e3b-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2017-12-10",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0098",
+      "fastighets_id": "909a6a88-3e3b-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2017-12-10",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0099",
+      "fastighets_id": "909a6a88-3e3b-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2017-12-10",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0100",
+      "fastighets_id": "909a6a88-3e18-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2022-04-18",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0101",
+      "fastighets_id": "909a6a88-3e18-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2022-04-18",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0102",
+      "fastighets_id": "909a6a88-3e18-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2022-04-18",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0103",
+      "fastighets_id": "909a6a88-3eaa-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2014-10-05",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0104",
+      "fastighets_id": "909a6a88-3eaa-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2014-10-05",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0105",
+      "fastighets_id": "909a6a88-3eaa-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2014-10-05",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0106",
+      "fastighets_id": "909a6a88-3eaa-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2014-10-05",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0107",
+      "fastighets_id": "909a6a88-3e3c-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2009-06-24",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0108",
+      "fastighets_id": "909a6a88-3e3c-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2009-06-24",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0109",
+      "fastighets_id": "909a6a88-3e3c-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2009-06-24",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0110",
+      "fastighets_id": "909a6a88-3e3c-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2009-06-24",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0111",
+      "fastighets_id": "909a6a88-3e3c-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2009-06-24",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0112",
+      "fastighets_id": "909a6a88-3e10-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2020-02-15",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0113",
+      "fastighets_id": "909a6a88-3e10-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2020-02-15",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0114",
+      "fastighets_id": "909a6a88-3e10-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2020-02-15",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0115",
+      "fastighets_id": "909a6a88-3e10-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2020-02-15",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0116",
+      "fastighets_id": "909a6a88-3e30-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2020-02-15",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0117",
+      "fastighets_id": "909a6a88-3e30-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2020-02-15",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0118",
+      "fastighets_id": "909a6a88-3e30-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2020-02-15",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0119",
+      "fastighets_id": "909a6a88-3e30-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2020-02-15",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0120",
+      "fastighets_id": "909a6a88-3e4e-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-25",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0121",
+      "fastighets_id": "909a6a88-3e4e-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-25",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0122",
+      "fastighets_id": "909a6a88-3e4e-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-25",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0123",
+      "fastighets_id": "909a6a88-3e57-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2014-10-05",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0124",
+      "fastighets_id": "909a6a88-3e57-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2014-10-05",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0125",
+      "fastighets_id": "909a6a88-3e57-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2014-10-05",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0126",
+      "fastighets_id": "909a6a88-3e57-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2014-10-05",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0127",
+      "fastighets_id": "909a6a88-3e46-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2022-03-18",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0128",
+      "fastighets_id": "909a6a88-3e0e-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2009-06-25",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0129",
+      "fastighets_id": "909a6a88-3e0e-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2009-06-25",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0130",
+      "fastighets_id": "909a6a88-3e41-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2012-08-02",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0131",
+      "fastighets_id": "909a6a88-3e41-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2012-08-02",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0132",
+      "fastighets_id": "909a6a88-3e4f-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2018-01-12",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0133",
+      "fastighets_id": "909a6a88-3e4f-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2018-01-12",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0134",
+      "fastighets_id": "909a6a88-3e4f-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2018-01-12",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0135",
+      "fastighets_id": "909a6a88-3e40-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2020-02-15",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0136",
+      "fastighets_id": "909a6a88-3e40-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2020-02-15",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0137",
+      "fastighets_id": "909a6a88-3e3e-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-25",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0138",
+      "fastighets_id": "909a6a88-3e3e-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-25",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0139",
+      "fastighets_id": "909a6a88-3e3e-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-25",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0140",
+      "fastighets_id": "909a6a88-3e3e-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-25",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0141",
+      "fastighets_id": "909a6a88-3e3e-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-25",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0142",
+      "fastighets_id": "909a6a88-3e50-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2021-02-15",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0143",
+      "fastighets_id": "909a6a88-3e50-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2021-02-15",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0144",
+      "fastighets_id": "909a6a88-3e50-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2021-02-15",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0145",
+      "fastighets_id": "909a6a88-3e50-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2021-02-15",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0146",
+      "fastighets_id": "909a6a88-3e3f-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2018-01-12",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0147",
+      "fastighets_id": "909a6a88-3e3f-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2018-01-12",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0148",
+      "fastighets_id": "909a6a88-3e3f-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2018-01-12",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0149",
+      "fastighets_id": "909a6a88-3e3f-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2018-01-12",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0150",
+      "fastighets_id": "909a6a88-3e3f-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2018-01-12",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0151",
+      "fastighets_id": "909a6a88-3e34-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2021-03-17",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0152",
+      "fastighets_id": "909a6a88-3e34-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2021-03-17",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0153",
+      "fastighets_id": "909a6a88-3e34-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2021-03-17",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0154",
+      "fastighets_id": "909a6a88-3e34-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2021-03-17",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0155",
+      "fastighets_id": "909a6a88-3e17-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2014-09-04",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0156",
+      "fastighets_id": "909a6a88-3e17-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2014-09-04",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0157",
+      "fastighets_id": "909a6a88-3e17-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2014-09-04",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0158",
+      "fastighets_id": "909a6a88-3e48-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2023-04-19",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0159",
+      "fastighets_id": "909a6a88-3e4b-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2017-12-10",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0160",
+      "fastighets_id": "909a6a88-3e4b-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2017-12-10",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0161",
+      "fastighets_id": "909a6a88-3e4b-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2017-12-10",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0162",
+      "fastighets_id": "909a6a88-3e06-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2022-03-17",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0163",
+      "fastighets_id": "909a6a88-3e3a-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2008-06-23",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0164",
+      "fastighets_id": "909a6a88-3e3a-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2008-06-23",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0165",
+      "fastighets_id": "909a6a88-3e3a-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2008-06-23",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0166",
+      "fastighets_id": "909a6a88-3e3a-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2008-06-23",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0167",
+      "fastighets_id": "909a6a88-3e3a-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2008-06-23",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0168",
+      "fastighets_id": "909a6a88-3eaf-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2024-05-21",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0169",
+      "fastighets_id": "909a6a88-3eaf-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2024-05-21",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0170",
+      "fastighets_id": "909a6a88-3eaf-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2024-05-21",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0171",
+      "fastighets_id": "909a6a88-3eaf-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2024-05-21",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0172",
+      "fastighets_id": "909a6a88-3eab-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2023-04-19",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0173",
+      "fastighets_id": "909a6a88-3eab-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2023-04-19",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0174",
+      "fastighets_id": "909a6a88-3eab-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2023-04-19",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0175",
+      "fastighets_id": "909a6a88-3eab-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2023-04-19",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0176",
+      "fastighets_id": "909a6a88-3f95-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2018-12-11",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0177",
+      "fastighets_id": "909a6a88-3f95-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2018-12-11",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0178",
+      "fastighets_id": "909a6a88-3f95-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2018-12-11",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0179",
+      "fastighets_id": "909a6a88-3f95-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2018-12-11",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0180",
+      "fastighets_id": "909a6a88-3e16-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2022-03-17",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0181",
+      "fastighets_id": "909a6a88-3e16-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2022-03-17",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0182",
+      "fastighets_id": "909a6a88-3e16-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2022-03-17",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0183",
+      "fastighets_id": "909a6a88-3e16-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2022-03-17",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0184",
+      "fastighets_id": "909a6a88-3e90-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2021-03-16",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0185",
+      "fastighets_id": "909a6a88-3e90-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2021-03-16",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0186",
+      "fastighets_id": "909a6a88-3e90-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2021-03-16",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0187",
+      "fastighets_id": "909a6a88-3e90-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2021-03-16",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0188",
+      "fastighets_id": "909a6a88-3e90-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2021-03-16",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0189",
+      "fastighets_id": "909a6a88-3e00-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2020-02-14",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0190",
+      "fastighets_id": "909a6a88-3e91-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2013-09-03",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0191",
+      "fastighets_id": "909a6a88-3e91-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2013-09-03",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0192",
+      "fastighets_id": "909a6a88-3e91-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2013-09-03",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0193",
+      "fastighets_id": "909a6a88-3e91-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2013-09-03",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0194",
+      "fastighets_id": "909a6a88-3e91-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2013-09-03",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0195",
+      "fastighets_id": "909a6a88-3ebd-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2024-04-20",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0196",
+      "fastighets_id": "909a6a88-3ea4-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-26",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0197",
+      "fastighets_id": "909a6a88-3ea4-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-26",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0198",
+      "fastighets_id": "909a6a88-3ea4-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-26",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0199",
+      "fastighets_id": "909a6a88-3ec5-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2019-01-13",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0200",
+      "fastighets_id": "909a6a88-3ec5-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2019-01-13",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0201",
+      "fastighets_id": "909a6a88-3ec5-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2019-01-13",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0202",
+      "fastighets_id": "909a6a88-3e33-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2013-09-02",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0203",
+      "fastighets_id": "909a6a88-3e33-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2013-09-02",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0204",
+      "fastighets_id": "909a6a88-3e33-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2013-09-02",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0205",
+      "fastighets_id": "909a6a88-3e33-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2013-09-02",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0206",
+      "fastighets_id": "909a6a88-3ec4-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-26",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0207",
+      "fastighets_id": "909a6a88-3ec4-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-26",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0208",
+      "fastighets_id": "909a6a88-3ec4-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-26",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0209",
+      "fastighets_id": "909a6a88-3ea7-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2019-01-13",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0210",
+      "fastighets_id": "909a6a88-3ea7-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2019-01-13",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0211",
+      "fastighets_id": "909a6a88-3ec6-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2011-07-27",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0212",
+      "fastighets_id": "909a6a88-3ec6-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2011-07-27",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0213",
+      "fastighets_id": "909a6a88-3ec6-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2011-07-27",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0214",
+      "fastighets_id": "909a6a88-3dcb-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2019-01-13",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0215",
+      "fastighets_id": "909a6a88-3dcb-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2019-01-13",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0216",
+      "fastighets_id": "909a6a88-3dcb-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2019-01-13",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0217",
+      "fastighets_id": "909a6a88-3dcb-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2019-01-13",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0218",
+      "fastighets_id": "909a6a88-3e43-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2013-09-02",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0219",
+      "fastighets_id": "909a6a88-3e43-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2013-09-02",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0220",
+      "fastighets_id": "909a6a88-3db0-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2022-04-18",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0221",
+      "fastighets_id": "909a6a88-3eb3-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2018-01-12",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0222",
+      "fastighets_id": "909a6a88-3eb3-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2018-01-12",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0223",
+      "fastighets_id": "909a6a88-3eb3-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2018-01-12",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0224",
+      "fastighets_id": "909a6a88-3eb3-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2018-01-12",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0225",
+      "fastighets_id": "909a6a88-3eb3-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2018-01-12",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0226",
+      "fastighets_id": "909a6a88-3e51-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2012-08-02",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0227",
+      "fastighets_id": "909a6a88-3e51-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2012-08-02",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0228",
+      "fastighets_id": "909a6a88-3e51-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2012-08-02",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0229",
+      "fastighets_id": "909a6a88-3e51-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2012-08-02",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0230",
+      "fastighets_id": "909a6a88-3e15-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2013-09-03",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0231",
+      "fastighets_id": "909a6a88-3e15-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2013-09-03",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0232",
+      "fastighets_id": "909a6a88-3e15-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2013-09-03",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0233",
+      "fastighets_id": "909a6a88-3e15-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2013-09-03",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0234",
+      "fastighets_id": "909a6a88-3e53-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2013-09-03",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0235",
+      "fastighets_id": "909a6a88-3e53-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2013-09-03",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0236",
+      "fastighets_id": "909a6a88-3e53-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2013-09-03",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0237",
+      "fastighets_id": "909a6a88-3e53-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2013-09-03",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0238",
+      "fastighets_id": "909a6a88-3e54-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2022-03-17",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0239",
+      "fastighets_id": "909a6a88-3e54-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2022-03-17",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0240",
+      "fastighets_id": "909a6a88-3e54-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2022-03-17",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0241",
+      "fastighets_id": "909a6a88-3e54-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2022-03-17",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0242",
+      "fastighets_id": "909a6a88-3e13-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2012-09-02",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0243",
+      "fastighets_id": "909a6a88-3e13-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2012-09-02",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0244",
+      "fastighets_id": "909a6a88-3e13-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2012-09-02",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0245",
+      "fastighets_id": "909a6a88-3e13-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2012-09-02",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0246",
+      "fastighets_id": "909a6a88-3e58-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2023-04-19",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0247",
+      "fastighets_id": "909a6a88-3e58-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2023-04-19",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0248",
+      "fastighets_id": "909a6a88-3e58-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2023-04-19",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0249",
+      "fastighets_id": "909a6a88-3e58-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2023-04-19",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0250",
+      "fastighets_id": "909a6a88-3e11-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2012-08-01",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0251",
+      "fastighets_id": "909a6a88-3e11-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2012-08-01",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0252",
+      "fastighets_id": "909a6a88-3e11-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2012-08-01",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0253",
+      "fastighets_id": "909a6a88-3e11-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2012-08-01",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0254",
+      "fastighets_id": "909a6a88-3f7b-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2022-03-17",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0255",
+      "fastighets_id": "909a6a88-3ebb-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2023-04-19",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0256",
+      "fastighets_id": "909a6a88-3ebb-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2023-04-19",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0257",
+      "fastighets_id": "909a6a88-3dfb-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2020-02-14",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0258",
+      "fastighets_id": "909a6a88-3dfb-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2020-02-14",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0259",
+      "fastighets_id": "909a6a88-3cdb-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2016-11-07",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0260",
+      "fastighets_id": "909a6a88-3cdb-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2016-11-07",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0261",
+      "fastighets_id": "909a6a88-3eb5-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2019-01-13",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0262",
+      "fastighets_id": "909a6a88-3eb5-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2019-01-13",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0263",
+      "fastighets_id": "909a6a88-3eb5-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2019-01-13",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0264",
+      "fastighets_id": "909a6a88-3eb5-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2019-01-13",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0265",
+      "fastighets_id": "909a6a88-3eb5-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2019-01-13",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0266",
+      "fastighets_id": "909a6a88-3dde-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2012-08-01",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0267",
+      "fastighets_id": "909a6a88-3dde-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2012-08-01",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0268",
+      "fastighets_id": "909a6a88-3de0-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2023-04-19",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0269",
+      "fastighets_id": "909a6a88-3de0-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2023-04-19",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0270",
+      "fastighets_id": "909a6a88-3de0-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2023-04-19",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0271",
+      "fastighets_id": "909a6a88-3f6c-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2013-09-03",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0272",
+      "fastighets_id": "909a6a88-3f6c-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2013-09-03",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0273",
+      "fastighets_id": "909a6a88-3f6c-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2013-09-03",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0274",
+      "fastighets_id": "909a6a88-3d91-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2009-06-24",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0275",
+      "fastighets_id": "909a6a88-3d91-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2009-06-24",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0276",
+      "fastighets_id": "909a6a88-3d91-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2009-06-24",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0277",
+      "fastighets_id": "909a6a88-3d91-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2009-06-24",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0278",
+      "fastighets_id": "909a6a88-3d91-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2009-06-24",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0279",
+      "fastighets_id": "909a6a88-3fc6-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2015-10-06",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0280",
+      "fastighets_id": "909a6a88-3fc6-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2015-10-06",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0281",
+      "fastighets_id": "909a6a88-3fc6-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2015-10-06",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0282",
+      "fastighets_id": "909a6a88-3cc0-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2019-01-12",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0283",
+      "fastighets_id": "909a6a88-3cc0-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2019-01-12",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0284",
+      "fastighets_id": "909a6a88-3cc0-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2019-01-12",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0285",
+      "fastighets_id": "909a6a88-3dba-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-27",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0286",
+      "fastighets_id": "909a6a88-3dba-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-27",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0287",
+      "fastighets_id": "909a6a88-3e9d-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2019-01-12",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0288",
+      "fastighets_id": "909a6a88-3f94-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2009-06-24",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0289",
+      "fastighets_id": "909a6a88-3f94-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2009-06-24",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0290",
+      "fastighets_id": "909a6a88-3f94-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2009-06-24",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0291",
+      "fastighets_id": "909a6a88-3f94-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2009-06-24",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0292",
+      "fastighets_id": "1ea9fcc0-7a01-482d-8e0d-05fe0c87b455",
+      "typ": "Arrende",
+      "datum": "2023-04-19",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0293",
+      "fastighets_id": "1ea9fcc0-7a01-482d-8e0d-05fe0c87b455",
+      "typ": "Arrende",
+      "datum": "2023-04-19",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0294",
+      "fastighets_id": "1ea9fcc0-7a01-482d-8e0d-05fe0c87b455",
+      "typ": "Arrende",
+      "datum": "2023-04-19",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0295",
+      "fastighets_id": "1ea9fcc0-7a01-482d-8e0d-05fe0c87b455",
+      "typ": "Arrende",
+      "datum": "2023-04-19",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0296",
+      "fastighets_id": "1ea9fcc0-7a01-482d-8e0d-05fe0c87b455",
+      "typ": "Arrende",
+      "datum": "2023-04-19",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0297",
+      "fastighets_id": "909a6a88-3ed1-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2018-01-11",
+      "belopp_kr": 1000000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0298",
+      "fastighets_id": "909a6a8a-c09b-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2008-05-22",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0299",
+      "fastighets_id": "909a6a88-3d7c-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2023-04-19",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0300",
+      "fastighets_id": "909a6a8a-9eb7-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2015-11-07",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0301",
+      "fastighets_id": "909a6a8a-9eb7-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2015-11-07",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0302",
+      "fastighets_id": "909a6a8a-9eb7-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2015-11-07",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0303",
+      "fastighets_id": "909a6a8a-9eb7-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2015-11-07",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0304",
+      "fastighets_id": "909a6a8a-9eb7-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2015-11-07",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0305",
+      "fastighets_id": "909a6a88-3d8b-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2014-10-05",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0306",
+      "fastighets_id": "909a6a88-3d8b-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2014-10-05",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0307",
+      "fastighets_id": "909a6a88-3d8b-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2014-10-05",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0308",
+      "fastighets_id": "909a6a88-3f96-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-25",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0309",
+      "fastighets_id": "909a6a88-3f96-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-25",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0310",
+      "fastighets_id": "909a6a88-3f96-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-25",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0311",
+      "fastighets_id": "909a6a88-3f96-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-25",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0312",
+      "fastighets_id": "909a6a88-3cc1-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-27",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0313",
+      "fastighets_id": "909a6a88-3cc1-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-27",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0314",
+      "fastighets_id": "909a6a88-3cc1-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-27",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0315",
+      "fastighets_id": "909a6a88-3dc4-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2024-04-20",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0316",
+      "fastighets_id": "909a6a88-3dc4-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2024-04-20",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0317",
+      "fastighets_id": "909a6a88-3dc4-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2024-04-20",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0318",
+      "fastighets_id": "909a6a88-3e92-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2022-03-17",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0319",
+      "fastighets_id": "909a6a88-3e92-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2022-03-17",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0320",
+      "fastighets_id": "909a6a88-3e92-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2022-03-17",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0321",
+      "fastighets_id": "909a6a88-3e92-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2022-03-17",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0322",
+      "fastighets_id": "909a6a88-3e92-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2022-03-17",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0323",
+      "fastighets_id": "909a6a88-3ed4-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-27",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0324",
+      "fastighets_id": "909a6a88-3ed4-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-27",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0325",
+      "fastighets_id": "909a6a88-3ed4-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-27",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0326",
+      "fastighets_id": "909a6a88-3ed4-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-27",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0327",
+      "fastighets_id": "909a6a88-3ed4-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-27",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0328",
+      "fastighets_id": "909a6a88-3e9c-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-25",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0329",
+      "fastighets_id": "909a6a88-3eae-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2015-11-07",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0330",
+      "fastighets_id": "909a6a88-3eae-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2015-11-07",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0331",
+      "fastighets_id": "909a6a88-3eae-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2015-11-07",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0332",
+      "fastighets_id": "909a6a88-3eae-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2015-11-07",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0333",
+      "fastighets_id": "909a6a8a-ac7d-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2017-12-10",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0334",
+      "fastighets_id": "909a6a8a-ac7d-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2017-12-10",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0335",
+      "fastighets_id": "909a6a8a-ac7d-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2017-12-10",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0336",
+      "fastighets_id": "909a6a8a-ac7d-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2017-12-10",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0337",
+      "fastighets_id": "909a6a8a-ac7d-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2017-12-10",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0338",
+      "fastighets_id": "909a6a88-3d99-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2011-08-28",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0339",
+      "fastighets_id": "909a6a88-3d99-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2011-08-28",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0340",
+      "fastighets_id": "909a6a88-3d99-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2011-08-28",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0341",
+      "fastighets_id": "909a6a88-3d99-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2011-08-28",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0342",
+      "fastighets_id": "909a6a8a-b252-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2019-02-13",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0343",
+      "fastighets_id": "909a6a8a-b252-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2019-02-13",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0344",
+      "fastighets_id": "909a6a8a-b252-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2019-02-13",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0345",
+      "fastighets_id": "909a6a88-3dad-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2020-02-14",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0346",
+      "fastighets_id": "909a6a88-3dad-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2020-02-14",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0347",
+      "fastighets_id": "909a6a88-3dad-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2020-02-14",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0348",
+      "fastighets_id": "909a6a88-3dad-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2020-02-14",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0349",
+      "fastighets_id": "909a6a88-3eac-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2015-10-06",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0350",
+      "fastighets_id": "909a6a88-3eac-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2015-10-06",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0351",
+      "fastighets_id": "909a6a88-3eac-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2015-10-06",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0352",
+      "fastighets_id": "909a6a88-3eac-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2015-10-06",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0353",
+      "fastighets_id": "909a6a88-3eb7-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2020-02-14",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0354",
+      "fastighets_id": "909a6a88-3eb7-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2020-02-14",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0355",
+      "fastighets_id": "909a6a88-3eb7-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2020-02-14",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0356",
+      "fastighets_id": "909a6a88-3eb7-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2020-02-14",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0357",
+      "fastighets_id": "909a6a88-3eb7-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2020-02-14",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0358",
+      "fastighets_id": "909a6a88-3cf0-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2019-01-13",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0359",
+      "fastighets_id": "909a6a8a-ae18-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2012-08-01",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0360",
+      "fastighets_id": "909a6a8a-ae18-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2012-08-01",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0361",
+      "fastighets_id": "909a6a8a-ae18-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2012-08-01",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0362",
+      "fastighets_id": "3a5356af-add8-629b-e053-7e44ed8f5303",
+      "typ": "Arrende",
+      "datum": "2021-03-17",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0363",
+      "fastighets_id": "909a6a88-3e0d-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2017-12-10",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0364",
+      "fastighets_id": "909a6a88-3e0d-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2017-12-10",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0365",
+      "fastighets_id": "909a6a88-3cbb-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2015-11-07",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0366",
+      "fastighets_id": "909a6a88-3cbb-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2015-11-07",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0367",
+      "fastighets_id": "909a6a88-3de9-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2017-12-09",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0368",
+      "fastighets_id": "909a6a88-3de9-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2017-12-09",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0369",
+      "fastighets_id": "909a6a88-3de9-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2017-12-09",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0370",
+      "fastighets_id": "909a6a88-3e0a-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2008-05-23",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0371",
+      "fastighets_id": "909a6a88-3e0a-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2008-05-23",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0372",
+      "fastighets_id": "909a6a88-3e0a-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2008-05-23",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0373",
+      "fastighets_id": "909a6a89-1ed9-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2022-04-18",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0374",
+      "fastighets_id": "909a6a89-1ed9-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2022-04-18",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0375",
+      "fastighets_id": "909a6a89-1ed9-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2022-04-18",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0376",
+      "fastighets_id": "909a6a89-1ed9-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2022-04-18",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0377",
+      "fastighets_id": "909a6a88-406f-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2020-02-14",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0378",
+      "fastighets_id": "909a6a88-406f-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2020-02-14",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0379",
+      "fastighets_id": "909a6a88-3e0f-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2018-12-11",
+      "belopp_kr": 1000000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0380",
+      "fastighets_id": "909a6a88-3e0f-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2018-12-11",
+      "belopp_kr": 1000000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0381",
+      "fastighets_id": "909a6a88-3e2a-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2008-06-23",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0382",
+      "fastighets_id": "909a6a88-3e2a-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2008-06-23",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0383",
+      "fastighets_id": "909a6a88-3e2a-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2008-06-23",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0384",
+      "fastighets_id": "909a6a88-3e0b-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2017-12-09",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0385",
+      "fastighets_id": "909a6a88-3e0b-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2017-12-09",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0386",
+      "fastighets_id": "909a6a88-3e0b-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2017-12-09",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0387",
+      "fastighets_id": "909a6a88-3ef0-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-25",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0388",
+      "fastighets_id": "909a6a88-3f87-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2018-01-11",
+      "belopp_kr": 1000000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0389",
+      "fastighets_id": "909a6a88-3f87-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2018-01-11",
+      "belopp_kr": 1000000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0390",
+      "fastighets_id": "909a6a88-3cfc-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2008-05-22",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0391",
+      "fastighets_id": "909a6a88-3cfc-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2008-05-22",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0392",
+      "fastighets_id": "909a6a88-3e32-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2021-03-16",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0393",
+      "fastighets_id": "909a6a88-3e32-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2021-03-16",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0394",
+      "fastighets_id": "909a6a88-3e32-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2021-03-16",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0395",
+      "fastighets_id": "909a6a88-3e32-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2021-03-16",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0396",
+      "fastighets_id": "909a6a88-3e09-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2014-10-04",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0397",
+      "fastighets_id": "909a6a88-3eb4-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-26",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0398",
+      "fastighets_id": "909a6a88-3eb4-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-26",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0399",
+      "fastighets_id": "909a6a88-3eb4-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-26",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0400",
+      "fastighets_id": "909a6a88-3eb4-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-26",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0401",
+      "fastighets_id": "909a6a88-3eb4-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-26",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0402",
+      "fastighets_id": "909a6a88-3e0c-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2009-06-24",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0403",
+      "fastighets_id": "909a6a88-3e0c-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2009-06-24",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0404",
+      "fastighets_id": "909a6a88-3ec7-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2020-02-14",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0405",
+      "fastighets_id": "909a6a88-3ec7-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2020-02-14",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0406",
+      "fastighets_id": "909a6a88-3ec7-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2020-02-14",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0407",
+      "fastighets_id": "909a6a88-3e35-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2013-09-03",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0408",
+      "fastighets_id": "909a6a88-3e35-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2013-09-03",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0409",
+      "fastighets_id": "909a6a88-3e35-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2013-09-03",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0410",
+      "fastighets_id": "909a6a88-3e35-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2013-09-03",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0411",
+      "fastighets_id": "909a6a88-3ec1-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2018-12-11",
+      "belopp_kr": 1000000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0412",
+      "fastighets_id": "909a6a88-3ec1-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2018-12-11",
+      "belopp_kr": 1000000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0413",
+      "fastighets_id": "909a6a88-3ec1-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2018-12-11",
+      "belopp_kr": 1000000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0414",
+      "fastighets_id": "909a6a88-3e42-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2021-03-16",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0415",
+      "fastighets_id": "909a6a88-3e42-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2021-03-16",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0416",
+      "fastighets_id": "909a6a88-3eb9-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2020-02-15",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0417",
+      "fastighets_id": "909a6a88-3eb9-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2020-02-15",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0418",
+      "fastighets_id": "909a6a88-3eb9-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2020-02-15",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0419",
+      "fastighets_id": "909a6a88-3eb9-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2020-02-15",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0420",
+      "fastighets_id": "909a6a88-3eb9-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2020-02-15",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0421",
+      "fastighets_id": "909a6a88-3e4d-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2018-12-11",
+      "belopp_kr": 1000000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0422",
+      "fastighets_id": "909a6a88-3e4d-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2018-12-11",
+      "belopp_kr": 1000000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0423",
+      "fastighets_id": "909a6a88-3e4d-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2018-12-11",
+      "belopp_kr": 1000000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0424",
+      "fastighets_id": "909a6a88-3e08-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2022-03-18",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0425",
+      "fastighets_id": "909a6a88-3e47-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2014-10-04",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0426",
+      "fastighets_id": "909a6a88-3e05-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2013-09-03",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0427",
+      "fastighets_id": "909a6a88-3e49-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2014-10-05",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0428",
+      "fastighets_id": "909a6a88-3e4a-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2009-06-24",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0429",
+      "fastighets_id": "909a6a88-3e4a-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2009-06-24",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0430",
+      "fastighets_id": "909a6a88-3e4a-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2009-06-24",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0431",
+      "fastighets_id": "909a6a88-3e4c-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2009-06-24",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0432",
+      "fastighets_id": "909a6a88-3e4c-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2009-06-24",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0433",
+      "fastighets_id": "909a6a88-3e4c-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2009-06-24",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0434",
+      "fastighets_id": "909a6a88-3e52-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2021-03-16",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0435",
+      "fastighets_id": "909a6a88-3e52-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2021-03-16",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0436",
+      "fastighets_id": "909a6a88-3e52-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2021-03-16",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0437",
+      "fastighets_id": "909a6a88-3e52-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2021-03-16",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0438",
+      "fastighets_id": "909a6a88-3e59-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2015-10-05",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0439",
+      "fastighets_id": "909a6a88-3e59-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2015-10-05",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0440",
+      "fastighets_id": "909a6a88-3e59-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2015-10-05",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0441",
+      "fastighets_id": "909a6a88-3e59-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2015-10-05",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0442",
+      "fastighets_id": "909a6a88-3e07-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2013-09-04",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0443",
+      "fastighets_id": "909a6a88-3e2f-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2018-01-11",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0444",
+      "fastighets_id": "909a6a88-3e2f-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2018-01-11",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0445",
+      "fastighets_id": "909a6a88-3e44-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2022-03-17",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0446",
+      "fastighets_id": "909a6a88-3e55-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2013-09-04",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0447",
+      "fastighets_id": "909a6a88-3e55-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2013-09-04",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0448",
+      "fastighets_id": "909a6a88-3e55-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2013-09-04",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0449",
+      "fastighets_id": "909a6a88-3e55-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2013-09-04",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0450",
+      "fastighets_id": "909a6a88-3e5b-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2017-12-10",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0451",
+      "fastighets_id": "909a6a88-3e5b-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2017-12-10",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0452",
+      "fastighets_id": "909a6a88-3e5b-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2017-12-10",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0453",
+      "fastighets_id": "909a6a88-3e5b-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2017-12-10",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0454",
+      "fastighets_id": "909a6a88-3e5b-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2017-12-10",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0455",
+      "fastighets_id": "909a6a88-3e5a-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2009-06-24",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0456",
+      "fastighets_id": "06488479-69b5-439e-8919-7b55f64b9697",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2009-06-25",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0457",
+      "fastighets_id": "06488479-69b5-439e-8919-7b55f64b9697",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2009-06-25",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0458",
+      "fastighets_id": "06488479-69b5-439e-8919-7b55f64b9697",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2009-06-25",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0459",
+      "fastighets_id": "909a6a88-3ead-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2023-04-20",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0460",
+      "fastighets_id": "909a6a88-3ead-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2023-04-20",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0461",
+      "fastighets_id": "909a6a88-3ead-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2023-04-20",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0462",
+      "fastighets_id": "909a6a88-3ead-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2023-04-20",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0463",
+      "fastighets_id": "909a6a88-3e56-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2022-03-18",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0464",
+      "fastighets_id": "909a6a88-3e56-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2022-03-18",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0465",
+      "fastighets_id": "909a6a88-3e56-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2022-03-18",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0466",
+      "fastighets_id": "909a6a88-3e56-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2022-03-18",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0467",
+      "fastighets_id": "909a6a8a-9eb8-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2024-05-21",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0468",
+      "fastighets_id": "909a6a8a-9eb8-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2024-05-21",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0469",
+      "fastighets_id": "909a6a8a-9eb8-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2024-05-21",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0470",
+      "fastighets_id": "909a6a8a-9eb8-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2024-05-21",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0471",
+      "fastighets_id": "909a6a8a-9eb8-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2024-05-21",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0472",
+      "fastighets_id": "909a6a88-3e12-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2021-02-15",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0473",
+      "fastighets_id": "909a6a88-3e12-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2021-02-15",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0474",
+      "fastighets_id": "909a6a88-3e12-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2021-02-15",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0475",
+      "fastighets_id": "909a6a88-3e12-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2021-02-15",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0476",
+      "fastighets_id": "909a6a88-3e45-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2013-09-03",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0477",
+      "fastighets_id": "909a6a88-3eb6-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2011-07-27",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0478",
+      "fastighets_id": "909a6a88-3eb6-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2011-07-27",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0479",
+      "fastighets_id": "909a6a88-3eb6-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2011-07-27",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0480",
+      "fastighets_id": "909a6a88-3eb6-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2011-07-27",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0481",
+      "fastighets_id": "909a6a88-3eb6-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2011-07-27",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0482",
+      "fastighets_id": "909a6a88-3e14-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2021-03-16",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0483",
+      "fastighets_id": "909a6a88-3e14-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2021-03-16",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0484",
+      "fastighets_id": "909a6a88-3e14-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2021-03-16",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0485",
+      "fastighets_id": "909a6a88-3e14-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2021-03-16",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0486",
+      "fastighets_id": "909a6a88-3cf6-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2021-02-15",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0487",
+      "fastighets_id": "909a6a88-3cf6-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2021-02-15",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0488",
+      "fastighets_id": "909a6a88-3cf6-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2021-02-15",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0489",
+      "fastighets_id": "909a6a88-3cf6-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2021-02-15",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0490",
+      "fastighets_id": "909a6a88-3cf6-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2021-02-15",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0491",
+      "fastighets_id": "909a6a89-ba2d-90ec-e040-ed8f66444c3f",
+      "typ": "Arrende",
+      "datum": "2023-04-19",
+      "belopp_kr": 5000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0492",
+      "fastighets_id": "3e2d38d2-bb90-0310-e053-7e44ed8f98ba",
+      "typ": "Markersättningsavtal",
+      "datum": "2016-11-08",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0493",
+      "fastighets_id": "3e2d38d2-bb90-0310-e053-7e44ed8f98ba",
+      "typ": "Markersättningsavtal",
+      "datum": "2016-11-08",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0494",
+      "fastighets_id": "909a6a89-d194-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2013-09-03",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0495",
+      "fastighets_id": "909a6a89-d194-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2013-09-03",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0496",
+      "fastighets_id": "909a6a89-d194-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2013-09-03",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0497",
+      "fastighets_id": "909a6a89-f23e-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2019-01-13",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0498",
+      "fastighets_id": "909a6a89-f24c-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2019-01-12",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0499",
+      "fastighets_id": "909a6a89-f24c-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2019-01-12",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0500",
+      "fastighets_id": "909a6a89-f24c-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2019-01-12",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0501",
+      "fastighets_id": "909a6a89-f24c-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2019-01-12",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0502",
+      "fastighets_id": "909a6a89-c174-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2014-09-04",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0503",
+      "fastighets_id": "909a6a89-c174-90ec-e040-ed8f66444c3f",
+      "typ": "Vägservitut",
+      "datum": "2014-09-04",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0504",
+      "fastighets_id": "909a6a89-d494-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2024-05-21",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0505",
+      "fastighets_id": "909a6a89-d494-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2024-05-21",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0506",
+      "fastighets_id": "909a6a89-d494-90ec-e040-ed8f66444c3f",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2024-05-21",
+      "belopp_kr": 20000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0507",
+      "fastighets_id": "7247c608-5662-6add-e053-7e44ed8fbebd",
+      "typ": "Vägservitut",
+      "datum": "2013-09-03",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0508",
+      "fastighets_id": "7247c608-5662-6add-e053-7e44ed8fbebd",
+      "typ": "Vägservitut",
+      "datum": "2013-09-03",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0509",
+      "fastighets_id": "7247c608-5662-6add-e053-7e44ed8fbebd",
+      "typ": "Vägservitut",
+      "datum": "2013-09-03",
+      "belopp_kr": 100000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0510",
+      "fastighets_id": "2fe09adf-d7f3-10d8-e053-7e44ed8f2781",
+      "typ": "Markersättningsavtal",
+      "datum": "2015-11-07",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0511",
+      "fastighets_id": "909a6a89-d1d4-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2018-01-11",
+      "belopp_kr": 1000000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0512",
+      "fastighets_id": "909a6a89-d1d4-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2018-01-11",
+      "belopp_kr": 1000000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0513",
+      "fastighets_id": "909a6a89-d1d4-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2018-01-11",
+      "belopp_kr": 1000000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0514",
+      "fastighets_id": "909a6a89-d1d4-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2018-01-11",
+      "belopp_kr": 1000000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0515",
+      "fastighets_id": "909a6a89-d1a8-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2019-01-13",
+      "belopp_kr": 1000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0516",
+      "fastighets_id": "909a6a89-d1a4-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2018-12-11",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0517",
+      "fastighets_id": "e42c6f56-3159-4912-9d02-96b6e02f2168",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-26",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0518",
+      "fastighets_id": "e42c6f56-3159-4912-9d02-96b6e02f2168",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-26",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0519",
+      "fastighets_id": "e42c6f56-3159-4912-9d02-96b6e02f2168",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-26",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0520",
+      "fastighets_id": "e42c6f56-3159-4912-9d02-96b6e02f2168",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-26",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0521",
+      "fastighets_id": "e42c6f56-3159-4912-9d02-96b6e02f2168",
+      "typ": "Nyttjanderättsavtal",
+      "datum": "2010-07-26",
+      "belopp_kr": 50000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0522",
+      "fastighets_id": "909a6a89-d1ad-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2014-10-05",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0523",
+      "fastighets_id": "909a6a89-d1ad-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2014-10-05",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0524",
+      "fastighets_id": "909a6a89-d1ad-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2014-10-05",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0525",
+      "fastighets_id": "909a6a89-da59-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2018-12-11",
+      "belopp_kr": 1000000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0526",
+      "fastighets_id": "909a6a89-da59-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2018-12-11",
+      "belopp_kr": 1000000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0527",
+      "fastighets_id": "909a6a89-da59-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2018-12-11",
+      "belopp_kr": 1000000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0528",
+      "fastighets_id": "909a6a89-da59-90ec-e040-ed8f66444c3f",
+      "typ": "Väntansavtal",
+      "datum": "2018-12-11",
+      "belopp_kr": 1000000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0529",
+      "fastighets_id": "e84a3b0f-b135-6773-e043-7e44ed8f5b50",
+      "typ": "Arrende",
+      "datum": "2021-02-16",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0530",
+      "fastighets_id": "e84a3b0f-b135-6773-e043-7e44ed8f5b50",
+      "typ": "Arrende",
+      "datum": "2021-02-16",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0531",
+      "fastighets_id": "e84a3b0f-b135-6773-e043-7e44ed8f5b50",
+      "typ": "Arrende",
+      "datum": "2021-02-16",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0532",
+      "fastighets_id": "e84a3b0f-b135-6773-e043-7e44ed8f5b50",
+      "typ": "Arrende",
+      "datum": "2021-02-16",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0533",
+      "fastighets_id": "e84a3b0f-b135-6773-e043-7e44ed8f5b50",
+      "typ": "Arrende",
+      "datum": "2021-02-16",
+      "belopp_kr": 6000000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0534",
+      "fastighets_id": "6641fbb3-39d8-5c6c-e053-7e44ed8f2c46",
+      "typ": "Markersättningsavtal",
+      "datum": "2014-10-05",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0535",
+      "fastighets_id": "6641fbb3-39d8-5c6c-e053-7e44ed8f2c46",
+      "typ": "Markersättningsavtal",
+      "datum": "2014-10-05",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0536",
+      "fastighets_id": "6641fbb3-39d8-5c6c-e053-7e44ed8f2c46",
+      "typ": "Markersättningsavtal",
+      "datum": "2014-10-05",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0537",
+      "fastighets_id": "6641fbb3-39d8-5c6c-e053-7e44ed8f2c46",
+      "typ": "Markersättningsavtal",
+      "datum": "2014-10-05",
+      "belopp_kr": 250000,
+      "status": "Gällande"
+    },
+    {
+      "id": "AVT-0538",
+      "fastighets_id": "909a6a89-d495-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2016-11-08",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0539",
+      "fastighets_id": "909a6a89-d495-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2016-11-08",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    },
+    {
+      "id": "AVT-0540",
+      "fastighets_id": "909a6a89-d495-90ec-e040-ed8f66444c3f",
+      "typ": "Markersättningsavtal",
+      "datum": "2016-11-08",
+      "belopp_kr": 500000,
+      "status": "Avslutat"
+    }
+  ]
+}

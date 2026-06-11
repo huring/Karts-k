@@ -1,0 +1,2182 @@
+{
+  "anlaggningar": [
+    {
+      "id": "ANL-0001",
+      "fastighets_id": "909a6a7b-94a8-90ec-e040-ed8f66444c3f",
+      "namn": "Norra spångad led",
+      "typ": "Spångad led",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-1/600/300",
+      "ar": 2010
+    },
+    {
+      "id": "ANL-0002",
+      "fastighets_id": "909a6a7b-94a8-90ec-e040-ed8f66444c3f",
+      "namn": "Norra spångad led",
+      "typ": "Spångad led",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-2/600/300",
+      "ar": 2010
+    },
+    {
+      "id": "ANL-0003",
+      "fastighets_id": "909a6a7b-94a8-90ec-e040-ed8f66444c3f",
+      "namn": "Norra spångad led",
+      "typ": "Spångad led",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-3/600/300",
+      "ar": 2010
+    },
+    {
+      "id": "ANL-0004",
+      "fastighets_id": "909a6a7b-94a1-90ec-e040-ed8f66444c3f",
+      "namn": "Västra brygga",
+      "typ": "Brygga",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-4/600/300",
+      "ar": 1970
+    },
+    {
+      "id": "ANL-0005",
+      "fastighets_id": "909a6a7b-94a1-90ec-e040-ed8f66444c3f",
+      "namn": "Västra brygga",
+      "typ": "Brygga",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-5/600/300",
+      "ar": 1970
+    },
+    {
+      "id": "ANL-0006",
+      "fastighets_id": "909a6a7b-94a1-90ec-e040-ed8f66444c3f",
+      "namn": "Västra brygga",
+      "typ": "Brygga",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-6/600/300",
+      "ar": 1970
+    },
+    {
+      "id": "ANL-0007",
+      "fastighets_id": "909a6a7c-aba3-90ec-e040-ed8f66444c3f",
+      "namn": "Västra röjsågsförråd",
+      "typ": "Röjsågsförråd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-7/600/300",
+      "ar": 1968
+    },
+    {
+      "id": "ANL-0008",
+      "fastighets_id": "909a6a7b-94bd-90ec-e040-ed8f66444c3f",
+      "namn": "Övre parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-8/600/300",
+      "ar": 1992
+    },
+    {
+      "id": "ANL-0009",
+      "fastighets_id": "909a6a7b-94bd-90ec-e040-ed8f66444c3f",
+      "namn": "Övre parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-9/600/300",
+      "ar": 1992
+    },
+    {
+      "id": "ANL-0010",
+      "fastighets_id": "909a6a7b-93be-90ec-e040-ed8f66444c3f",
+      "namn": "Norra spångad led",
+      "typ": "Spångad led",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-10/600/300",
+      "ar": 2011
+    },
+    {
+      "id": "ANL-0011",
+      "fastighets_id": "909a6a7b-93be-90ec-e040-ed8f66444c3f",
+      "namn": "Norra spångad led",
+      "typ": "Spångad led",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-11/600/300",
+      "ar": 2011
+    },
+    {
+      "id": "ANL-0012",
+      "fastighets_id": "909a6a8a-070b-90ec-e040-ed8f66444c3f",
+      "namn": "Nedre stängsel",
+      "typ": "Stängsel",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-12/600/300",
+      "ar": 1985
+    },
+    {
+      "id": "ANL-0013",
+      "fastighets_id": "909a6a8a-070b-90ec-e040-ed8f66444c3f",
+      "namn": "Nedre stängsel",
+      "typ": "Stängsel",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-13/600/300",
+      "ar": 1985
+    },
+    {
+      "id": "ANL-0014",
+      "fastighets_id": "909a6a8a-0196-90ec-e040-ed8f66444c3f",
+      "namn": "Nedre stängsel",
+      "typ": "Stängsel",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-14/600/300",
+      "ar": 1985
+    },
+    {
+      "id": "ANL-0015",
+      "fastighets_id": "909a6a8a-0196-90ec-e040-ed8f66444c3f",
+      "namn": "Nedre stängsel",
+      "typ": "Stängsel",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-15/600/300",
+      "ar": 1985
+    },
+    {
+      "id": "ANL-0016",
+      "fastighets_id": "909a6a8a-0196-90ec-e040-ed8f66444c3f",
+      "namn": "Nedre stängsel",
+      "typ": "Stängsel",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-16/600/300",
+      "ar": 1985
+    },
+    {
+      "id": "ANL-0017",
+      "fastighets_id": "909a6a8a-070c-90ec-e040-ed8f66444c3f",
+      "namn": "Södra vindskydd",
+      "typ": "Vindskydd",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-17/600/300",
+      "ar": 2019
+    },
+    {
+      "id": "ANL-0018",
+      "fastighets_id": "909a6a8a-070c-90ec-e040-ed8f66444c3f",
+      "namn": "Södra vindskydd",
+      "typ": "Vindskydd",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-18/600/300",
+      "ar": 2019
+    },
+    {
+      "id": "ANL-0019",
+      "fastighets_id": "909a6a89-d4f9-90ec-e040-ed8f66444c3f",
+      "namn": "Lilla spångad led",
+      "typ": "Spångad led",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-19/600/300",
+      "ar": 2009
+    },
+    {
+      "id": "ANL-0020",
+      "fastighets_id": "909a6a89-bdd0-90ec-e040-ed8f66444c3f",
+      "namn": "Södra vindskydd",
+      "typ": "Vindskydd",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-20/600/300",
+      "ar": 2022
+    },
+    {
+      "id": "ANL-0021",
+      "fastighets_id": "909a6a88-3d7b-90ec-e040-ed8f66444c3f",
+      "namn": "Gamla brygga",
+      "typ": "Brygga",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-21/600/300",
+      "ar": 1975
+    },
+    {
+      "id": "ANL-0022",
+      "fastighets_id": "909a6a88-3d7b-90ec-e040-ed8f66444c3f",
+      "namn": "Gamla brygga",
+      "typ": "Brygga",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-22/600/300",
+      "ar": 1975
+    },
+    {
+      "id": "ANL-0023",
+      "fastighets_id": "909a6a88-406d-90ec-e040-ed8f66444c3f",
+      "namn": "Stora parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-23/600/300",
+      "ar": 1996
+    },
+    {
+      "id": "ANL-0024",
+      "fastighets_id": "909a6a88-406d-90ec-e040-ed8f66444c3f",
+      "namn": "Stora parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-24/600/300",
+      "ar": 1996
+    },
+    {
+      "id": "ANL-0025",
+      "fastighets_id": "909a6a88-406d-90ec-e040-ed8f66444c3f",
+      "namn": "Stora parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-25/600/300",
+      "ar": 1996
+    },
+    {
+      "id": "ANL-0026",
+      "fastighets_id": "909a6a88-407e-90ec-e040-ed8f66444c3f",
+      "namn": "Östra röjsågsförråd",
+      "typ": "Röjsågsförråd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-26/600/300",
+      "ar": 1965
+    },
+    {
+      "id": "ANL-0027",
+      "fastighets_id": "909a6a88-3cf8-90ec-e040-ed8f66444c3f",
+      "namn": "Lilla informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-27/600/300",
+      "ar": 2003
+    },
+    {
+      "id": "ANL-0028",
+      "fastighets_id": "909a6a88-3cf8-90ec-e040-ed8f66444c3f",
+      "namn": "Lilla informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-28/600/300",
+      "ar": 2003
+    },
+    {
+      "id": "ANL-0029",
+      "fastighets_id": "909a6a88-406e-90ec-e040-ed8f66444c3f",
+      "namn": "Östra röjsågsförråd",
+      "typ": "Röjsågsförråd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-29/600/300",
+      "ar": 1965
+    },
+    {
+      "id": "ANL-0030",
+      "fastighets_id": "909a6a88-406e-90ec-e040-ed8f66444c3f",
+      "namn": "Östra röjsågsförråd",
+      "typ": "Röjsågsförråd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-30/600/300",
+      "ar": 1965
+    },
+    {
+      "id": "ANL-0031",
+      "fastighets_id": "909a6a88-406e-90ec-e040-ed8f66444c3f",
+      "namn": "Östra röjsågsförråd",
+      "typ": "Röjsågsförråd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-31/600/300",
+      "ar": 1965
+    },
+    {
+      "id": "ANL-0032",
+      "fastighets_id": "909a6a8a-c09c-90ec-e040-ed8f66444c3f",
+      "namn": "Nedre stängsel",
+      "typ": "Stängsel",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-32/600/300",
+      "ar": 1985
+    },
+    {
+      "id": "ANL-0033",
+      "fastighets_id": "909a6a8a-c09c-90ec-e040-ed8f66444c3f",
+      "namn": "Nedre stängsel",
+      "typ": "Stängsel",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-33/600/300",
+      "ar": 1985
+    },
+    {
+      "id": "ANL-0034",
+      "fastighets_id": "3c4d6a1e-5baa-461b-8c4b-e811d14239d4",
+      "namn": "Nedre stängsel",
+      "typ": "Stängsel",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-34/600/300",
+      "ar": 1982
+    },
+    {
+      "id": "ANL-0035",
+      "fastighets_id": "909a6a88-3e97-90ec-e040-ed8f66444c3f",
+      "namn": "Gamla brygga",
+      "typ": "Brygga",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-35/600/300",
+      "ar": 1977
+    },
+    {
+      "id": "ANL-0036",
+      "fastighets_id": "909a6a88-3eb0-90ec-e040-ed8f66444c3f",
+      "namn": "Södra vindskydd",
+      "typ": "Vindskydd",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-36/600/300",
+      "ar": 2021
+    },
+    {
+      "id": "ANL-0037",
+      "fastighets_id": "909a6a88-3eb0-90ec-e040-ed8f66444c3f",
+      "namn": "Södra vindskydd",
+      "typ": "Vindskydd",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-37/600/300",
+      "ar": 2021
+    },
+    {
+      "id": "ANL-0038",
+      "fastighets_id": "909a6a88-3ebc-90ec-e040-ed8f66444c3f",
+      "namn": "Gamla stängsel",
+      "typ": "Stängsel",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-38/600/300",
+      "ar": 1978
+    },
+    {
+      "id": "ANL-0039",
+      "fastighets_id": "909a6a88-3ebc-90ec-e040-ed8f66444c3f",
+      "namn": "Gamla stängsel",
+      "typ": "Stängsel",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-39/600/300",
+      "ar": 1978
+    },
+    {
+      "id": "ANL-0040",
+      "fastighets_id": "909a6a88-3ebc-90ec-e040-ed8f66444c3f",
+      "namn": "Gamla stängsel",
+      "typ": "Stängsel",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-40/600/300",
+      "ar": 1978
+    },
+    {
+      "id": "ANL-0041",
+      "fastighets_id": "909a6a88-3e94-90ec-e040-ed8f66444c3f",
+      "namn": "Lilla spångad led",
+      "typ": "Spångad led",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-41/600/300",
+      "ar": 2006
+    },
+    {
+      "id": "ANL-0042",
+      "fastighets_id": "909a6a88-3dfa-90ec-e040-ed8f66444c3f",
+      "namn": "Östra röjsågsförråd",
+      "typ": "Röjsågsförråd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-42/600/300",
+      "ar": 1963
+    },
+    {
+      "id": "ANL-0043",
+      "fastighets_id": "909a6a88-3dfa-90ec-e040-ed8f66444c3f",
+      "namn": "Östra röjsågsförråd",
+      "typ": "Röjsågsförråd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-43/600/300",
+      "ar": 1963
+    },
+    {
+      "id": "ANL-0044",
+      "fastighets_id": "909a6a88-3dfa-90ec-e040-ed8f66444c3f",
+      "namn": "Östra röjsågsförråd",
+      "typ": "Röjsågsförråd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-44/600/300",
+      "ar": 1963
+    },
+    {
+      "id": "ANL-0045",
+      "fastighets_id": "909a6a88-3e3b-90ec-e040-ed8f66444c3f",
+      "namn": "Övre parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-45/600/300",
+      "ar": 1988
+    },
+    {
+      "id": "ANL-0046",
+      "fastighets_id": "909a6a88-3e3b-90ec-e040-ed8f66444c3f",
+      "namn": "Övre parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-46/600/300",
+      "ar": 1988
+    },
+    {
+      "id": "ANL-0047",
+      "fastighets_id": "909a6a88-3eaa-90ec-e040-ed8f66444c3f",
+      "namn": "Gamla brygga",
+      "typ": "Brygga",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-47/600/300",
+      "ar": 1976
+    },
+    {
+      "id": "ANL-0048",
+      "fastighets_id": "909a6a88-3e3c-90ec-e040-ed8f66444c3f",
+      "namn": "Södra vindskydd",
+      "typ": "Vindskydd",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-48/600/300",
+      "ar": 2021
+    },
+    {
+      "id": "ANL-0049",
+      "fastighets_id": "909a6a88-3e3c-90ec-e040-ed8f66444c3f",
+      "namn": "Södra vindskydd",
+      "typ": "Vindskydd",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-49/600/300",
+      "ar": 2021
+    },
+    {
+      "id": "ANL-0050",
+      "fastighets_id": "909a6a88-3e10-90ec-e040-ed8f66444c3f",
+      "namn": "Stora informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-50/600/300",
+      "ar": 1998
+    },
+    {
+      "id": "ANL-0051",
+      "fastighets_id": "909a6a88-3e30-90ec-e040-ed8f66444c3f",
+      "namn": "Stora informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-51/600/300",
+      "ar": 1999
+    },
+    {
+      "id": "ANL-0052",
+      "fastighets_id": "909a6a88-3e57-90ec-e040-ed8f66444c3f",
+      "namn": "Gamla brygga",
+      "typ": "Brygga",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-52/600/300",
+      "ar": 1975
+    },
+    {
+      "id": "ANL-0053",
+      "fastighets_id": "909a6a88-3e46-90ec-e040-ed8f66444c3f",
+      "namn": "Lilla spångad led",
+      "typ": "Spångad led",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-53/600/300",
+      "ar": 2006
+    },
+    {
+      "id": "ANL-0054",
+      "fastighets_id": "909a6a88-3e46-90ec-e040-ed8f66444c3f",
+      "namn": "Lilla spångad led",
+      "typ": "Spångad led",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-54/600/300",
+      "ar": 2006
+    },
+    {
+      "id": "ANL-0055",
+      "fastighets_id": "909a6a88-3e46-90ec-e040-ed8f66444c3f",
+      "namn": "Lilla spångad led",
+      "typ": "Spångad led",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-55/600/300",
+      "ar": 2006
+    },
+    {
+      "id": "ANL-0056",
+      "fastighets_id": "909a6a88-3e0e-90ec-e040-ed8f66444c3f",
+      "namn": "Södra vindskydd",
+      "typ": "Vindskydd",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-56/600/300",
+      "ar": 2022
+    },
+    {
+      "id": "ANL-0057",
+      "fastighets_id": "909a6a88-3e0e-90ec-e040-ed8f66444c3f",
+      "namn": "Södra vindskydd",
+      "typ": "Vindskydd",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-57/600/300",
+      "ar": 2022
+    },
+    {
+      "id": "ANL-0058",
+      "fastighets_id": "909a6a88-3e0e-90ec-e040-ed8f66444c3f",
+      "namn": "Södra vindskydd",
+      "typ": "Vindskydd",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-58/600/300",
+      "ar": 2022
+    },
+    {
+      "id": "ANL-0059",
+      "fastighets_id": "909a6a88-3e41-90ec-e040-ed8f66444c3f",
+      "namn": "Västra röjsågsförråd",
+      "typ": "Röjsågsförråd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-59/600/300",
+      "ar": 1968
+    },
+    {
+      "id": "ANL-0060",
+      "fastighets_id": "909a6a88-3e41-90ec-e040-ed8f66444c3f",
+      "namn": "Västra röjsågsförråd",
+      "typ": "Röjsågsförråd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-60/600/300",
+      "ar": 1968
+    },
+    {
+      "id": "ANL-0061",
+      "fastighets_id": "909a6a88-3e41-90ec-e040-ed8f66444c3f",
+      "namn": "Västra röjsågsförråd",
+      "typ": "Röjsågsförråd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-61/600/300",
+      "ar": 1968
+    },
+    {
+      "id": "ANL-0062",
+      "fastighets_id": "909a6a88-3e40-90ec-e040-ed8f66444c3f",
+      "namn": "Stora informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-62/600/300",
+      "ar": 2000
+    },
+    {
+      "id": "ANL-0063",
+      "fastighets_id": "909a6a88-3e40-90ec-e040-ed8f66444c3f",
+      "namn": "Stora informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-63/600/300",
+      "ar": 2000
+    },
+    {
+      "id": "ANL-0064",
+      "fastighets_id": "909a6a88-3e40-90ec-e040-ed8f66444c3f",
+      "namn": "Stora informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-64/600/300",
+      "ar": 2000
+    },
+    {
+      "id": "ANL-0065",
+      "fastighets_id": "909a6a88-3e3e-90ec-e040-ed8f66444c3f",
+      "namn": "Södra vindskydd",
+      "typ": "Vindskydd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-65/600/300",
+      "ar": 2023
+    },
+    {
+      "id": "ANL-0066",
+      "fastighets_id": "909a6a88-3e3e-90ec-e040-ed8f66444c3f",
+      "namn": "Södra vindskydd",
+      "typ": "Vindskydd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-66/600/300",
+      "ar": 2023
+    },
+    {
+      "id": "ANL-0067",
+      "fastighets_id": "909a6a88-3e50-90ec-e040-ed8f66444c3f",
+      "namn": "Stora informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-67/600/300",
+      "ar": 2000
+    },
+    {
+      "id": "ANL-0068",
+      "fastighets_id": "909a6a88-3e3f-90ec-e040-ed8f66444c3f",
+      "namn": "Övre parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-68/600/300",
+      "ar": 1992
+    },
+    {
+      "id": "ANL-0069",
+      "fastighets_id": "909a6a88-3e3f-90ec-e040-ed8f66444c3f",
+      "namn": "Övre parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-69/600/300",
+      "ar": 1992
+    },
+    {
+      "id": "ANL-0070",
+      "fastighets_id": "909a6a88-3e34-90ec-e040-ed8f66444c3f",
+      "namn": "Lilla informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-70/600/300",
+      "ar": 2004
+    },
+    {
+      "id": "ANL-0071",
+      "fastighets_id": "909a6a88-3e48-90ec-e040-ed8f66444c3f",
+      "namn": "Lilla spångad led",
+      "typ": "Spångad led",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-71/600/300",
+      "ar": 2008
+    },
+    {
+      "id": "ANL-0072",
+      "fastighets_id": "909a6a88-3e48-90ec-e040-ed8f66444c3f",
+      "namn": "Lilla spångad led",
+      "typ": "Spångad led",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-72/600/300",
+      "ar": 2008
+    },
+    {
+      "id": "ANL-0073",
+      "fastighets_id": "909a6a88-3e06-90ec-e040-ed8f66444c3f",
+      "namn": "Lilla informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-73/600/300",
+      "ar": 2004
+    },
+    {
+      "id": "ANL-0074",
+      "fastighets_id": "909a6a88-3e06-90ec-e040-ed8f66444c3f",
+      "namn": "Lilla informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-74/600/300",
+      "ar": 2004
+    },
+    {
+      "id": "ANL-0075",
+      "fastighets_id": "909a6a88-3e3a-90ec-e040-ed8f66444c3f",
+      "namn": "Södra vindskydd",
+      "typ": "Vindskydd",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-75/600/300",
+      "ar": 2019
+    },
+    {
+      "id": "ANL-0076",
+      "fastighets_id": "909a6a88-3e3a-90ec-e040-ed8f66444c3f",
+      "namn": "Södra vindskydd",
+      "typ": "Vindskydd",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-76/600/300",
+      "ar": 2019
+    },
+    {
+      "id": "ANL-0077",
+      "fastighets_id": "909a6a88-3eaf-90ec-e040-ed8f66444c3f",
+      "namn": "Norra spångad led",
+      "typ": "Spångad led",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-77/600/300",
+      "ar": 2013
+    },
+    {
+      "id": "ANL-0078",
+      "fastighets_id": "909a6a88-3eab-90ec-e040-ed8f66444c3f",
+      "namn": "Norra spångad led",
+      "typ": "Spångad led",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-78/600/300",
+      "ar": 2009
+    },
+    {
+      "id": "ANL-0079",
+      "fastighets_id": "909a6a88-3f95-90ec-e040-ed8f66444c3f",
+      "namn": "Övre parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-79/600/300",
+      "ar": 1990
+    },
+    {
+      "id": "ANL-0080",
+      "fastighets_id": "909a6a88-3e90-90ec-e040-ed8f66444c3f",
+      "namn": "Lilla informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-80/600/300",
+      "ar": 2002
+    },
+    {
+      "id": "ANL-0081",
+      "fastighets_id": "909a6a88-3e00-90ec-e040-ed8f66444c3f",
+      "namn": "Stora informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-81/600/300",
+      "ar": 1998
+    },
+    {
+      "id": "ANL-0082",
+      "fastighets_id": "909a6a88-3e00-90ec-e040-ed8f66444c3f",
+      "namn": "Stora informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-82/600/300",
+      "ar": 1998
+    },
+    {
+      "id": "ANL-0083",
+      "fastighets_id": "909a6a88-3e00-90ec-e040-ed8f66444c3f",
+      "namn": "Stora informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-83/600/300",
+      "ar": 1998
+    },
+    {
+      "id": "ANL-0084",
+      "fastighets_id": "909a6a88-3e91-90ec-e040-ed8f66444c3f",
+      "namn": "Västra brygga",
+      "typ": "Brygga",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-84/600/300",
+      "ar": 1971
+    },
+    {
+      "id": "ANL-0085",
+      "fastighets_id": "909a6a88-3ebd-90ec-e040-ed8f66444c3f",
+      "namn": "Norra spångad led",
+      "typ": "Spångad led",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-85/600/300",
+      "ar": 2012
+    },
+    {
+      "id": "ANL-0086",
+      "fastighets_id": "909a6a88-3ebd-90ec-e040-ed8f66444c3f",
+      "namn": "Norra spångad led",
+      "typ": "Spångad led",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-86/600/300",
+      "ar": 2012
+    },
+    {
+      "id": "ANL-0087",
+      "fastighets_id": "909a6a88-3ebd-90ec-e040-ed8f66444c3f",
+      "namn": "Norra spångad led",
+      "typ": "Spångad led",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-87/600/300",
+      "ar": 2012
+    },
+    {
+      "id": "ANL-0088",
+      "fastighets_id": "909a6a88-3e33-90ec-e040-ed8f66444c3f",
+      "namn": "Västra brygga",
+      "typ": "Brygga",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-88/600/300",
+      "ar": 1970
+    },
+    {
+      "id": "ANL-0089",
+      "fastighets_id": "909a6a88-3dcb-90ec-e040-ed8f66444c3f",
+      "namn": "Stora parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-89/600/300",
+      "ar": 1996
+    },
+    {
+      "id": "ANL-0090",
+      "fastighets_id": "909a6a88-3e43-90ec-e040-ed8f66444c3f",
+      "namn": "Västra brygga",
+      "typ": "Brygga",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-90/600/300",
+      "ar": 1971
+    },
+    {
+      "id": "ANL-0091",
+      "fastighets_id": "909a6a88-3e43-90ec-e040-ed8f66444c3f",
+      "namn": "Västra brygga",
+      "typ": "Brygga",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-91/600/300",
+      "ar": 1971
+    },
+    {
+      "id": "ANL-0092",
+      "fastighets_id": "909a6a88-3e43-90ec-e040-ed8f66444c3f",
+      "namn": "Västra brygga",
+      "typ": "Brygga",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-92/600/300",
+      "ar": 1971
+    },
+    {
+      "id": "ANL-0093",
+      "fastighets_id": "909a6a88-3db0-90ec-e040-ed8f66444c3f",
+      "namn": "Lilla spångad led",
+      "typ": "Spångad led",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-93/600/300",
+      "ar": 2007
+    },
+    {
+      "id": "ANL-0094",
+      "fastighets_id": "909a6a88-3db0-90ec-e040-ed8f66444c3f",
+      "namn": "Lilla spångad led",
+      "typ": "Spångad led",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-94/600/300",
+      "ar": 2007
+    },
+    {
+      "id": "ANL-0095",
+      "fastighets_id": "909a6a88-3eb3-90ec-e040-ed8f66444c3f",
+      "namn": "Övre parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-95/600/300",
+      "ar": 1992
+    },
+    {
+      "id": "ANL-0096",
+      "fastighets_id": "909a6a88-3eb3-90ec-e040-ed8f66444c3f",
+      "namn": "Övre parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-96/600/300",
+      "ar": 1992
+    },
+    {
+      "id": "ANL-0097",
+      "fastighets_id": "909a6a88-3e51-90ec-e040-ed8f66444c3f",
+      "namn": "Västra brygga",
+      "typ": "Brygga",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-97/600/300",
+      "ar": 1969
+    },
+    {
+      "id": "ANL-0098",
+      "fastighets_id": "909a6a88-3e53-90ec-e040-ed8f66444c3f",
+      "namn": "Västra brygga",
+      "typ": "Brygga",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-98/600/300",
+      "ar": 1971
+    },
+    {
+      "id": "ANL-0099",
+      "fastighets_id": "909a6a88-3e54-90ec-e040-ed8f66444c3f",
+      "namn": "Lilla informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-99/600/300",
+      "ar": 2005
+    },
+    {
+      "id": "ANL-0100",
+      "fastighets_id": "909a6a88-3e13-90ec-e040-ed8f66444c3f",
+      "namn": "Västra brygga",
+      "typ": "Brygga",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-100/600/300",
+      "ar": 1969
+    },
+    {
+      "id": "ANL-0101",
+      "fastighets_id": "909a6a88-3e58-90ec-e040-ed8f66444c3f",
+      "namn": "Lilla spångad led",
+      "typ": "Spångad led",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-101/600/300",
+      "ar": 2009
+    },
+    {
+      "id": "ANL-0102",
+      "fastighets_id": "909a6a88-3e11-90ec-e040-ed8f66444c3f",
+      "namn": "Västra röjsågsförråd",
+      "typ": "Röjsågsförråd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-102/600/300",
+      "ar": 1967
+    },
+    {
+      "id": "ANL-0103",
+      "fastighets_id": "909a6a88-3f7b-90ec-e040-ed8f66444c3f",
+      "namn": "Lilla informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-103/600/300",
+      "ar": 2004
+    },
+    {
+      "id": "ANL-0104",
+      "fastighets_id": "909a6a88-3f7b-90ec-e040-ed8f66444c3f",
+      "namn": "Lilla informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-104/600/300",
+      "ar": 2004
+    },
+    {
+      "id": "ANL-0105",
+      "fastighets_id": "909a6a88-3ebb-90ec-e040-ed8f66444c3f",
+      "namn": "Norra spångad led",
+      "typ": "Spångad led",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-105/600/300",
+      "ar": 2010
+    },
+    {
+      "id": "ANL-0106",
+      "fastighets_id": "909a6a88-3ebb-90ec-e040-ed8f66444c3f",
+      "namn": "Norra spångad led",
+      "typ": "Spångad led",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-106/600/300",
+      "ar": 2010
+    },
+    {
+      "id": "ANL-0107",
+      "fastighets_id": "909a6a88-3ebb-90ec-e040-ed8f66444c3f",
+      "namn": "Norra spångad led",
+      "typ": "Spångad led",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-107/600/300",
+      "ar": 2010
+    },
+    {
+      "id": "ANL-0108",
+      "fastighets_id": "909a6a88-3dfb-90ec-e040-ed8f66444c3f",
+      "namn": "Stora informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-108/600/300",
+      "ar": 1997
+    },
+    {
+      "id": "ANL-0109",
+      "fastighets_id": "909a6a88-3dfb-90ec-e040-ed8f66444c3f",
+      "namn": "Stora informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-109/600/300",
+      "ar": 1997
+    },
+    {
+      "id": "ANL-0110",
+      "fastighets_id": "909a6a88-3dfb-90ec-e040-ed8f66444c3f",
+      "namn": "Stora informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-110/600/300",
+      "ar": 1997
+    },
+    {
+      "id": "ANL-0111",
+      "fastighets_id": "909a6a88-3cdb-90ec-e040-ed8f66444c3f",
+      "namn": "Nedre stängsel",
+      "typ": "Stängsel",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-111/600/300",
+      "ar": 1981
+    },
+    {
+      "id": "ANL-0112",
+      "fastighets_id": "909a6a88-3cdb-90ec-e040-ed8f66444c3f",
+      "namn": "Nedre stängsel",
+      "typ": "Stängsel",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-112/600/300",
+      "ar": 1981
+    },
+    {
+      "id": "ANL-0113",
+      "fastighets_id": "909a6a88-3cdb-90ec-e040-ed8f66444c3f",
+      "namn": "Nedre stängsel",
+      "typ": "Stängsel",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-113/600/300",
+      "ar": 1981
+    },
+    {
+      "id": "ANL-0114",
+      "fastighets_id": "909a6a88-3eb5-90ec-e040-ed8f66444c3f",
+      "namn": "Övre parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-114/600/300",
+      "ar": 1994
+    },
+    {
+      "id": "ANL-0115",
+      "fastighets_id": "909a6a88-3eb5-90ec-e040-ed8f66444c3f",
+      "namn": "Övre parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-115/600/300",
+      "ar": 1994
+    },
+    {
+      "id": "ANL-0116",
+      "fastighets_id": "909a6a88-3dde-90ec-e040-ed8f66444c3f",
+      "namn": "Västra röjsågsförråd",
+      "typ": "Röjsågsförråd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-116/600/300",
+      "ar": 1967
+    },
+    {
+      "id": "ANL-0117",
+      "fastighets_id": "909a6a88-3dde-90ec-e040-ed8f66444c3f",
+      "namn": "Västra röjsågsförråd",
+      "typ": "Röjsågsförråd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-117/600/300",
+      "ar": 1967
+    },
+    {
+      "id": "ANL-0118",
+      "fastighets_id": "909a6a88-3dde-90ec-e040-ed8f66444c3f",
+      "namn": "Västra röjsågsförråd",
+      "typ": "Röjsågsförråd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-118/600/300",
+      "ar": 1967
+    },
+    {
+      "id": "ANL-0119",
+      "fastighets_id": "909a6a88-3d91-90ec-e040-ed8f66444c3f",
+      "namn": "Södra vindskydd",
+      "typ": "Vindskydd",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-119/600/300",
+      "ar": 2021
+    },
+    {
+      "id": "ANL-0120",
+      "fastighets_id": "909a6a88-3dba-90ec-e040-ed8f66444c3f",
+      "namn": "Östra röjsågsförråd",
+      "typ": "Röjsågsförråd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-120/600/300",
+      "ar": 1962
+    },
+    {
+      "id": "ANL-0121",
+      "fastighets_id": "909a6a88-3dba-90ec-e040-ed8f66444c3f",
+      "namn": "Östra röjsågsförråd",
+      "typ": "Röjsågsförråd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-121/600/300",
+      "ar": 1962
+    },
+    {
+      "id": "ANL-0122",
+      "fastighets_id": "909a6a88-3dba-90ec-e040-ed8f66444c3f",
+      "namn": "Östra röjsågsförråd",
+      "typ": "Röjsågsförråd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-122/600/300",
+      "ar": 1962
+    },
+    {
+      "id": "ANL-0123",
+      "fastighets_id": "909a6a88-3e9d-90ec-e040-ed8f66444c3f",
+      "namn": "Övre parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-123/600/300",
+      "ar": 1993
+    },
+    {
+      "id": "ANL-0124",
+      "fastighets_id": "909a6a88-3e9d-90ec-e040-ed8f66444c3f",
+      "namn": "Övre parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-124/600/300",
+      "ar": 1993
+    },
+    {
+      "id": "ANL-0125",
+      "fastighets_id": "909a6a88-3f94-90ec-e040-ed8f66444c3f",
+      "namn": "Södra vindskydd",
+      "typ": "Vindskydd",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-125/600/300",
+      "ar": 2021
+    },
+    {
+      "id": "ANL-0126",
+      "fastighets_id": "1ea9fcc0-7a01-482d-8e0d-05fe0c87b455",
+      "namn": "Norra spångad led",
+      "typ": "Spångad led",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-126/600/300",
+      "ar": 2010
+    },
+    {
+      "id": "ANL-0127",
+      "fastighets_id": "909a6a88-3ed1-90ec-e040-ed8f66444c3f",
+      "namn": "Övre parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-127/600/300",
+      "ar": 1991
+    },
+    {
+      "id": "ANL-0128",
+      "fastighets_id": "909a6a88-3ed1-90ec-e040-ed8f66444c3f",
+      "namn": "Övre parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-128/600/300",
+      "ar": 1991
+    },
+    {
+      "id": "ANL-0129",
+      "fastighets_id": "909a6a8a-c09b-90ec-e040-ed8f66444c3f",
+      "namn": "Norra vindskydd",
+      "typ": "Vindskydd",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-129/600/300",
+      "ar": 2016
+    },
+    {
+      "id": "ANL-0130",
+      "fastighets_id": "909a6a8a-c09b-90ec-e040-ed8f66444c3f",
+      "namn": "Norra vindskydd",
+      "typ": "Vindskydd",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-130/600/300",
+      "ar": 2016
+    },
+    {
+      "id": "ANL-0131",
+      "fastighets_id": "909a6a88-3d7c-90ec-e040-ed8f66444c3f",
+      "namn": "Lilla spångad led",
+      "typ": "Spångad led",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-131/600/300",
+      "ar": 2008
+    },
+    {
+      "id": "ANL-0132",
+      "fastighets_id": "909a6a88-3d7c-90ec-e040-ed8f66444c3f",
+      "namn": "Lilla spångad led",
+      "typ": "Spångad led",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-132/600/300",
+      "ar": 2008
+    },
+    {
+      "id": "ANL-0133",
+      "fastighets_id": "909a6a8a-9eb7-90ec-e040-ed8f66444c3f",
+      "namn": "Nedre stängsel",
+      "typ": "Stängsel",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-133/600/300",
+      "ar": 1980
+    },
+    {
+      "id": "ANL-0134",
+      "fastighets_id": "909a6a88-3f96-90ec-e040-ed8f66444c3f",
+      "namn": "Södra vindskydd",
+      "typ": "Vindskydd",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-134/600/300",
+      "ar": 2023
+    },
+    {
+      "id": "ANL-0135",
+      "fastighets_id": "909a6a88-3e92-90ec-e040-ed8f66444c3f",
+      "namn": "Lilla informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-135/600/300",
+      "ar": 2004
+    },
+    {
+      "id": "ANL-0136",
+      "fastighets_id": "909a6a88-3ed4-90ec-e040-ed8f66444c3f",
+      "namn": "Östra röjsågsförråd",
+      "typ": "Röjsågsförråd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-136/600/300",
+      "ar": 1962
+    },
+    {
+      "id": "ANL-0137",
+      "fastighets_id": "909a6a88-3ed4-90ec-e040-ed8f66444c3f",
+      "namn": "Östra röjsågsförråd",
+      "typ": "Röjsågsförråd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-137/600/300",
+      "ar": 1962
+    },
+    {
+      "id": "ANL-0138",
+      "fastighets_id": "909a6a88-3e9c-90ec-e040-ed8f66444c3f",
+      "namn": "Östra vindskydd",
+      "typ": "Vindskydd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-138/600/300",
+      "ar": 2024
+    },
+    {
+      "id": "ANL-0139",
+      "fastighets_id": "909a6a88-3e9c-90ec-e040-ed8f66444c3f",
+      "namn": "Östra vindskydd",
+      "typ": "Vindskydd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-139/600/300",
+      "ar": 2024
+    },
+    {
+      "id": "ANL-0140",
+      "fastighets_id": "909a6a88-3eae-90ec-e040-ed8f66444c3f",
+      "namn": "Gamla stängsel",
+      "typ": "Stängsel",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-140/600/300",
+      "ar": 1980
+    },
+    {
+      "id": "ANL-0141",
+      "fastighets_id": "909a6a8a-ac7d-90ec-e040-ed8f66444c3f",
+      "namn": "Nedre stängsel",
+      "typ": "Stängsel",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-141/600/300",
+      "ar": 1987
+    },
+    {
+      "id": "ANL-0142",
+      "fastighets_id": "909a6a8a-ac7d-90ec-e040-ed8f66444c3f",
+      "namn": "Nedre stängsel",
+      "typ": "Stängsel",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-142/600/300",
+      "ar": 1987
+    },
+    {
+      "id": "ANL-0143",
+      "fastighets_id": "909a6a88-3d99-90ec-e040-ed8f66444c3f",
+      "namn": "Östra röjsågsförråd",
+      "typ": "Röjsågsförråd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-143/600/300",
+      "ar": 1965
+    },
+    {
+      "id": "ANL-0144",
+      "fastighets_id": "909a6a88-3dad-90ec-e040-ed8f66444c3f",
+      "namn": "Stora informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-144/600/300",
+      "ar": 1997
+    },
+    {
+      "id": "ANL-0145",
+      "fastighets_id": "909a6a88-3eac-90ec-e040-ed8f66444c3f",
+      "namn": "Gamla brygga",
+      "typ": "Brygga",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-145/600/300",
+      "ar": 1978
+    },
+    {
+      "id": "ANL-0146",
+      "fastighets_id": "909a6a88-3eb7-90ec-e040-ed8f66444c3f",
+      "namn": "Stora parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-146/600/300",
+      "ar": 1996
+    },
+    {
+      "id": "ANL-0147",
+      "fastighets_id": "909a6a88-3eb7-90ec-e040-ed8f66444c3f",
+      "namn": "Stora parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-147/600/300",
+      "ar": 1996
+    },
+    {
+      "id": "ANL-0148",
+      "fastighets_id": "909a6a88-3cf0-90ec-e040-ed8f66444c3f",
+      "namn": "Övre parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-148/600/300",
+      "ar": 1994
+    },
+    {
+      "id": "ANL-0149",
+      "fastighets_id": "909a6a88-3cf0-90ec-e040-ed8f66444c3f",
+      "namn": "Övre parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-149/600/300",
+      "ar": 1994
+    },
+    {
+      "id": "ANL-0150",
+      "fastighets_id": "3a5356af-add8-629b-e053-7e44ed8f5303",
+      "namn": "Lilla informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-150/600/300",
+      "ar": 2003
+    },
+    {
+      "id": "ANL-0151",
+      "fastighets_id": "3a5356af-add8-629b-e053-7e44ed8f5303",
+      "namn": "Lilla informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-151/600/300",
+      "ar": 2003
+    },
+    {
+      "id": "ANL-0152",
+      "fastighets_id": "909a6a88-3e0d-90ec-e040-ed8f66444c3f",
+      "namn": "Övre parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-152/600/300",
+      "ar": 1988
+    },
+    {
+      "id": "ANL-0153",
+      "fastighets_id": "909a6a88-3e0d-90ec-e040-ed8f66444c3f",
+      "namn": "Övre parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-153/600/300",
+      "ar": 1988
+    },
+    {
+      "id": "ANL-0154",
+      "fastighets_id": "909a6a88-3e0d-90ec-e040-ed8f66444c3f",
+      "namn": "Övre parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-154/600/300",
+      "ar": 1988
+    },
+    {
+      "id": "ANL-0155",
+      "fastighets_id": "909a6a88-3cbb-90ec-e040-ed8f66444c3f",
+      "namn": "Nedre stängsel",
+      "typ": "Stängsel",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-155/600/300",
+      "ar": 1981
+    },
+    {
+      "id": "ANL-0156",
+      "fastighets_id": "909a6a88-3cbb-90ec-e040-ed8f66444c3f",
+      "namn": "Nedre stängsel",
+      "typ": "Stängsel",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-156/600/300",
+      "ar": 1981
+    },
+    {
+      "id": "ANL-0157",
+      "fastighets_id": "909a6a88-3cbb-90ec-e040-ed8f66444c3f",
+      "namn": "Nedre stängsel",
+      "typ": "Stängsel",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-157/600/300",
+      "ar": 1981
+    },
+    {
+      "id": "ANL-0158",
+      "fastighets_id": "909a6a88-406f-90ec-e040-ed8f66444c3f",
+      "namn": "Stora informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-158/600/300",
+      "ar": 1998
+    },
+    {
+      "id": "ANL-0159",
+      "fastighets_id": "909a6a88-406f-90ec-e040-ed8f66444c3f",
+      "namn": "Stora informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-159/600/300",
+      "ar": 1998
+    },
+    {
+      "id": "ANL-0160",
+      "fastighets_id": "909a6a88-406f-90ec-e040-ed8f66444c3f",
+      "namn": "Stora informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-160/600/300",
+      "ar": 1998
+    },
+    {
+      "id": "ANL-0161",
+      "fastighets_id": "909a6a88-3e0f-90ec-e040-ed8f66444c3f",
+      "namn": "Övre parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-161/600/300",
+      "ar": 1990
+    },
+    {
+      "id": "ANL-0162",
+      "fastighets_id": "909a6a88-3e0f-90ec-e040-ed8f66444c3f",
+      "namn": "Övre parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-162/600/300",
+      "ar": 1990
+    },
+    {
+      "id": "ANL-0163",
+      "fastighets_id": "909a6a88-3e0f-90ec-e040-ed8f66444c3f",
+      "namn": "Övre parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-163/600/300",
+      "ar": 1990
+    },
+    {
+      "id": "ANL-0164",
+      "fastighets_id": "909a6a88-3ef0-90ec-e040-ed8f66444c3f",
+      "namn": "Södra vindskydd",
+      "typ": "Vindskydd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-164/600/300",
+      "ar": 2023
+    },
+    {
+      "id": "ANL-0165",
+      "fastighets_id": "909a6a88-3ef0-90ec-e040-ed8f66444c3f",
+      "namn": "Södra vindskydd",
+      "typ": "Vindskydd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-165/600/300",
+      "ar": 2023
+    },
+    {
+      "id": "ANL-0166",
+      "fastighets_id": "909a6a88-3f87-90ec-e040-ed8f66444c3f",
+      "namn": "Övre parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-166/600/300",
+      "ar": 1991
+    },
+    {
+      "id": "ANL-0167",
+      "fastighets_id": "909a6a88-3f87-90ec-e040-ed8f66444c3f",
+      "namn": "Övre parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-167/600/300",
+      "ar": 1991
+    },
+    {
+      "id": "ANL-0168",
+      "fastighets_id": "909a6a88-3f87-90ec-e040-ed8f66444c3f",
+      "namn": "Övre parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-168/600/300",
+      "ar": 1991
+    },
+    {
+      "id": "ANL-0169",
+      "fastighets_id": "909a6a88-3cfc-90ec-e040-ed8f66444c3f",
+      "namn": "Norra vindskydd",
+      "typ": "Vindskydd",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-169/600/300",
+      "ar": 2016
+    },
+    {
+      "id": "ANL-0170",
+      "fastighets_id": "909a6a88-3cfc-90ec-e040-ed8f66444c3f",
+      "namn": "Norra vindskydd",
+      "typ": "Vindskydd",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-170/600/300",
+      "ar": 2016
+    },
+    {
+      "id": "ANL-0171",
+      "fastighets_id": "909a6a88-3cfc-90ec-e040-ed8f66444c3f",
+      "namn": "Norra vindskydd",
+      "typ": "Vindskydd",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-171/600/300",
+      "ar": 2016
+    },
+    {
+      "id": "ANL-0172",
+      "fastighets_id": "909a6a88-3e32-90ec-e040-ed8f66444c3f",
+      "namn": "Stora informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-172/600/300",
+      "ar": 2002
+    },
+    {
+      "id": "ANL-0173",
+      "fastighets_id": "909a6a88-3e09-90ec-e040-ed8f66444c3f",
+      "namn": "Gamla brygga",
+      "typ": "Brygga",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-173/600/300",
+      "ar": 1975
+    },
+    {
+      "id": "ANL-0174",
+      "fastighets_id": "909a6a88-3e09-90ec-e040-ed8f66444c3f",
+      "namn": "Gamla brygga",
+      "typ": "Brygga",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-174/600/300",
+      "ar": 1975
+    },
+    {
+      "id": "ANL-0175",
+      "fastighets_id": "909a6a88-3eb4-90ec-e040-ed8f66444c3f",
+      "namn": "Östra röjsågsförråd",
+      "typ": "Röjsågsförråd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-175/600/300",
+      "ar": 1961
+    },
+    {
+      "id": "ANL-0176",
+      "fastighets_id": "909a6a88-3eb4-90ec-e040-ed8f66444c3f",
+      "namn": "Östra röjsågsförråd",
+      "typ": "Röjsågsförråd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-176/600/300",
+      "ar": 1961
+    },
+    {
+      "id": "ANL-0177",
+      "fastighets_id": "909a6a88-3e35-90ec-e040-ed8f66444c3f",
+      "namn": "Västra brygga",
+      "typ": "Brygga",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-177/600/300",
+      "ar": 1972
+    },
+    {
+      "id": "ANL-0178",
+      "fastighets_id": "909a6a88-3e42-90ec-e040-ed8f66444c3f",
+      "namn": "Lilla informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-178/600/300",
+      "ar": 2002
+    },
+    {
+      "id": "ANL-0179",
+      "fastighets_id": "909a6a88-3e42-90ec-e040-ed8f66444c3f",
+      "namn": "Lilla informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-179/600/300",
+      "ar": 2002
+    },
+    {
+      "id": "ANL-0180",
+      "fastighets_id": "909a6a88-3e42-90ec-e040-ed8f66444c3f",
+      "namn": "Lilla informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-180/600/300",
+      "ar": 2002
+    },
+    {
+      "id": "ANL-0181",
+      "fastighets_id": "909a6a88-3eb9-90ec-e040-ed8f66444c3f",
+      "namn": "Stora informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-181/600/300",
+      "ar": 1999
+    },
+    {
+      "id": "ANL-0182",
+      "fastighets_id": "909a6a88-3e08-90ec-e040-ed8f66444c3f",
+      "namn": "Lilla spångad led",
+      "typ": "Spångad led",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-182/600/300",
+      "ar": 2007
+    },
+    {
+      "id": "ANL-0183",
+      "fastighets_id": "909a6a88-3e08-90ec-e040-ed8f66444c3f",
+      "namn": "Lilla spångad led",
+      "typ": "Spångad led",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-183/600/300",
+      "ar": 2007
+    },
+    {
+      "id": "ANL-0184",
+      "fastighets_id": "909a6a88-3e47-90ec-e040-ed8f66444c3f",
+      "namn": "Gamla brygga",
+      "typ": "Brygga",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-184/600/300",
+      "ar": 1975
+    },
+    {
+      "id": "ANL-0185",
+      "fastighets_id": "909a6a88-3e47-90ec-e040-ed8f66444c3f",
+      "namn": "Gamla brygga",
+      "typ": "Brygga",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-185/600/300",
+      "ar": 1975
+    },
+    {
+      "id": "ANL-0186",
+      "fastighets_id": "909a6a88-3e47-90ec-e040-ed8f66444c3f",
+      "namn": "Gamla brygga",
+      "typ": "Brygga",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-186/600/300",
+      "ar": 1975
+    },
+    {
+      "id": "ANL-0187",
+      "fastighets_id": "909a6a88-3e05-90ec-e040-ed8f66444c3f",
+      "namn": "Västra brygga",
+      "typ": "Brygga",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-187/600/300",
+      "ar": 1971
+    },
+    {
+      "id": "ANL-0188",
+      "fastighets_id": "909a6a88-3e05-90ec-e040-ed8f66444c3f",
+      "namn": "Västra brygga",
+      "typ": "Brygga",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-188/600/300",
+      "ar": 1971
+    },
+    {
+      "id": "ANL-0189",
+      "fastighets_id": "909a6a88-3e49-90ec-e040-ed8f66444c3f",
+      "namn": "Gamla brygga",
+      "typ": "Brygga",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-189/600/300",
+      "ar": 1977
+    },
+    {
+      "id": "ANL-0190",
+      "fastighets_id": "909a6a88-3e49-90ec-e040-ed8f66444c3f",
+      "namn": "Gamla brygga",
+      "typ": "Brygga",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-190/600/300",
+      "ar": 1977
+    },
+    {
+      "id": "ANL-0191",
+      "fastighets_id": "909a6a88-3e52-90ec-e040-ed8f66444c3f",
+      "namn": "Lilla informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-191/600/300",
+      "ar": 2002
+    },
+    {
+      "id": "ANL-0192",
+      "fastighets_id": "909a6a88-3e59-90ec-e040-ed8f66444c3f",
+      "namn": "Gamla brygga",
+      "typ": "Brygga",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-192/600/300",
+      "ar": 1977
+    },
+    {
+      "id": "ANL-0193",
+      "fastighets_id": "909a6a88-3e07-90ec-e040-ed8f66444c3f",
+      "namn": "Gamla brygga",
+      "typ": "Brygga",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-193/600/300",
+      "ar": 1973
+    },
+    {
+      "id": "ANL-0194",
+      "fastighets_id": "909a6a88-3e07-90ec-e040-ed8f66444c3f",
+      "namn": "Gamla brygga",
+      "typ": "Brygga",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-194/600/300",
+      "ar": 1973
+    },
+    {
+      "id": "ANL-0195",
+      "fastighets_id": "909a6a88-3e2f-90ec-e040-ed8f66444c3f",
+      "namn": "Övre parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-195/600/300",
+      "ar": 1991
+    },
+    {
+      "id": "ANL-0196",
+      "fastighets_id": "909a6a88-3e2f-90ec-e040-ed8f66444c3f",
+      "namn": "Övre parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-196/600/300",
+      "ar": 1991
+    },
+    {
+      "id": "ANL-0197",
+      "fastighets_id": "909a6a88-3e2f-90ec-e040-ed8f66444c3f",
+      "namn": "Övre parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-197/600/300",
+      "ar": 1991
+    },
+    {
+      "id": "ANL-0198",
+      "fastighets_id": "909a6a88-3e44-90ec-e040-ed8f66444c3f",
+      "namn": "Lilla informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-198/600/300",
+      "ar": 2004
+    },
+    {
+      "id": "ANL-0199",
+      "fastighets_id": "909a6a88-3e44-90ec-e040-ed8f66444c3f",
+      "namn": "Lilla informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-199/600/300",
+      "ar": 2004
+    },
+    {
+      "id": "ANL-0200",
+      "fastighets_id": "909a6a88-3e44-90ec-e040-ed8f66444c3f",
+      "namn": "Lilla informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-200/600/300",
+      "ar": 2004
+    },
+    {
+      "id": "ANL-0201",
+      "fastighets_id": "909a6a88-3e55-90ec-e040-ed8f66444c3f",
+      "namn": "Gamla brygga",
+      "typ": "Brygga",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-201/600/300",
+      "ar": 1973
+    },
+    {
+      "id": "ANL-0202",
+      "fastighets_id": "909a6a88-3e5b-90ec-e040-ed8f66444c3f",
+      "namn": "Övre parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-202/600/300",
+      "ar": 1989
+    },
+    {
+      "id": "ANL-0203",
+      "fastighets_id": "909a6a88-3e5b-90ec-e040-ed8f66444c3f",
+      "namn": "Övre parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-203/600/300",
+      "ar": 1989
+    },
+    {
+      "id": "ANL-0204",
+      "fastighets_id": "909a6a88-3e5a-90ec-e040-ed8f66444c3f",
+      "namn": "Södra vindskydd",
+      "typ": "Vindskydd",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-204/600/300",
+      "ar": 2020
+    },
+    {
+      "id": "ANL-0205",
+      "fastighets_id": "909a6a88-3e5a-90ec-e040-ed8f66444c3f",
+      "namn": "Södra vindskydd",
+      "typ": "Vindskydd",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-205/600/300",
+      "ar": 2020
+    },
+    {
+      "id": "ANL-0206",
+      "fastighets_id": "909a6a88-3ead-90ec-e040-ed8f66444c3f",
+      "namn": "Norra spångad led",
+      "typ": "Spångad led",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-206/600/300",
+      "ar": 2011
+    },
+    {
+      "id": "ANL-0207",
+      "fastighets_id": "909a6a88-3e56-90ec-e040-ed8f66444c3f",
+      "namn": "Lilla spångad led",
+      "typ": "Spångad led",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-207/600/300",
+      "ar": 2007
+    },
+    {
+      "id": "ANL-0208",
+      "fastighets_id": "909a6a8a-9eb8-90ec-e040-ed8f66444c3f",
+      "namn": "Norra spångad led",
+      "typ": "Spångad led",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-208/600/300",
+      "ar": 2014
+    },
+    {
+      "id": "ANL-0209",
+      "fastighets_id": "909a6a88-3e12-90ec-e040-ed8f66444c3f",
+      "namn": "Stora informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-209/600/300",
+      "ar": 2001
+    },
+    {
+      "id": "ANL-0210",
+      "fastighets_id": "909a6a88-3e45-90ec-e040-ed8f66444c3f",
+      "namn": "Västra brygga",
+      "typ": "Brygga",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-210/600/300",
+      "ar": 1973
+    },
+    {
+      "id": "ANL-0211",
+      "fastighets_id": "909a6a88-3e45-90ec-e040-ed8f66444c3f",
+      "namn": "Västra brygga",
+      "typ": "Brygga",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-211/600/300",
+      "ar": 1973
+    },
+    {
+      "id": "ANL-0212",
+      "fastighets_id": "909a6a88-3e45-90ec-e040-ed8f66444c3f",
+      "namn": "Västra brygga",
+      "typ": "Brygga",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-212/600/300",
+      "ar": 1973
+    },
+    {
+      "id": "ANL-0213",
+      "fastighets_id": "909a6a88-3eb6-90ec-e040-ed8f66444c3f",
+      "namn": "Östra röjsågsförråd",
+      "typ": "Röjsågsförråd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-213/600/300",
+      "ar": 1963
+    },
+    {
+      "id": "ANL-0214",
+      "fastighets_id": "909a6a88-3eb6-90ec-e040-ed8f66444c3f",
+      "namn": "Östra röjsågsförråd",
+      "typ": "Röjsågsförråd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-214/600/300",
+      "ar": 1963
+    },
+    {
+      "id": "ANL-0215",
+      "fastighets_id": "909a6a88-3e14-90ec-e040-ed8f66444c3f",
+      "namn": "Lilla informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-215/600/300",
+      "ar": 2003
+    },
+    {
+      "id": "ANL-0216",
+      "fastighets_id": "909a6a88-3cf6-90ec-e040-ed8f66444c3f",
+      "namn": "Stora informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-216/600/300",
+      "ar": 2001
+    },
+    {
+      "id": "ANL-0217",
+      "fastighets_id": "909a6a88-3cf6-90ec-e040-ed8f66444c3f",
+      "namn": "Stora informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-217/600/300",
+      "ar": 2001
+    },
+    {
+      "id": "ANL-0218",
+      "fastighets_id": "909a6a89-ba2d-90ec-e040-ed8f66444c3f",
+      "namn": "Norra spångad led",
+      "typ": "Spångad led",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-218/600/300",
+      "ar": 2010
+    },
+    {
+      "id": "ANL-0219",
+      "fastighets_id": "909a6a89-ba2d-90ec-e040-ed8f66444c3f",
+      "namn": "Norra spångad led",
+      "typ": "Spångad led",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-219/600/300",
+      "ar": 2010
+    },
+    {
+      "id": "ANL-0220",
+      "fastighets_id": "3e2d38d2-bb90-0310-e053-7e44ed8f98ba",
+      "namn": "Nedre stängsel",
+      "typ": "Stängsel",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-220/600/300",
+      "ar": 1984
+    },
+    {
+      "id": "ANL-0221",
+      "fastighets_id": "3e2d38d2-bb90-0310-e053-7e44ed8f98ba",
+      "namn": "Nedre stängsel",
+      "typ": "Stängsel",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-221/600/300",
+      "ar": 1984
+    },
+    {
+      "id": "ANL-0222",
+      "fastighets_id": "3e2d38d2-bb90-0310-e053-7e44ed8f98ba",
+      "namn": "Nedre stängsel",
+      "typ": "Stängsel",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-222/600/300",
+      "ar": 1984
+    },
+    {
+      "id": "ANL-0223",
+      "fastighets_id": "909a6a89-f23e-90ec-e040-ed8f66444c3f",
+      "namn": "Stora parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-223/600/300",
+      "ar": 1995
+    },
+    {
+      "id": "ANL-0224",
+      "fastighets_id": "909a6a89-f23e-90ec-e040-ed8f66444c3f",
+      "namn": "Stora parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-224/600/300",
+      "ar": 1995
+    },
+    {
+      "id": "ANL-0225",
+      "fastighets_id": "909a6a89-f24c-90ec-e040-ed8f66444c3f",
+      "namn": "Övre parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-225/600/300",
+      "ar": 1993
+    },
+    {
+      "id": "ANL-0226",
+      "fastighets_id": "909a6a89-c174-90ec-e040-ed8f66444c3f",
+      "namn": "Gamla brygga",
+      "typ": "Brygga",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-226/600/300",
+      "ar": 1974
+    },
+    {
+      "id": "ANL-0227",
+      "fastighets_id": "909a6a89-c174-90ec-e040-ed8f66444c3f",
+      "namn": "Gamla brygga",
+      "typ": "Brygga",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-227/600/300",
+      "ar": 1974
+    },
+    {
+      "id": "ANL-0228",
+      "fastighets_id": "909a6a89-c174-90ec-e040-ed8f66444c3f",
+      "namn": "Gamla brygga",
+      "typ": "Brygga",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-228/600/300",
+      "ar": 1974
+    },
+    {
+      "id": "ANL-0229",
+      "fastighets_id": "2fe09adf-d7f3-10d8-e053-7e44ed8f2781",
+      "namn": "Gamla stängsel",
+      "typ": "Stängsel",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-229/600/300",
+      "ar": 1980
+    },
+    {
+      "id": "ANL-0230",
+      "fastighets_id": "2fe09adf-d7f3-10d8-e053-7e44ed8f2781",
+      "namn": "Gamla stängsel",
+      "typ": "Stängsel",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-230/600/300",
+      "ar": 1980
+    },
+    {
+      "id": "ANL-0231",
+      "fastighets_id": "909a6a89-d1d4-90ec-e040-ed8f66444c3f",
+      "namn": "Övre parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-231/600/300",
+      "ar": 1991
+    },
+    {
+      "id": "ANL-0232",
+      "fastighets_id": "909a6a89-d1a8-90ec-e040-ed8f66444c3f",
+      "namn": "Övre parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-232/600/300",
+      "ar": 1994
+    },
+    {
+      "id": "ANL-0233",
+      "fastighets_id": "909a6a89-d1a8-90ec-e040-ed8f66444c3f",
+      "namn": "Övre parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-233/600/300",
+      "ar": 1994
+    },
+    {
+      "id": "ANL-0234",
+      "fastighets_id": "909a6a89-d1a4-90ec-e040-ed8f66444c3f",
+      "namn": "Övre parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-234/600/300",
+      "ar": 1990
+    },
+    {
+      "id": "ANL-0235",
+      "fastighets_id": "909a6a89-d1a4-90ec-e040-ed8f66444c3f",
+      "namn": "Övre parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-235/600/300",
+      "ar": 1990
+    },
+    {
+      "id": "ANL-0236",
+      "fastighets_id": "909a6a89-d1a4-90ec-e040-ed8f66444c3f",
+      "namn": "Övre parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-236/600/300",
+      "ar": 1990
+    },
+    {
+      "id": "ANL-0237",
+      "fastighets_id": "e42c6f56-3159-4912-9d02-96b6e02f2168",
+      "namn": "Östra röjsågsförråd",
+      "typ": "Röjsågsförråd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-237/600/300",
+      "ar": 1961
+    },
+    {
+      "id": "ANL-0238",
+      "fastighets_id": "e42c6f56-3159-4912-9d02-96b6e02f2168",
+      "namn": "Östra röjsågsförråd",
+      "typ": "Röjsågsförråd",
+      "skick": "Åtgärdsbehov",
+      "bild": "https://picsum.photos/seed/ANL-238/600/300",
+      "ar": 1961
+    },
+    {
+      "id": "ANL-0239",
+      "fastighets_id": "909a6a89-da59-90ec-e040-ed8f66444c3f",
+      "namn": "Övre parkeringsplats",
+      "typ": "Parkeringsplats",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-239/600/300",
+      "ar": 1990
+    },
+    {
+      "id": "ANL-0240",
+      "fastighets_id": "e84a3b0f-b135-6773-e043-7e44ed8f5b50",
+      "namn": "Stora informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-240/600/300",
+      "ar": 2001
+    },
+    {
+      "id": "ANL-0241",
+      "fastighets_id": "e84a3b0f-b135-6773-e043-7e44ed8f5b50",
+      "namn": "Stora informationsskylt",
+      "typ": "Informationsskylt",
+      "skick": "Bra",
+      "bild": "https://picsum.photos/seed/ANL-241/600/300",
+      "ar": 2001
+    },
+    {
+      "id": "ANL-0242",
+      "fastighets_id": "6641fbb3-39d8-5c6c-e053-7e44ed8f2c46",
+      "namn": "Gamla brygga",
+      "typ": "Brygga",
+      "skick": "Bristfällig",
+      "bild": "https://picsum.photos/seed/ANL-242/600/300",
+      "ar": 1976
+    }
+  ]
+}

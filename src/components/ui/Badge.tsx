@@ -24,24 +24,30 @@ export function Badge({
   return <span className={cls}>{children}</span>
 }
 
-/** Mappar byggnads-skick till badge-variant */
+/** Mappar byggnads/anläggnings-skick till badge-variant */
 export function skickVariant(skick: string): BadgeVariant {
   switch (skick) {
-    case 'Gott skick':    return 'success'
+    case 'Bra':           return 'success'
     case 'Åtgärdsbehov':  return 'warning'
-    case 'Kritiskt skick': return 'error'
+    case 'Bristfällig':   return 'error'
     default:              return 'neutral'
   }
 }
 
 /** Mappar DINO-status till badge-variant */
-export function statusVariant(
-  status: 'aktiv' | 'vilande' | 'avslutad' | string,
-): BadgeVariant {
+export function statusVariant(status: string): BadgeVariant {
   switch (status) {
-    case 'aktiv':     return 'success'
-    case 'vilande':   return 'warning'
-    case 'avslutad':  return 'neutral'
+    // Fastighet
+    case 'Ägd':       return 'success'
+    case 'Arrende':   return 'warning'
+    case 'Sökt':      return 'neutral'
+    // Skyddsomrade / Beslut
+    case 'GALLANDE':  return 'success'
+    case 'UTREDNING': return 'warning'
+    case 'AVVECKLAD': return 'neutral'
+    // Avtal
+    case 'Gällande':  return 'success'
+    case 'Avslutat':  return 'neutral'
     default:          return 'default'
   }
 }
