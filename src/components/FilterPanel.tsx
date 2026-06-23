@@ -5,10 +5,11 @@ import type { ObjectTypeKey, AttributeFilters } from '../hooks/useFilters'
 import type { FilterOptions, SearchTypeCounts } from '../hooks/useSearch'
 
 const TYPE_CONFIG: Array<{ key: ObjectTypeKey; label: string; icon: string }> = [
-  { key: 'fastigheter',   label: 'Fastigheter',       icon: 'landscape'  },
-  { key: 'skyddsomraden', label: 'Skyddsvärtområden', icon: 'nature'     },
-  { key: 'beslut',        label: 'Beslut',             icon: 'gavel'      },
-  { key: 'byggnader',     label: 'Byggnader',          icon: 'home_work'  },
+  { key: 'fastigheter',    label: 'Fastigheter',     icon: 'landscape'  },
+  { key: 'skyddatomraden', label: 'Skyddade områden', icon: 'nature'     },
+  { key: 'delomraden',     label: 'Delområden',       icon: 'layers'     },
+  { key: 'beslut',         label: 'Beslut',           icon: 'gavel'      },
+  { key: 'byggnader',      label: 'Byggnader',        icon: 'home_work'  },
 ]
 
 interface AttrGroupConfig {
@@ -18,11 +19,10 @@ interface AttrGroupConfig {
 }
 
 const ATTR_GROUPS: AttrGroupConfig[] = [
-  { key: 'status',     label: 'Status',          isAvailable: (o, t) => o.status.length > 0 && (t.skyddsomraden || t.beslut) },
-  { key: 'skyddstyp',  label: 'Skyddstyp',       isAvailable: (o, t) => o.skyddstyp.length > 0 && t.skyddsomraden },
-  { key: 'kommunnamn', label: 'Kommun',           isAvailable: (o, t) => o.kommunnamn.length > 0 && t.fastigheter },
-  { key: 'skick',      label: 'Byggnadsskick',    isAvailable: (o, t) => o.skick.length > 0 && t.byggnader },
-  { key: 'anvandning', label: 'Användning',       isAvailable: (o, t) => o.anvandning.length > 0 && t.byggnader },
+  { key: 'status',     label: 'Status',       isAvailable: (o, t) => o.status.length > 0 && (t.skyddatomraden || t.beslut || t.delomraden) },
+  { key: 'typ',        label: 'Skyddstyp',    isAvailable: (o, t) => o.typ.length > 0 && t.skyddatomraden },
+  { key: 'skick',      label: 'Byggnadsskick', isAvailable: (o, t) => o.skick.length > 0 && t.byggnader },
+  { key: 'anvandning', label: 'Användning',    isAvailable: (o, t) => o.anvandning.length > 0 && t.byggnader },
 ]
 
 interface FilterPanelProps {

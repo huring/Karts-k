@@ -1,25 +1,26 @@
 import { useState } from 'react'
 
-export type ObjectTypeKey = 'fastigheter' | 'skyddsomraden' | 'beslut' | 'byggnader'
+export type ObjectTypeKey = 'fastigheter' | 'skyddatomraden' | 'beslut' | 'delomraden' | 'byggnader'
 
 export type AttributeFilters = {
   status:     string[]
-  skyddstyp:  string[]
+  typ:        string[]
   kommunnamn: string[]
   skick:      string[]
   anvandning: string[]
 }
 
 const INITIAL_TYPES: Record<ObjectTypeKey, boolean> = {
-  fastigheter:   true,
-  skyddsomraden: true,
-  beslut:        true,
-  byggnader:     true,
+  fastigheter:    true,
+  skyddatomraden: true,
+  beslut:         true,
+  delomraden:     true,
+  byggnader:      true,
 }
 
 const INITIAL_ATTRIBUTES: AttributeFilters = {
   status:     [],
-  skyddstyp:  [],
+  typ:        [],
   kommunnamn: [],
   skick:      [],
   anvandning: [],

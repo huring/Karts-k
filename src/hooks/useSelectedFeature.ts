@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import type * as mapboxgl from 'mapbox-gl'
 import type { Feature } from 'geojson'
 
-export type SelectedLayer = 'fastigheter' | 'skyddsomraden' | 'beslut'
+export type SelectedLayer = 'fastigheter' | 'skyddatomraden' | 'beslut' | 'delomraden'
 
 export interface SelectedFeatureState {
   feature: Feature
@@ -37,7 +37,6 @@ export function useSelectedFeature(
         setSelected({ feature: { type: 'Feature', geometry: f.geometry, properties: f.properties }, layer })
       }
 
-    // Unified hover handler factory — extracts feature ID and propagates it with layer type
     const makeHoverHandlers = (layer: SelectedLayer) => {
       const onEnter = (e: mapboxgl.MapMouseEvent & { features?: mapboxgl.MapboxGeoJSONFeature[] }) => {
         if (isToolActiveRef.current) return
@@ -54,12 +53,14 @@ export function useSelectedFeature(
     }
 
     const onFastighetClick    = makeClickHandler('fastigheter')
-    const onSkyddsomradeClick = makeClickHandler('skyddsomraden')
+    const onSkyddsClick       = makeClickHandler('skyddatomraden')
     const onBeslutClick       = makeClickHandler('beslut')
+    const onDelomradeClick    = makeClickHandler('delomraden')
 
-    const { onEnter: onFastEnter, onLeave: onFastLeave }   = makeHoverHandlers('fastigheter')
-    const { onEnter: onSkyddsEnter, onLeave: onSkyddsLeave } = makeHoverHandlers('skyddsomraden')
-    const { onEnter: onBeslutEnter, onLeave: onBeslutLeave } = makeHoverHandlers('beslut')
+    const { onEnter: onFastEnter,    onLeave: onFastLeave    } = makeHoverHandlers('fastigheter')
+    const { onEnter: onSkyddsEnter,  onLeave: onSkyddsLeave  } = makeHoverHandlers('skyddatomraden')
+    const { onEnter: onBeslutEnter,  onLeave: onBeslutLeave  } = makeHoverHandlers('beslut')
+    const { onEnter: onDelomEnter,   onLeave: onDelomLeave   } = makeHoverHandlers('delomraden')
 
     const onByggnadsClick = (e: mapboxgl.MapMouseEvent & { features?: mapboxgl.MapboxGeoJSONFeature[] }) => {
       if (isToolActiveRef.current) return
@@ -72,31 +73,39 @@ export function useSelectedFeature(
     const onByggnadsLeave = () => { if (!isToolActiveRef.current) map.getCanvas().style.cursor = '' }
 
     map.on('click', 'fastigheter-fill',    onFastighetClick)
-    map.on('click', 'skyddsomraden-fill',  onSkyddsomradeClick)
+    map.on('click', 'skyddatomraden-fill', onSkyddsClick)
     map.on('click', 'beslut-circle',       onBeslutClick)
+    map.on('click', 'delomraden-fill',     onDelomradeClick)
     map.on('click', 'byggnader-circle',    onByggnadsClick)
-    map.on('mouseenter', 'fastigheter-fill',   onFastEnter)
-    map.on('mouseleave', 'fastigheter-fill',   onFastLeave)
-    map.on('mouseenter', 'skyddsomraden-fill', onSkyddsEnter)
-    map.on('mouseleave', 'skyddsomraden-fill', onSkyddsLeave)
-    map.on('mouseenter', 'beslut-circle',      onBeslutEnter)
-    map.on('mouseleave', 'beslut-circle',      onBeslutLeave)
-    map.on('mouseenter', 'byggnader-circle',   onByggnadsEnter)
-    map.on('mouseleave', 'byggnader-circle',   onByggnadsLeave)
+
+    map.on('mouseenter', 'fastigheter-fill',    onFastEnter)
+    map.on('mouseleave', 'fastigheter-fill',    onFastLeave)
+    map.on('mouseenter', 'skyddatomraden-fill', onSkyddsEnter)
+    map.on('mouseleave', 'skyddatomraden-fill', onSkyddsLeave)
+    map.on('mouseenter', 'beslut-circle',       onBeslutEnter)
+    map.on('mouseleave', 'beslut-circle',       onBeslutLeave)
+    map.on('mouseenter', 'delomraden-fill',     onDelomEnter)
+    map.on('mouseleave', 'delomraden-fill',     onDelomLeave)
+    map.on('mouseenter', 'byggnader-circle',    onByggnadsEnter)
+    map.on('mouseleave', 'byggnader-circle',    onByggnadsLeave)
 
     return () => {
       map.off('click', 'fastigheter-fill',    onFastighetClick)
-      map.off('click', 'skyddsomraden-fill',  onSkyddsomradeClick)
+      map.off('click', 'skyddatomraden-fill', onSkyddsClick)
       map.off('click', 'beslut-circle',       onBeslutClick)
+      map.off('click', 'delomraden-fill',     onDelomradeClick)
       map.off('click', 'byggnader-circle',    onByggnadsClick)
-      map.off('mouseenter', 'fastigheter-fill',   onFastEnter)
-      map.off('mouseleave', 'fastigheter-fill',   onFastLeave)
-      map.off('mouseenter', 'skyddsomraden-fill', onSkyddsEnter)
-      map.off('mouseleave', 'skyddsomraden-fill', onSkyddsLeave)
-      map.off('mouseenter', 'beslut-circle',      onBeslutEnter)
-      map.off('mouseleave', 'beslut-circle',      onBeslutLeave)
-      map.off('mouseenter', 'byggnader-circle',   onByggnadsEnter)
-      map.off('mouseleave', 'byggnader-circle',   onByggnadsLeave)
+
+      map.off('mouseenter', 'fastigheter-fill',    onFastEnter)
+      map.off('mouseleave', 'fastigheter-fill',    onFastLeave)
+      map.off('mouseenter', 'skyddatomraden-fill', onSkyddsEnter)
+      map.off('mouseleave', 'skyddatomraden-fill', onSkyddsLeave)
+      map.off('mouseenter', 'beslut-circle',       onBeslutEnter)
+      map.off('mouseleave', 'beslut-circle',       onBeslutLeave)
+      map.off('mouseenter', 'delomraden-fill',     onDelomEnter)
+      map.off('mouseleave', 'delomraden-fill',     onDelomLeave)
+      map.off('mouseenter', 'byggnader-circle',    onByggnadsEnter)
+      map.off('mouseleave', 'byggnader-circle',    onByggnadsLeave)
     }
   }, [isLoaded, mapRef])
 

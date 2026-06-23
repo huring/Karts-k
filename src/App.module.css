@@ -8,3 +8,109 @@
   height: 100%;
   overflow: hidden;
 }
+
+.scrollArea {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.zoomDebug {
+  position: absolute;
+  bottom: var(--space-2);
+  left: var(--space-2);
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  font-family: 'Inter', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  pointer-events: none;
+  user-select: none;
+}
+
+.searchOverlay {
+  position: absolute;
+  top: var(--space-4);
+  left: var(--space-4);
+  z-index: 10;
+  width: 340px;
+  background: var(--color-bg);
+  border-radius: var(--radius-md);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Visa i närheten bar */
+
+.nearbyBar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.nearbyBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex: 1;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  padding: var(--space-1) var(--space-3);
+  height: 34px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  color: var(--color-text);
+  cursor: pointer;
+  transition: background 0.1s, border-color 0.1s, color 0.1s;
+}
+
+.nearbyBtn:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.nearbyBtnActive {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--dino-white);
+}
+
+.nearbyBtnActive:hover {
+  background: var(--dino-darkblue-500);
+  border-color: var(--dino-darkblue-500);
+  color: var(--dino-white);
+}
+
+.nearbyBtn .material-symbols-outlined {
+  font-size: 16px;
+}
+
+.nearbyClear {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: none;
+  cursor: pointer;
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+  transition: background 0.1s, color 0.1s;
+}
+
+.nearbyClear:hover {
+  background: var(--color-bg-secondary);
+  color: var(--color-text);
+}
+
+.nearbyClear .material-symbols-outlined {
+  font-size: 18px;
+}

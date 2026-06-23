@@ -4,28 +4,31 @@ import type { SearchResult, SearchResultLayer } from '../hooks/useSearch'
 import type { GeocodeResult } from '../hooks/useGeocode'
 
 const LAYER_LABELS: Record<SearchResultLayer, string> = {
-  fastigheter:   'Fastighet',
-  skyddsomraden: 'Skyddsvärtområde',
-  beslut:        'Beslut',
-  byggnader:     'Byggnad',
+  fastigheter:    'Fastighet',
+  skyddatomraden: 'Skyddat område',
+  beslut:         'Beslut',
+  delomraden:     'Delområde',
+  byggnader:      'Byggnad',
 }
 
 const LAYER_ICONS: Record<SearchResultLayer, string> = {
-  fastigheter:   'landscape',
-  skyddsomraden: 'nature',
-  beslut:        'gavel',
-  byggnader:     'home_work',
+  fastigheter:    'landscape',
+  skyddatomraden: 'nature',
+  beslut:         'gavel',
+  delomraden:     'layers',
+  byggnader:      'home_work',
 }
 
 type GroupedResult = { parent: SearchResult; children: SearchResult[] }
 
 function groupResults(results: SearchResult[]): { groups: GroupedResult[]; orphans: SearchResult[] } {
-  const fastigheter   = results.filter(r => r.layer === 'fastigheter')
-  const byggnader     = results.filter(r => r.layer === 'byggnader')
-  const skyddsomraden = results.filter(r => r.layer === 'skyddsomraden')
-  const beslut        = results.filter(r => r.layer === 'beslut')
+  const fastigheter    = results.filter(r => r.layer === 'fastigheter')
+  const byggnader      = results.filter(r => r.layer === 'byggnader')
+  const skyddatomraden = results.filter(r => r.layer === 'skyddatomraden')
+  const beslut         = results.filter(r => r.layer === 'beslut')
+  const delomraden     = results.filter(r => r.layer === 'delomraden')
 
-  // byggnader keyed by fastighets_id
+  // byggnader grouped under parent fastighet
   const byggnaderByFid = new Map<string, SearchResult[]>()
   byggnader.forEach(b => {
     const fid = (b.feature.properties as { fastighets_id?: string }).fastighets_id
@@ -35,18 +38,7 @@ function groupResults(results: SearchResult[]): { groups: GroupedResult[]; orpha
     byggnaderByFid.set(fid, list)
   })
 
-  // beslut keyed by soid
-  const beslutBySoid = new Map<string, SearchResult[]>()
-  beslut.forEach(b => {
-    const soid = (b.feature.properties as { soid?: string }).soid
-    if (!soid) return
-    const list = beslutBySoid.get(soid) ?? []
-    list.push(b)
-    beslutBySoid.set(soid, list)
-  })
-
   const attachedByggnader = new Set<string>()
-  const attachedBeslut    = new Set<string>()
   const groups: GroupedResult[] = []
 
   fastigheter.forEach(f => {
@@ -55,16 +47,13 @@ function groupResults(results: SearchResult[]): { groups: GroupedResult[]; orpha
     groups.push({ parent: f, children })
   })
 
-  skyddsomraden.forEach(s => {
-    const soid = (s.feature.properties as { soid?: string }).soid ?? ''
-    const children = beslutBySoid.get(soid) ?? []
-    children.forEach(c => attachedBeslut.add(c.id))
-    groups.push({ parent: s, children })
-  })
+  // skyddatomraden, beslut, delomraden are all shown flat (no soid linking)
+  skyddatomraden.forEach(s => groups.push({ parent: s, children: [] }))
 
   const orphans: SearchResult[] = [
     ...byggnader.filter(b => !attachedByggnader.has(b.id)),
-    ...beslut.filter(b => !attachedBeslut.has(b.id)),
+    ...beslut,
+    ...delomraden,
   ]
 
   return { groups, orphans }
@@ -72,18 +61,20 @@ function groupResults(results: SearchResult[]): { groups: GroupedResult[]; orpha
 
 interface ResultsListProps {
   results: SearchResult[]
-  geocodeResults: GeocodeResult[]
+  geocodeResults?: GeocodeResult[]
   hasQuery: boolean
+  isNearbyMode?: boolean
   onResultClick: (result: SearchResult) => void
   onResultHover: (result: SearchResult) => void
   onResultLeave: () => void
-  onGeoResultClick: (result: GeocodeResult) => void
+  onGeoResultClick?: (result: GeocodeResult) => void
 }
 
 export function ResultsList({
   results,
-  geocodeResults,
+  geocodeResults = [],
   hasQuery,
+  isNearbyMode = false,
   onResultClick,
   onResultHover,
   onResultLeave,
@@ -117,7 +108,9 @@ export function ResultsList({
         <>
           <div className={styles.header}>
             <span className={styles.count}>
-              {results.length} träff{results.length !== 1 ? 'ar' : ''}
+              {isNearbyMode
+                ? `Objekt i närheten · ${results.length}`
+                : `${results.length} träff${results.length !== 1 ? 'ar' : ''}`}
             </span>
           </div>
           <ul className={styles.list}>

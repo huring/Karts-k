@@ -24,50 +24,28 @@ export type FastighetProperties = {
   processstatus?: string | null
 }
 
-export type SkyddsomradeProperties = {
-  feature_type: 'skyddsomrade'
-  id: string
-  soid: string
-  gid: number
+export type SkyddatomradeProperties = {
+  feature_type: 'skyddatomrade'
+  id: string       // "NVR-2013488"
   namn: string
-  skyddstyp: string
-  status: string
+  typ: string      // "NR" | "NP" | "NM" | "KR" | "OBO" | "NVO" | "DVO" | "VSO" | "LBSO" | "IF"
+  status: string   // "GALLANDE" | "BESLUTAT" | "OVERKLAGAT"
+  beskrivning: string | null
   area_ha: number
-  _source_file: string
-  // Optional extended fields from richer DINO exports
-  omr_besk?: string | null
-  beslmyndig?: string | null
-  forvaltare?: string | null
-  geo_status?: string | null
-  a_foresk?: string | null
-  b_foresk?: string | null
-  c_foresk?: string | null
-  undantag?: string | null
-  [key: string]: unknown
 }
 
 export type BeslutProperties = {
   feature_type: 'beslut'
-  id: string
-  soid: string
-  gid: number
-  namn: string
-  typ: string
-  status: string
+  id: string       // "BESLUT-2201458"
+  status: string   // "FORSLAG"
   area_ha: number
-  beslut_dat: string
-  lagakr_dat: string
-  status_dbt: string | null
-  _source_file: string
-  // Optional extended fields from richer DINO exports
-  beslmyndig?: string | null
-  forvaltare?: string | null
-  geo_status?: string | null
-  a_foresk?: string | null
-  b_foresk?: string | null
-  c_foresk?: string | null
-  undantag?: string | null
-  [key: string]: unknown
+}
+
+export type DelomradeProperties = {
+  feature_type: 'delomrade'
+  id: string       // "DO-140845"
+  status: string   // "AVFORT" | "AVTALAT" | "PAGAR" | "PLANERAT"
+  area_ha: number
 }
 
 // ── Byggnad (icke-geografisk, kopplad till fastighet) ─────────────────────────
@@ -119,10 +97,11 @@ export type FastighetMeta = {
 
 // ── Typed feature wrappers ────────────────────────────────────────────────────
 
-export type FastighetFeature    = Feature<Geometry, FastighetProperties>
-export type SkyddsomradeFeature = Feature<Geometry, SkyddsomradeProperties>
-export type BeslutFeature       = Feature<Geometry, BeslutProperties>
-export type DinoFeature         = FastighetFeature | SkyddsomradeFeature | BeslutFeature
+export type FastighetFeature      = Feature<Geometry, FastighetProperties>
+export type SkyddatomradeFeature  = Feature<Geometry, SkyddatomradeProperties>
+export type BeslutFeature         = Feature<Geometry, BeslutProperties>
+export type DelomradeFeature      = Feature<Geometry, DelomradeProperties>
+export type DinoFeature           = FastighetFeature | SkyddatomradeFeature | BeslutFeature | DelomradeFeature
 
 // ── Type guards ───────────────────────────────────────────────────────────────
 
@@ -130,10 +109,14 @@ export function isFastighet(f: Feature): f is FastighetFeature {
   return (f.properties as { feature_type?: string } | null)?.feature_type === 'fastighet'
 }
 
-export function isSkyddsomrade(f: Feature): f is SkyddsomradeFeature {
-  return (f.properties as { feature_type?: string } | null)?.feature_type === 'skyddsomrade'
+export function isSkyddatomrade(f: Feature): f is SkyddatomradeFeature {
+  return (f.properties as { feature_type?: string } | null)?.feature_type === 'skyddatomrade'
 }
 
 export function isBeslut(f: Feature): f is BeslutFeature {
   return (f.properties as { feature_type?: string } | null)?.feature_type === 'beslut'
+}
+
+export function isDelomrade(f: Feature): f is DelomradeFeature {
+  return (f.properties as { feature_type?: string } | null)?.feature_type === 'delomrade'
 }

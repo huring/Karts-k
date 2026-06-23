@@ -118,32 +118,37 @@
   font-weight: 500;
 }
 
+/* Header actions group (fly-to + close) */
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  flex-shrink: 0;
+}
+
 /* Scrollable content */
 
 .content {
   flex: 1;
+  min-height: 0;
   overflow-y: auto;
-  padding: var(--space-4);
   display: flex;
   flex-direction: column;
-  gap: var(--space-4);
 }
 
-/* Property list (F4-1, F4-4) */
+/* Property list */
 
 .propList {
   display: flex;
   flex-direction: column;
   gap: 0;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  overflow: hidden;
 }
 
 .propRow {
   display: flex;
   align-items: flex-start;
-  padding: var(--space-2) var(--space-3);
+  padding: var(--space-2) var(--space-4);
   gap: var(--space-3);
   border-bottom: 1px solid var(--color-border);
 }
@@ -179,10 +184,10 @@
   color: var(--color-text-muted);
 }
 
-/* Fly to button */
+/* Fly to button (kept for any inline use) */
 
 .flyToRow {
-  display: flex;
+  display: none;
 }
 
 .flyToBtn {
@@ -207,6 +212,36 @@
   font-size: 14px;
 }
 
+/* Full-panel loader */
+
+.panelLoader {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+}
+
+.loaderSpinner {
+  width: 28px;
+  height: 28px;
+  border: 3px solid var(--color-border);
+  border-top-color: var(--color-primary);
+  border-radius: 50%;
+  animation: panelSpin 0.7s linear infinite;
+}
+
+@keyframes panelSpin {
+  to { transform: rotate(360deg); }
+}
+
+.loaderText {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
 /* Loading / empty states */
 
 .loadingText,
@@ -214,15 +249,14 @@
   font-size: 13px;
   color: var(--color-text-muted);
   text-align: center;
-  padding: var(--space-4) 0;
+  padding: var(--space-3) var(--space-4);
+  margin: 0;
 }
 
-/* Related sections (F4-2) */
+/* Related sections — flat accordion, separated by border-bottom */
 
 .relatedSection {
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  overflow: hidden;
+  border-bottom: 1px solid var(--color-border);
 }
 
 .sectionHeader {
@@ -230,8 +264,8 @@
   align-items: center;
   gap: var(--space-2);
   width: 100%;
-  padding: var(--space-2) var(--space-3);
-  background: var(--color-bg-secondary);
+  padding: var(--space-3) var(--space-4);
+  background: none;
   border: none;
   cursor: pointer;
   text-align: left;
@@ -239,7 +273,7 @@
 }
 
 .sectionHeader:hover {
-  background: var(--dino-slategrey-100);
+  background: var(--color-bg-secondary);
 }
 
 .sectionIcon {
@@ -284,7 +318,7 @@
   align-items: center;
   gap: var(--space-2);
   width: 100%;
-  padding: var(--space-2) var(--space-3);
+  padding: var(--space-2) var(--space-4);
   background: none;
   border: none;
   border-bottom: 1px solid var(--color-border);
@@ -344,8 +378,28 @@
   flex-shrink: 0;
 }
 
+.flyToIconBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: none;
+  cursor: pointer;
+  color: var(--color-link);
+  flex-shrink: 0;
+  font-size: 16px;
+  transition: background 0.1s;
+}
+
+.flyToIconBtn:hover {
+  background: var(--dino-blue-100);
+}
+
 .relatedRowIndent {
-  padding-left: calc(var(--space-3) + 16px);
+  padding-left: calc(var(--space-4) + 16px);
   background: var(--color-bg-secondary);
 }
 
@@ -355,9 +409,10 @@
   font-size: 13px;
   color: var(--color-text);
   line-height: 1.6;
-  padding: var(--space-3);
+  padding: var(--space-3) var(--space-4);
   margin: 0;
   white-space: pre-wrap;
+  overflow-wrap: break-word;
 }
 
 .foreskriftBlock {
@@ -384,7 +439,7 @@
   align-items: center;
   gap: var(--space-2);
   width: 100%;
-  padding: var(--space-2) var(--space-3);
+  padding: var(--space-2) var(--space-4);
   background: none;
   border: none;
   border-bottom: 1px solid var(--color-border);
@@ -423,7 +478,6 @@
   aspect-ratio: 2 / 1;
   overflow: hidden;
   background: var(--color-bg-secondary);
-  border-radius: var(--radius-md);
 }
 
 .byggnadsImage {
@@ -443,4 +497,122 @@
 
 .byggnadsImageIcon {
   font-size: 48px;
+}
+
+/* Section items with padding (for PropList and other non-row content) */
+
+.sectionItemsPad {
+  padding: var(--space-3) var(--space-4);
+}
+
+/* Markägare */
+
+.markagareCard {
+  padding: var(--space-3) var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.markagareOrg {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.markagareRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: 12px;
+  color: var(--color-text);
+}
+
+.markagareIcon {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+}
+
+.markagareRole {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  margin-left: auto;
+}
+
+/* Ekonomiska värden */
+
+.ekonomiGroup {
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.ekonomiGroupTitle {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  padding: var(--space-1) var(--space-4) var(--space-2);
+}
+
+.ekonomiRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px var(--space-4);
+  font-size: 12px;
+  color: var(--color-text);
+}
+
+.ekonomiSubtotal {
+  font-weight: 600;
+  margin-top: var(--space-1);
+  padding-top: var(--space-2);
+  border-top: 1px solid var(--color-border);
+}
+
+.ekonomiNetto {
+  font-size: 13px;
+  font-weight: 700;
+  padding: var(--space-2) var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.ekonomiNegative {
+  color: var(--color-error);
+}
+
+.ekonomiPositive {
+  color: var(--dino-green-500);
+}
+
+/* Section link (används i Markägare och Ekonomiska värden) */
+
+.sectionLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  width: 100%;
+  padding: var(--space-2) var(--space-4);
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-link);
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.1s;
+}
+
+.sectionLink:hover {
+  background: var(--color-bg-secondary);
+}
+
+.sectionLinkIcon {
+  font-size: 14px;
+  flex-shrink: 0;
 }

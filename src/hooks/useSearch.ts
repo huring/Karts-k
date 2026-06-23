@@ -1,11 +1,11 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import mapboxgl from 'mapbox-gl'
 import * as turf from '@turf/turf'
 import type { Feature, FeatureCollection } from 'geojson'
-import type { FastighetProperties, SkyddsomradeProperties, BeslutProperties, FastighetMeta } from '../types'
+import type { FastighetProperties, SkyddatomradeProperties, BeslutProperties, DelomradeProperties, FastighetMeta } from '../types'
 import type { ObjectTypeKey, AttributeFilters } from './useFilters'
 
-export type SearchResultLayer = 'fastigheter' | 'skyddsomraden' | 'beslut' | 'byggnader'
+export type SearchResultLayer = 'fastigheter' | 'skyddatomraden' | 'beslut' | 'delomraden' | 'byggnader'
 
 export type SearchResult = {
   id: string
@@ -16,28 +16,37 @@ export type SearchResult = {
 }
 
 export type FilterOptions = {
-  status:      string[]
-  skyddstyp:   string[]
-  kommunnamn:  string[]
-  skick:       string[]
-  anvandning:  string[]
+  status:     string[]
+  typ:        string[]
+  kommunnamn: string[]
+  skick:      string[]
+  anvandning: string[]
 }
 
-// Per-type hit counts from the current text query (before type/attribute filters)
-export type SearchTypeCounts = Record<'fastigheter' | 'skyddsomraden' | 'beslut' | 'byggnader', number>
+export type SearchTypeCounts = Record<'fastigheter' | 'skyddatomraden' | 'beslut' | 'delomraden' | 'byggnader', number>
+
+function deduplicateById(items: SearchResult[]): SearchResult[] {
+  const seen = new Set<string>()
+  return items.filter(item => {
+    if (seen.has(item.id)) return false
+    seen.add(item.id)
+    return true
+  })
+}
 
 function unique(vals: (string | null | undefined)[]): string[] {
   return [...new Set(vals.filter((v): v is string => typeof v === 'string' && v.length > 0))].sort()
 }
 
-function computeFilterOptions(items: SearchResult[]): FilterOptions {
+export function computeFilterOptions(items: SearchResult[]): FilterOptions {
   return {
     status: unique([
-      ...items.filter(i => i.layer === 'skyddsomraden').map(i => (i.feature.properties as SkyddsomradeProperties).status),
+      ...items.filter(i => i.layer === 'skyddatomraden').map(i => (i.feature.properties as SkyddatomradeProperties).status),
       ...items.filter(i => i.layer === 'beslut').map(i => (i.feature.properties as BeslutProperties).status),
+      ...items.filter(i => i.layer === 'delomraden').map(i => (i.feature.properties as DelomradeProperties).status),
       ...items.filter(i => i.layer === 'fastigheter').map(i => (i.feature.properties as FastighetProperties).status ?? ''),
     ]),
-    skyddstyp:  unique(items.filter(i => i.layer === 'skyddsomraden').map(i => (i.feature.properties as SkyddsomradeProperties).skyddstyp)),
+    typ:        unique(items.filter(i => i.layer === 'skyddatomraden').map(i => (i.feature.properties as SkyddatomradeProperties).typ)),
     kommunnamn: unique(items.filter(i => i.layer === 'fastigheter').map(i => (i.feature.properties as FastighetProperties).kommunnamn)),
     skick:      unique(items.filter(i => i.layer === 'byggnader').map(i => (i.feature.properties as Record<string, string>).skick)),
     anvandning: unique(items.filter(i => i.layer === 'byggnader').map(i => (i.feature.properties as Record<string, string>).anvandning)),
@@ -49,11 +58,13 @@ function matchesText(item: SearchResult, q: string): boolean {
   const fields: (string | undefined | null)[] =
     item.layer === 'fastigheter'
       ? [p.beteckning as string, p.trakt as string, p.kommunnamn as string, p.blockenhet as string]
-    : item.layer === 'skyddsomraden'
-      ? [p.namn as string, p.id as string, p.skyddstyp as string, p.status as string]
-    : item.layer === 'byggnader'
-      ? [p.namn as string, p.anvandning as string, p.skick as string, p.id as string]
-    : [p.namn as string, p.id as string, p.typ as string, p.status as string]
+    : item.layer === 'skyddatomraden'
+      ? [p.namn as string, p.id as string, p.typ as string, p.status as string]
+    : item.layer === 'beslut'
+      ? [p.id as string, p.status as string]
+    : item.layer === 'delomraden'
+      ? [p.id as string, p.status as string]
+    : [p.namn as string, p.anvandning as string, p.skick as string, p.id as string]
   return fields.some(v => v?.toLowerCase().includes(q))
 }
 
@@ -62,34 +73,44 @@ export function useSearch(
   activeTypes: Record<ObjectTypeKey, boolean>,
   attributes: AttributeFilters,
 ) {
-  const [query, setQuery] = useState('')
+  const [query, setQueryState] = useState('')
+  const [committedQuery, setCommittedQuery] = useState('')
   const [results, setResults] = useState<SearchResult[]>([])
-  const [filterOptions, setFilterOptions] = useState<FilterOptions>({ status: [], skyddstyp: [], kommunnamn: [], skick: [], anvandning: [] })
+  const [suggestions, setSuggestions] = useState<SearchResult[]>([])
+  const [filterOptions, setFilterOptions] = useState<FilterOptions>({ status: [], typ: [], kommunnamn: [], skick: [], anvandning: [] })
   const [typeCounts, setTypeCounts] = useState<SearchTypeCounts | null>(null)
   const allFeaturesRef = useRef<SearchResult[]>([])
+  const [dataLoaded, setDataLoaded] = useState(false)
+
+  const setQuery = (q: string) => {
+    setQueryState(q)
+    if (!q.trim()) setCommittedQuery('')
+  }
+
+  const commitSearch = () => setCommittedQuery(query)
 
   useEffect(() => {
     Promise.all([
       fetch('/data/fastigheter.geojson').then(r => r.json()),
-      fetch('/data/skyddsomraden.geojson').then(r => r.json()),
+      fetch('/data/skyddatomraden.geojson').then(r => r.json()),
       fetch('/data/beslut.geojson').then(r => r.json()),
+      fetch('/data/delomraden.geojson').then(r => r.json()),
       fetch('/data/byggnader.json').then(r => r.json()),
       fetch('/data/fastigheter_meta.json').then(r => r.json()),
-    ]).then(([rawFast, rawSkydds, rawBeslut, rawByggnader, rawMeta]) => {
-      const fast       = rawFast       as FeatureCollection
-      const skydds     = rawSkydds     as FeatureCollection
-      const beslut     = rawBeslut     as FeatureCollection
-      const bgData     = rawByggnader  as { byggnader: Array<{ id: string; fastighets_id: string; namn: string; anvandning: string; skick: string }> }
-      const metaMap    = (rawMeta as { meta: Record<string, FastighetMeta> }).meta
+    ]).then(([rawFast, rawSkydds, rawBeslut, rawDelomrade, rawByggnader, rawMeta]) => {
+      const fast        = rawFast        as FeatureCollection
+      const skydds      = rawSkydds      as FeatureCollection
+      const beslut      = rawBeslut      as FeatureCollection
+      const delomrade   = rawDelomrade   as FeatureCollection
+      const bgData      = rawByggnader   as { byggnader: Array<{ id: string; fastighets_id: string; namn: string; anvandning: string; skick: string }> }
+      const metaMap     = (rawMeta as { meta: Record<string, FastighetMeta> }).meta
 
-      // Merge meta fields into fastighet features so they're available for filtering
       fast.features.forEach((f: Feature) => {
         const id = (f.properties as FastighetProperties).id
         const m = id ? metaMap[id] : null
         if (m && f.properties) Object.assign(f.properties, m)
       })
 
-      // Build centroid lookup for placing building points
       const centroidById = new Map<string, [number, number]>()
       fast.features.forEach(f => {
         const id = (f.properties as FastighetProperties).id
@@ -104,12 +125,16 @@ export function useSearch(
         return { id: p.id, label: p.beteckning, subLabel: `${p.trakt} · ${p.kommunnamn}`, layer: 'fastigheter' as const, feature: f }
       })
       const skyddsItems: SearchResult[] = skydds.features.map(f => {
-        const p = f.properties as SkyddsomradeProperties
-        return { id: p.id, label: p.namn, subLabel: `${p.id} · ${p.skyddstyp}`, layer: 'skyddsomraden' as const, feature: f }
+        const p = f.properties as SkyddatomradeProperties
+        return { id: p.id, label: p.namn, subLabel: `${p.id} · ${p.typ}`, layer: 'skyddatomraden' as const, feature: f }
       })
       const beslutItems: SearchResult[] = beslut.features.map(f => {
         const p = f.properties as BeslutProperties
-        return { id: p.id, label: p.namn, subLabel: `${p.id} · ${p.typ}`, layer: 'beslut' as const, feature: f }
+        return { id: p.id, label: p.id, subLabel: p.status, layer: 'beslut' as const, feature: f }
+      })
+      const delomradeItems: SearchResult[] = delomrade.features.map(f => {
+        const p = f.properties as DelomradeProperties
+        return { id: p.id, label: p.id, subLabel: p.status, layer: 'delomraden' as const, feature: f }
       })
       const byggnadItems: SearchResult[] = bgData.byggnader
         .filter(b => centroidById.has(b.fastighets_id))
@@ -125,98 +150,62 @@ export function useSearch(
           },
         }))
 
-      allFeaturesRef.current = [...fastItems, ...skyddsItems, ...beslutItems, ...byggnadItems]
+      allFeaturesRef.current = [
+        ...deduplicateById(fastItems),
+        ...deduplicateById(skyddsItems),
+        ...deduplicateById(beslutItems),
+        ...deduplicateById(delomradeItems),
+        ...byggnadItems,
+      ]
       setFilterOptions(computeFilterOptions(allFeaturesRef.current))
+      setDataLoaded(true)
     })
   }, [])
 
   useEffect(() => {
+    const q = query.trim().toLowerCase()
+    if (q.length < 2 || !dataLoaded) { setSuggestions([]); return }
+    const matches = allFeaturesRef.current.filter(item => matchesText(item, q))
+    setSuggestions(matches.slice(0, 6))
+  }, [query, dataLoaded])
+
+  useEffect(() => {
     if (allFeaturesRef.current.length === 0) return
 
-    const q = query.trim().toLowerCase()
-    const hasAttributeFilter = Object.values(attributes).some(arr => arr.length > 0)
+    const q = committedQuery.trim().toLowerCase()
 
-    if (!q && !hasAttributeFilter) {
+    if (!q) {
       setResults([])
       setTypeCounts(null)
       setFilterOptions(computeFilterOptions(allFeaturesRef.current))
       return
     }
 
-    // Stage 1: text filter across all types
-    const textItems = q
-      ? allFeaturesRef.current.filter(item => matchesText(item, q))
-      : allFeaturesRef.current
+    const textItems = allFeaturesRef.current.filter(item => matchesText(item, q))
 
-    // Type counts before type-toggle filter — drives chip badges and dimming
     setTypeCounts({
-      fastigheter:   textItems.filter(i => i.layer === 'fastigheter').length,
-      skyddsomraden: textItems.filter(i => i.layer === 'skyddsomraden').length,
-      beslut:        textItems.filter(i => i.layer === 'beslut').length,
-      byggnader:     textItems.filter(i => i.layer === 'byggnader').length,
+      fastigheter:    textItems.filter(i => i.layer === 'fastigheter').length,
+      skyddatomraden: textItems.filter(i => i.layer === 'skyddatomraden').length,
+      beslut:         textItems.filter(i => i.layer === 'beslut').length,
+      delomraden:     textItems.filter(i => i.layer === 'delomraden').length,
+      byggnader:      textItems.filter(i => i.layer === 'byggnader').length,
     })
 
-    // Stage 2: type toggle filter
-    let items = textItems.filter(item => activeTypes[item.layer])
-
-    // Dynamic attribute options — only values present in text+type filtered set
+    const items = textItems.filter(item => activeTypes[item.layer])
     setFilterOptions(computeFilterOptions(items))
-
-    // Stage 3: attribute filters (each is an OR within the group, skipped if empty)
-    if (attributes.status.length > 0) {
-      const set = attributes.status
-      items = items.filter(item =>
-        !['skyddsomraden', 'beslut'].includes(item.layer) ||
-        set.includes((item.feature.properties as Record<string, string>).status),
-      )
-    }
-    if (attributes.skyddstyp.length > 0) {
-      const set = attributes.skyddstyp
-      items = items.filter(item =>
-        item.layer !== 'skyddsomraden' ||
-        set.includes((item.feature.properties as SkyddsomradeProperties).skyddstyp),
-      )
-    }
-    if (attributes.kommunnamn.length > 0) {
-      const set = attributes.kommunnamn
-      items = items.filter(item =>
-        item.layer !== 'fastigheter' ||
-        set.includes((item.feature.properties as FastighetProperties).kommunnamn),
-      )
-    }
-    if (attributes.skick.length > 0) {
-      const set = attributes.skick
-      items = items.filter(item =>
-        item.layer !== 'byggnader' ||
-        set.includes((item.feature.properties as Record<string, string>).skick),
-      )
-    }
-    if (attributes.anvandning.length > 0) {
-      const set = attributes.anvandning
-      items = items.filter(item =>
-        item.layer !== 'byggnader' ||
-        set.includes((item.feature.properties as Record<string, string>).anvandning),
-      )
-    }
-
     setResults(items)
-  }, [query, activeTypes, attributes])
+  }, [committedQuery, activeTypes])
 
-  // Zoom to bounding box of results (debounced 300 ms)
   useEffect(() => {
-    if (!results.length || !mapRef.current || query.trim().length < 2) return
+    if (!results.length || !mapRef.current || committedQuery.trim().length < 2) return
     const timer = setTimeout(() => {
       const [minLng, minLat, maxLng, maxLat] = turf.bbox(turf.featureCollection(results.map(r => r.feature)))
       mapRef.current?.fitBounds([[minLng, minLat], [maxLng, maxLat]], { padding: 80, maxZoom: 13, duration: 500 })
     }, 300)
     return () => clearTimeout(timer)
-  }, [results, query, mapRef])
+  }, [results, committedQuery, mapRef])
 
-  const highlightIds = useMemo(() => results.map(r => r.id), [results])
+  const hasActiveQuery = committedQuery.trim().length > 0
 
-  const hasActiveQuery =
-    query.trim().length > 0 ||
-    Object.values(attributes).some(arr => arr.length > 0)
-
-  return { query, setQuery, results, highlightIds, hasActiveQuery, filterOptions, typeCounts }
+  return { query, setQuery, results, suggestions, hasActiveQuery, filterOptions, typeCounts, commitSearch, allFeaturesRef }
 }
